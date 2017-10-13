@@ -1,0 +1,32 @@
+#
+# Site settings
+#
+title:			sss
+email:			12697333@qq.com
+description: "aaaaaaaa"
+keyword: "窗外蟋蟀, keysaim"
+url: "https://sir-he.github.io"
+baseurl:		""
+#url:			"http://alfabravo.org"
+twitter_username:	arturoborrero
+github_username:	aborrero
+
+#
+# Build settings
+#
+markdown:		kramdown
+# to show future post, run 'jekyll serve --future'
+future:			false
+
+#
+# Pagination config
+#
+gems:			[jekyll-paginate]
+paginate:		15
+paginate_path:		"/page:num/"
+
+
+#
+# Other settings
+#
+excerpt_separator:	<!--more-->
