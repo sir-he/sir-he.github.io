@@ -2,36 +2,21 @@
 layout: page
 title: About
 permalink: /about/
+tags:   [snorkel, lagos, portugal]
 ---
 
-Este es el blog *alfabravo.org*, con tematica relacionada con aventuras, viajes y experiencias.
+关于我
 
-Puedes encontrar contenido sobre diversos deportes en la naturaleza:
+* 男
 
-* senderismo
-* montañismo
-* alpinismo
-* kayak
-* rafting
-* barranquismo
-* surf
-* snorkel
+热爱大海与冷笑话，
 
-Así mismo, se publican articulos sobre:
+目前是一枚后端
 
-* equipamiento
-* expediciones
-* materiales
-* viajes
+内向羞涩，不易相处，
 
-Todo el contenido del sitio tiene doble licencia:
+年轻无为，搬砖为生。
 
-* Licencia [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html)
-* Licencia [CC-BY-SA](http://creativecommons.org/licenses/by-sa/4.0) ![CC-BY-SA](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)
+专注web领域研究与分享
 
-Se puede acceder al código fuente en [GitHub](https://github.com/aborrero/alfabravo.org)
-
-Tengo otro blog sobre tecnología, escrito en inglés:
-[ral-arturo.org][ral-arturo.org].
-
-[ral-arturo.org]:		http://ral-arturo.org
+如果你感觉有用,[微信打赏点呗]({{site.url}}/assets/reward.jpg "感谢您的支持")～

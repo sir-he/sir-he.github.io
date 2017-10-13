@@ -1,15 +1,14 @@
 #
 # Site settings
 #
-title:			sss
-email:			12697333@qq.com
-description: "aaaaaaaa"
-keyword: "窗外蟋蟀, keysaim"
+title:			sir-he blog
+email:			h525619010@sina.com
+description: "开源改变世界,为开源献上力量,专注web领域研究与分享"
+keywords: "sir-he,sir-he blog,sir-he.github.io,何先生的博客,何先森的博客,开源改变世界,为开源献上力量,专注web领域研究与分享"
 url: "https://sir-he.github.io"
 baseurl:		""
-#url:			"http://alfabravo.org"
-twitter_username:	arturoborrero
-github_username:	aborrero
+# twitter_username:	sir-he
+github_username:	sir-he
 
 #
 # Build settings
