@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "互联网行业知识"
+keyword: "sir-he,sir-he blog,互联网行业知识"
+excerpt: "互联网行业知识"
 date:   2017-10-12 19:11:05
 tags:   [snorkel, lagos, portugal]
 ---
