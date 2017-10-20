@@ -8,3 +8,5 @@ permalink: /link/
 [PHP源码阅读，PHP设计模式-胖胖的空间](http://www.phppan.com/ "点击前往")
 
 [Markdown 语法说明 (简体中文版)](http://www.appinn.com/markdown/ "点击前往")
+
+[新浪云福利 1000云豆免费领！低成本、免运维、灵活、安全稳定](http://t.cn/ROg7EW1 "点击前往")
