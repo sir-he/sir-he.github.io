@@ -1,10 +1,8 @@
 ---
 layout: post
 keyword: "sir-he,sir-he blog,vim安装,linux,linux下vim安装,centos"
-excerpt: "linux[centos]下vim安装"
 title:  "linux下vim安装"
 date:   2017-10-18 11:37:09
-tags:   [snorkel, lagos, portugal]
 ---
 
 本文以centos7为讲解：
@@ -18,6 +16,8 @@ tags:   [snorkel, lagos, portugal]
 第二步：在命令行敲入“vi”后按"tab"键，可以看到目前系统中只安装了vi
 
 ![linux_vim0.png][linux_vim0.png]
+
+<!--more-->
 
 第三步：如果缺少vim，进行安装：
 

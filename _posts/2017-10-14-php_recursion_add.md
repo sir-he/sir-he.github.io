@@ -1,10 +1,8 @@
 ---
 layout: post
 keyword: "sir-he,sir-he blog,php数组处理,php,php数组递加处理,何先生的博客"
-excerpt: "php数组递加处理"
 title:  "php数组递加处理"
 date:   2017-10-14 15:00:09
-tags:   [snorkel, lagos, portugal]
 ---
 
 示例：
@@ -33,3 +31,7 @@ tags:   [snorkel, lagos, portugal]
             }
         }
         echo '处理前：'.var_export($arr,true). "<br>" .'处理后：'.var_export($newArr,true);
+
+<!--more-->
+
+...

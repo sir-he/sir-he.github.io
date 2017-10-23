@@ -1,10 +1,8 @@
 ---
 layout: post
 keyword: "sir-he,sir-he blog,php,Iterator,迭代器,php迭代器Iterator作用"
-excerpt: "什么是迭代器?迭代器的使用范围.php迭代器的实现.php迭代器的示例"
 title:  "php迭代器Iterator作用"
 date:   2017-10-21
-tags:   [snorkel, lagos, portugal]
 ---
 
 ### 什么是迭代器?
@@ -19,6 +17,8 @@ tags:   [snorkel, lagos, portugal]
 2. 无法在一次的调用获取容器的所有元素时
 3. 要处理数量巨大的无素时（数据库中的表以GB计的数据）
 4. ……
+
+<!--more-->
 
 ### php迭代器的实现
 

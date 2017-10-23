@@ -1,7 +1,6 @@
 ---
 layout: post
 keyword: "sir-he,sir-he blog,array_multisort,php数组排序,php分组,php数组分组排序"
-excerpt: "php数组利用array_multisort函数分组排序"
 title:  "php数组分组排序"
 date:   2017-10-13 23:29:06
 tags:   [snorkel, lagos, portugal]
@@ -51,6 +50,8 @@ tags:   [snorkel, lagos, portugal]
             [bankAbbr] => PABC
             [prilvl] => 10
         )
+
+<!--more-->
 
 ***根据 key=>bankAbbr 分组后数组：***
 

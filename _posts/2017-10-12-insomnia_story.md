@@ -2,7 +2,6 @@
 layout: post
 title:  "失眠故事【花匠与候鸟】"
 date:   2017-10-12 17:29:06
-tags:   [snorkel, lagos, portugal]
 ---
 
 ![diary-29.jpg][diary-29.jpg]
@@ -14,6 +13,8 @@ tags:   [snorkel, lagos, portugal]
 
 有一个春天，候鸟跟花匠说起了她家乡的雪莲。
 这种花，花匠从来没听说过。但每次说起雪莲，花匠都能注意到她眼中飞扬的光亮。是的，那是候鸟最心爱的花儿。
+
+<!--more-->
 
 ### 二、
 
