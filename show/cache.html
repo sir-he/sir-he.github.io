@@ -1,0 +1,1232 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>cache</title></head><body><article class="markdown-body"><h2 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：1</h2>
+<p>标题：Memcache一致性哈希原理是什么？以及缺点有哪些？</p>
+<p>优点：<br />
+当一个节点失效的时候，其他节点的数据不会受到破坏，这个节点的数据会被分流到另外一个节点。当增加一个节点时，只会对一个节点的一分部数据有影响。<br />
+<br />
+<br />
+缺点：<br />
+ 极容易造成节点间数据量的不平衡，可能一个节点上热点非常多，一个节点上热点很少。</p>
+<h2 id="2"><a name="user-content-2" href="#2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：2</h2>
+<p>标题：Redis和memcache的区别有哪些？</p>
+<p>1、存储方式：<br />
+memecache 把数据全部存在内存之中，断电后会挂掉，数据不能超过内存大小<br />
+redis有部份存在硬盘上，这样能保证数据的持久性。<br />
+2、数据支持类型：<br />
+redis在数据支持上要比memecache多的多。<br />
+3、使用底层模型不同：<br />
+新版本的redis直接自己构建了VM 机制 ，因为一般的系统调用系统函数的话，会浪费一定的时间去移动和请求。<br />
+4、运行环境不同：<br />
+redis目前官方只支持LINUX 上去行，从而省去了对于其它系统的支持，这样的话可以更好的把精力用于本系统 环境上的优化，虽然后来微软有一个小组为其写了补丁。但是没有放到主干上</p>
+<h2 id="3"><a name="user-content-3" href="#3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：3</h2>
+<p>标题：关于网站静态文件访问提高性能的方法或方式有哪些？</p>
+<p>（1）减少生成cookie: 将静态文件放在不同域下，让静态文件避免设置cookie，做网站时候建议将网站的静态文件(如图片、css、js 等)放在一个专门的域名下访问，由于这个域名与主站的域名不同，所以浏览器就不会把主域名下的 Cookie 传给该域域名，减少了请求，一定程度提高了页面加载速度，特别是零碎的静态文件特别多的时候下效果是很显著的。<br />
+(2) js的调配:减少不必要的样式，以及杂乱的代码，<br />
+(3)代码整合:将代码中间的不必要的空格去掉了；s</p>
+<h2 id="4"><a name="user-content-4" href="#4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：4</h2>
+<p>标题：请举例说明在你的开发过程中用什么方法来加快页面的加载速度？</p>
+<p>1、减少页面请求：<br />
+   从WEB运行原理上讲，IIS请求是无状态的，在服务器端一直是连接和关闭的不断进行着，如果能减少服务器请求，总的时间将会减少。<br />
+   之前我下载163邮箱的登陆页面的图片时发现，它们的只用到了一个图片来完成整个页面的所有图片，当时我就纳闷了，这跟平时做的网站不一样呀。然来这样做减少浏览器的请求次数，用httpwatch你会发现请求的总时间大大减少了。同样的想法，在做css样式，javascript代码的时候也要做到尽可能的放在一个文件下来减少WEB请求。</p>
+<p>2、页面压缩技术，给我们JS，HTML代码进行瘦身。<br />
+     Jquery 作为JS最轻量级的类库，它的原类库是242KB，压缩后的它竟只有91.6KB。     常见的压缩工具有Google Closure Compiler、YUI Compressor、JsPacker、gzip。我常用的是gzip，因为它的压缩率是最高的。用jdk压缩后它会把一些空格去掉，把我们很长的变量名换成换成很短的字母来代替。</p>
+<p>3、样式、行为、结构分离。<br />
+   当第一次访问页面的时候，用户就可以把CSS,JS代码下载下来，这样做虽然第一次使网页加载的速度变慢了，但后面的页面将快很多。当用户访问这个网站的其它的页面时，由于其它页面也引用了这个CSS样式和JS代码。浏览器发现它已经下载好了，下一次就可以不用下载了。这样就做到了一次下载，后续速度的效果。</p>
+<p>4、使用存储过程<br />
+   在运行存储过程前，数据库已对其进行了语法和句法分析，并给出了优化执行方案。这种已经编译好的过程可极大地改善SQL语句的性能。由于执行SQL语句的大部分工作已经完成，所以存储过程能以极快的速度执行。这种预编译的sql语句就可以直接执行而节省了很大一部分查询的时间。</p>
+<p>5、一些细节：<br />
+   把CSS样式放在头部，如果JS很多的话，把js代码放在尾部。这样做可以尽可能的先加载页面的DOM结构，然后才可以级用户体验。如果JS很多的大的话，页面都没加载完，何来用户体验之说呢。</p>
+<p>6、适当的使用AJAX<br />
+   现在的Ajax好像有点被神话了，好像网页只要Ajax了，那么就不存在效率问题了。其实这是一种误解。拙劣的使用Ajax不会让你的网页效率更高，反而会降低你的网页效率。Ajax的确是个好东西，但是请不要过分的神话它。使用Ajax的时候也要考虑上面的那些准则。</p>
+<p>7、尽量少使用样式工具为我们生成的页面样式代码，自己动手把样式写在样式文件里。尽量写得通用些。</p>
+<p>8、页面缓存<br />
+    在大型的门户网站都用到了缓存技术，它是以空间换时间的技术。<br />
+    缓存主要是为了提高数据的读取速度。因为服务器和应用客户端之间存在着流量的瓶颈，所以读取大容量数据时，使用缓存来直接为客户端服务，可以减少客户端与服务器端的数据交互，从而大大提高二次页面的访问速度的程序的效率。</p>
+<p>9、配置网站的实体标签:</p>
+<p>这个Etag不是给用户用的，而是给浏览器缓存用的。Etag是服务器告诉浏览器缓存，缓存中的内容是否已经发生变化的一种机制。通过Etag，浏览器就可以知道现在的缓存中的内容是不是最新的，需不需要重新从服务器上重新下载。</p>
+<p>10、使用CDN技术。<br />
+  我们上网下载东西的时候经常会看见什么“南方服务器”、“北方服务器”的就是用到了CDN技术来提高下载速度与稳定性。<br />
+  CDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络，CDN系统能够实时地根据网络流量和各节点的连接、负载状况以及到用户的距离和响应时间等综合信息将用户的请求重新导向离用户最近的服务节点上。其目的是使用户可就近取得所需内容，解决 Internet网络拥挤的状况，提高用户访问网站的响应速度（来自百度百科）。</p>
+<p>11.使用Gzip压缩文档：<br />
+     GZIP编码是用来改进网页性能的方法，不仅可以减小存储空间，还可以减少传输所需的时间。将网站中的文件使用Gzip压缩后，可以显著的增加网页加载速度，同时也可以降低网站的带宽流量消耗。</p>
+<p>12.样式表文件放在外部调用：<br />
+     把页面中需要用到的JavaScript和CSS样式表文件放在另外的文件夹中，这样一来在打开网站其它页面时就会缓存这些调用的文件，从而加快网站页面的加载速度。</p>
+<p>13.给JavaScript文件减肥：<br />
+     这个方法不同于gzip压缩功能，缩小JavaScript文档有很多方法，比如去除不必要的空格等其他标签等。减少脚本文件后可以显著的提高网页的访问速度。</p>
+<p>14.图片使用height和width属性<br />
+     每个图片的height和width属性可以让浏览器在加载图片之前就知道图片的长和宽，并预留出指定的长宽待图片加载后显示。如果没有这两个属性，浏览器还需要在读取图片成功后再处理一次页面布局样式，这无疑减慢了网页加载速度。所以在固定图片大小的情况下最好都使用上长和宽属性。</p>
+<p>15.CSS文件压缩瘦身<br />
+DIV+CSS是现在流利的网页布局方式，DIV定义了元素，CSS控制显示效果。所以往往我们会把CSS写到另外一个或多个外部链接CSS文件中，并且CSS文件代码也有很多行。我们可以使用一些CSS压缩工具来删除CSS文件中不必要的多余内容，如重复定义样式、空格等来瘦身。可以尝试使用一下CleanCSS工具来压缩你的CSS文件。</p>
+<p>16.整合CSS、JS文件减少HTTP请求次数<br />
+      现在的网页都有多个图片、CSS外部文件链接、Javascript外部脚本链接。所以当访问一个网页时浏览器需要多次向服务器请求这些文件。在请求和加载之间会产生不少的时间差。特别是一些网页上有多个小图片、图标按钮的网页，有多少图片，浏览器就需要请求多少将这些小文件，多将请求这些小图片文件将明显影响网页的加载速度。所以我们应该尽可能将小图片拼合一个PNG大图片上，然后通过坐标来显示图标。一次请求一个大图片比多次请求小图片速度要快不少。同样，最好将CSS和Javascript尽可能地整合到一个文件中都有助于加快网页载入速度。</p>
+<p>17.目录地址后加上斜杠（/）<br />
+      如访客点击访问这样一个目录地址：<a href="http://www.zhen.com/dajiaguifan">http://www.zhen.com/dajiaguifan</a>，去打开这个目录下的index.html文档。当服务器收到请求后它需要消耗一些时间来分析这是一个文件还是一个目录。但是如果我们在最后加上一个斜杠（/），服务器就知道你是在访问一个目录地址，然后就直接加载默认文档index.html或index.php就行了。这样服务器就不用花时间来分析这个地址，也起到了一定加速的作用。</p>
+<h2 id="5"><a name="user-content-5" href="#5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：5</h2>
+<p>标题：设计一个短连接的功能类似http://house.focus.cn/s9w要求满足1000W url，并通过memcached实现覆盖80%，请描述一下你的数据结构及开发思路。</p>
+<h2 id="6"><a name="user-content-6" href="#6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：6</h2>
+<p>标题：说下php中session的运行机制简要说下原理就行<br />
+详细：简答题：说下php中session的运行机制简要说下原理就行</p>
+<p>session是在服务器端保持用户会话数据的一种方法，它以文件的形式存储在服务器端，session将客户端和服务器端建立一一联系，每个客户端都得有一个唯一标识（也就是session_id），服务器通过这个session_id来区分不同的客户端，session_id默认建立一个名叫”PHPSESSID”的cookie（可以通过php.ini修改session.name值指定）存储在客户端，我们也可以让session_id以地址栏来进行传输（修改php.ini中session.use_trans_sid等参数来改变session_id的传输方式），客户端将session_id传输给服务器端，服务器以传输过来的session_id来找到相对应的文件，读取的时候对文件内容进行反序列化就得到session的值，保存的时候先序列化再写入。</p>
+<h2 id="7"><a name="user-content-7" href="#7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：7</h2>
+<p>标题：请写出你所熟悉的缓存   以及使用心得及相关问题排除<br />
+详细：请写出你所熟悉的缓存   以及使用心得及相关问题排除</p>
+<p>在以往的项目中redis用的还是比较多的，redis的性能比较稳定，支持的数据类型也比较丰富，一般Cache宕机让人纠结，Redis有半持久化和持久化两种方式，能从某种程度上解决这个问题，以减少Cache宕机带来的雪崩效应。</p>
+<h2 id="8"><a name="user-content-8" href="#8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：8</h2>
+<p>标题：说说你对缓存技术的了解<br />
+详细：说说你对缓存技术的了解</p>
+<p>缓存这方面呢，有很多实现方式，我们平常最常用的就是利用ob来生成静态页面，还有一些反向代理缓存，以及我们常用的memcache，redis</p>
+<h2 id="9"><a name="user-content-9" href="#9" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：9</h2>
+<p>标题：你都用过什么缓存技术   说一说缓存的工作机制<br />
+详细：你都用过什么缓存技术   说一说缓存的工作机制</p>
+<p>Memcache和redis用的都比较多，使用缓存技术来减少对数据库的访问，从而加快我们网站页面的加载速度</p>
+<h2 id="10"><a name="user-content-10" href="#10" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：10</h2>
+<p>标题：Redis 和 Memcache 的性能对比？</p>
+<p>由于redis只能使用单核，而memcache可以使用多核，所以在比较上，平均每一个核上redis在储存小数据时比memccache性能更高。而却100K以上数据中，memcache性能要高于redis，虽然redis最近也在储存大数据的性能上进行优化，但是比起memcached还是有点逊色。结论是无论你使用那个，每秒处理请求的次数都不会成为瓶颈。<br />
+你需要关注内存使用率。对于key-vlaue这样简单的数据储存，memcache的内存使用率更高，如果采用hash结构，redis的内存使用率会更高，当然这都依赖于具体的应用场景。、<br />
+你需要关注数据持久化和主从复制时只有redis拥有这两个特性。如果你的目标是构建一个缓存在升级或者重启之前的数据不会丢失的话，只能选择redis<br />
+Redis和memcache的不同<br />
+1、储存方式<br />
+2、数据支持类型<br />
+3、使用底层模型不同<br />
+4、 运行环境不同</p>
+<h2 id="11"><a name="user-content-11" href="#11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：11</h2>
+<p>标题：memcache原理是什么？能否存入2M的value？</p>
+<p>Memcache是danga.com的一个项目最早为livejournal服务的，目前全世界不少人使用这个缓存项目来构建自己的网站，来分担数据库的压力。<br />
+他可以应对多个连接，使用非阻塞的网络IO，由于他的工作机制是在内存中开辟一块空间，然后建立一个hashTable，memacahe自管理这些hashtable</p>
+<h2 id="12"><a name="user-content-12" href="#12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：12</h2>
+<p>标题：memcache 是如何实现分布式存储的？<br />
+详细：memcache 是如何实现分布式存储的？<br />
+memcached虽然称为“分布式”缓存服务器，但服务器端并没有“分布式”功能。服务器端仅包括内存存储功能，其实现非常简单。至于memcached的分布式，则是完全由客户端程序库实现的。这种分布式是memcached的最大特点</p>
+<p>首先向memcached中添加“tokyo”。将“tokyo”传给客户端程序库后，客户端实现的算法就会根据“键”来决定保存数据的memcached服务器。服务器选定后，即命令它保存“tokyo”及其值。<br />
+图2 分布式简介：添加时<br />
+同样，“kanagawa”“chiba”“saitama”“gunma”都 是先选择服务器再保存。接下来获取保存的数据。获取时也要将要获取的键“tokyo”传递给函数库。函数库通过与数据保存时相同的算法，根据“键”选择服 务器。使用的算法相同，就能选中与保存时相同的服务器，然后发送get命令。只要数据没有因为某些原因被删除，就能获得保存的值。<br />
+图3 分布式简介：获取时<br />
+这样，将不同的键保存到不同的服务器上，就实现了memcached的分布式。 memcached服务器增多后，键就会分散，即使一台memcached服务器发生故障无法连接，也不会影响其他的缓存，系统依然能继续运行。<br />
+Php+memcache实现分布式：<br />
+我们PHP的PECL中的Memcache扩展能够有效的解决Memcache的分布式问题，主要的接口就是 addServer() 函数，具体关于addServer()函数的实现可以参考该扩展源代码。那么现在就存在第二个问题，就是说无法同步数据，可以理解为MySQL中Master/Slave的机制，就是说如果我们有多台的Memcache服务器，使用addServer函数的话，每个服务器存储的数据都是唯一的，也就是说每个memcached服务器上存储的数据不是统一的，而是各自保存了不通的数据。</p>
+<h2 id="13"><a name="user-content-13" href="#13" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：13</h2>
+<p>标题：Memcached 使用场景及工作原理</p>
+<p>memcached产品或相关技术的应用，我们在前面已经提到了一些。其实它的应用还是非常普遍的，应用作为广泛的领域：例如sns类网站、blog类网站、bbs类网站以及im后台服务。<br />
+Memcached处理的原子是每一个（key，value）对（以下简称kv对），key会通过一个hash算法转化成hash-key，便于查找、对比以及做到尽可能的散列。同时，memcached用的是一个二级散列，通过一张大hash表来维护。<br />
+Memcached有两个核心组件组成：服务器端（server）和客户端（client），在一个memcached的查询中，client先通 过计算key的hash值来确定kv对所处在的server位置。当server确定后，客户端就会发送一个查询请求给对应的server，让它来查找确 切的数据。因为这之间没有交互以及多播协议，所以memcached交互带给网络的影响是最小化的。</p>
+<h2 id="14"><a name="user-content-14" href="#14" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：14</h2>
+<p>标题：memcache,redis,mongoDb的应用场景？Mysql和mongoDb的区别</p>
+<p>MySQL与MongoDB都是开源的常用数据库，但是MySQL是传统的关系型数据库，MongoDB则是非关系型数据库，也叫文档型数据库，是一种NoSQL的数据库。<br />
+Mongodb优点<br />
+　　①弱一致性（最终一致），更能保证用户的访问速度：<br />
+　　②文档结构的存储方式，能够更便捷的获取数据。<br />
+　　③内置GridFS，支持大容量的存储。<br />
+　　④内置Sharding。<br />
+　　⑤第三方支持丰富。(这是与其他的NoSQL相比，MongoDB也具有的优势)<br />
+　　⑥性能优越：<br />
+缺点<br />
+　　①mongodb不支持事务操作。<br />
+　　②mongodb占用空间过大。<br />
+　　③MongoDB没有如MySQL那样成熟的维护工具，这对于开发和IT运营都是个值得注意的地方。</p>
+<h2 id="15"><a name="user-content-15" href="#15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：15</h2>
+<p>标题：禁用COOKIE后SESSION还能用吗?举例说明<br />
+  在ASP中，Session必须倚赖Cookie才可用，Session是存储在服务器端的，而Cookie是存储在客户端的，相对而言，Session的安全性和可靠程度都比Cookie高。<br />
+2. PHP<br />
+  在PHP中，通过相关的配置，可以让Session不依赖Cookie而存在。这是因为：       Session储存于服务器端（默认以文件方式存储Session），根据客户端提供的Session ID来得到用户的文件，取得变量的值，Session ID可以使用客户端的Cookie或者Http1.1协议的Query_String（就是访问的URL的“?”后面的部分）来传送给服务器，然后服务器 读取Session的目录</p>
+<h2 id="16"><a name="user-content-16" href="#16" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：16</h2>
+<p>标题：静态文件访问提高性能<br />
+详细：静态文件访问提高性能的方法或方式有哪些？<br />
+Nginx作为web服务器，对于静态文件的优化有很多的长处在此将静态文件优化分为3步，实现高性能的读取<br />
+将Nginx作为前端反向代理，缓存静态文件<br />
+Nginx提供代理缓存，在此技术上显示缓存静态文件，能大大提高资源的获取速度，显著降低系统调用静态资源所产生的I/O瓶颈<br />
+[plain] view plain copy print?<br />
+http{  <br />
+//反向代理设置  <br />
+upstream realserver{  <br />
+        server localhost:88;  <br />
+}  <br />
+proxy_connect_timeout 5;  <br />
+proxy_read_timeout 60;  <br />
+proxy_send_timeout 5;  <br />
+proxy_buffer_size 16k;  <br />
+proxy_buffers 4 64k;  <br />
+proxy_busy_buffers_size 128k;  <br />
+proxy_temp_file_write_size 128k;  <br />
+proxy_temp_path /tmp/proxy_temp_dir;  <br />
+//代理缓存设置  <br />
+proxy_cache_path /tmp/proxy_cache_dir levels=1:2 keys_zone=cache_one:100m inactive=1d max_size=10g;  <br />
+}  <br />
+location / {  <br />
+//代理设置  <br />
+proxy_pass http://realserver;//对应upstream后的名称  <br />
+proxy_setHeader Host $host;  <br />
+proxy_setheader X-Forwarded-For $remote_addr;  <br />
+//代理缓存设置  <br />
+proxy_cache cache_one;//对应proxy_cache_path中的keys_zone  <br />
+proxy_cache_valid 200 304 1d;//对于200及304的http页面缓存  <br />
+proxy_cache_key $host$uri$is_args$args;//缓存的key值  <br />
+}  </p>
+<p>Gzip压缩及设定HTTP请求头<br />
+[plain] view plain copy print?<br />
+http{  <br />
+gzip on;  <br />
+gzip_min_length 1k;  <br />
+gzip_buffers 4 16k;  <br />
+gzip_comp_level 2;  <br />
+gzip_types text/plain application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png;  <br />
+gzip_disable &ldquo;MSIE [1-6].&ldquo;;  <br />
+}  <br />
+server{  <br />
+gzip_proxied any;//对于任意访问都进行gzip压缩  <br />
+//如果是后端服务器，则需要设置  <br />
+gzip_vary on;//用于写响应头Vary: Accept-Encoding，让前端代理进行压缩  <br />
+}  <br />
+Localation / {  <br />
+expires 1d;//写请求响应头  <br />
+}  </p>
+<p>利用模块，压缩js及css，自动生成图片缩略图<br />
+我推荐3个模块针对静态文件进行优化：<br />
+ngx_pagespeed：这款是google开发的对于页面加速，提供全面的解决方案，内部功能很多，上诉2个步骤的功能也包含，还能去除js和css文件中的空白换行等，进行文件压缩<br />
+ngx_image_thumb：主要功能是对请求的图片进行缩略/水印处理，支持文字水印和图片水印，程序中不用对用户上传的图片进行处理，在需要的时候才生成所需的图片，无疑，该模块成为图片处理的利器，开源中国上有针对该模块的详细说明，点击<br />
+ngx_http_concat：主要功能是实现对于js和css文件的合并，用一个请求实现多个文件调用，可以有效的降低页面的请求数</p>
+<h2 id="17"><a name="user-content-17" href="#17" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：17</h2>
+<p>标题：什么是cookie和session他们区别和联系,如何设置cookie,操作cooki&hellip;<br />
+详细：什么是cookie和session他们区别和联系如何设置cookie,操作cookie和session<br />
+PHP session 变量用于存储关于用户会话（session）的信息，或者更改用户会话（session）的设置。Session 变量存储单一用户的信息，并且对于应用程序中的所有页面都是可用的。[1]  <br />
+您在计算机上操作某个应用程序时，您打开它，做些更改，然后关闭它。这很像一次对话（Session）。计算机知道您是谁。它清楚您在何时打开和关闭应用程序。然而，在因特网上问题出现了：由于 HTTP 地址无法保持状态，Web 服务器并不知道您是谁以及您做了什么。<br />
+PHP session 解决了这个问题，它通过在服务器上存储用户信息以便随后使用（比如用户名称、购买商品等）。然而，会话信息是临时的，在用户离开网站后将被删除。如果您需要永久存储信息，可以把数据存储在数据库中。<br />
+Session 的工作机制是：为每个访客创建一个唯一的 id (UID)，并基于这个 UID 来存储变量。UID 存储在 cookie 中，或者通过 URL 进行传导。<br />
+PHP cookie 常用于识别用户。cookie 是一种服务器留在用户计算机上的小文件。每当同一台计算机通过浏览器请求页面时，这台计算机将会发送 cookie。通过 PHP，您能够创建并取回 cookie 的值。<br />
+cookie 和session 的区别：<br />
+1、cookie数据存放在客户的浏览器上，session数据放在服务器上。<br />
+2、cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗<br />
+   考虑到安全应当使用session。<br />
+3、session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能<br />
+   考虑到减轻服务器性能方面，应当使用COOKIE。<br />
+4、单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。</p>
+<p>cookie 和session 的联系：<br />
+session是通过cookie来工作的<br />
+session和cookie之间是通过$_COOKIE[&lsquo;PHPSESSID&rsquo;]来联系的，通过$_COOKIE[&lsquo;PHPSESSID&rsquo;]可以知道session的id，从而获取到其他的信息。<br />
+在购物网站中通常将用户加入购物车的商品联通session_id记录到数据库中，当用户再次访问是，通过sessionid就可以查找到用户上次加入购物车的商品。因为sessionid是唯一的，记录到数据库中就可以根据这个查找了。<br />
+操作COOKIE：<br />
+如何创建 Cookie？<br />
+setcookie() 函数用于设置 cookie。<br />
+如何取回 Cookie 的值？<br />
+PHP 的 $_COOKIE 变量用于取回 cookie 的值。<br />
+如何删除 Cookie？<br />
+当删除 cookie 时，您应当使过期日期变更为过去的时间点。<br />
+PHP session：<br />
+sesstion_start();// 首先开启session<br />
+$_SESSION[&lsquo;user&rsquo;] = &lsquo;username&rsquo;;// 把username存在$_SESSION[&lsquo;user&rsquo;] 里面<br />
+echo $_SESSION[&lsquo;user&rsquo;];// 直接输出 username<br />
+session_destroy(); // 销毁session</p></article></body></html>

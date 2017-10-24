@@ -1,0 +1,2977 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>other</title></head><body><article class="markdown-body"><h2 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：1</h2>
+<p>标题：你知道有哪些设计模式？什么情况下用这些设计模式？<br />
+详细：同上同上同上同上同上同上同上同上同上同上同上同上同上同上<br />
+单例模式：保证一个类中，有且只有一个实例存在并提供一个访问点供全局访问，该实例可以被所有的程序来访问。<br />
+一般有在，在这种情况下用：<br />
+1、当要用一个类时，又要用该类中的一个实例；<br />
+2、new 来创建实例时会给程序造成资源的浪费，而且实例越多也不好控制。<br />
+3、不同的线程调用时，可能会引起不同步的现象。<br />
+原型模式：用原型实例指定创建对象的种类，并且通过拷贝这些原型来创建新的对象。 <br />
+类的资源非常多、性能和安全要求，一般和工厂方法结合使用。<br />
+命令模式：将一个请求封装为一个对象，从而使你可以用不同的请求对客户进行参数化，对请求排队和记录请求日志，以及支持可撤销的操作</p>
+<h2 id="2"><a name="user-content-2" href="#2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：2</h2>
+<p>标题：你可以通过哪些方式翻墙访问Google.com？这些翻墙方式的原理<br />
+详细：同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上<br />
+VPN翻墙，VPN一般指虚拟专用网络，那么VPN翻墙也就是通过建立一个国外的虚拟专用网络，绕过牛逼的GFW防火墙来访问国外的网站，比如Google、Facebook、Youtube及Twitter等。<br />
+二师兄VPN<br />
+VPNCUP<br />
+利用公用网络（通常是互联网）把远程站点或用户连接到一起的专用网络。</p>
+<h2 id="3"><a name="user-content-3" href="#3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：3</h2>
+<p>标题：你用过的抓包工具有哪些？<br />
+详细：同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上同上<br />
+wireshark，Expert，WinSock </p>
+<h2 id="4"><a name="user-content-4" href="#4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：4</h2>
+<p>标题：逻辑思维题<br />
+详细：有1000瓶药，但是其中有一瓶是有毒的，小白鼠吃了24小时后就会死掉，请问，在24小时找出有毒的药物，最少需要多少只小白鼠？<br />
+10只。<br />
+给1000个瓶分别标上如下标签（10位长度）：<br />
+0000000001 （第1瓶）<br />
+0000000010 （第2瓶）<br />
+0000000011 （第3瓶）<br />
+1111101000 （第1000瓶）<br />
+从编号最后1位是1的所有的瓶子里面取出1滴混在一起（比如从第一瓶,第三瓶,.里分别取出一滴混在一起）并标上记号为1.以此类推,从编号第一位是1的所有的瓶子里面取出1滴混在一起并标上记号为10.现在得到有10个编号的混合液,小白鼠排排站,分别标上10,9,.1号,并分别给它们灌上对应号码的混合液.24小时过去了,过来验尸吧：<br />
+从左到右,死了的小白鼠贴上标签1,没死的贴上0,最后得到一个序号,把这个序号换成10进制的数字,就是有毒的那瓶水的编号.<br />
+检验一下：假如第一瓶有毒,按照0000000001 （第1瓶）,说明第1号混合液有毒,因此小白鼠的生死符为0000000001（编号为1的小白鼠挂了）,0000000001二进制标签转换成十进制=1号瓶有毒；假如第三瓶有毒,0000000011 （第3瓶）,第1号和第2号混合液有毒,因此小白鼠的生死符为00000011（编号为1,2的鼠兄弟挂了）,0000000011二进制标签转换成十进制=3号瓶有毒.</p>
+<h2 id="5"><a name="user-content-5" href="#5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：5</h2>
+<p>标题：存在如下格式的很大的日志文件a.log：（其中\t是tab分割符）<br />
+2015-11-20 11:11:11 \tapp_name\t....（位置列数）。。。。\tXX<br />
+&hellip;<br />
+其中：\t是分隔符；第一列是时间；第二列是记录该日志的程序的名称，<br />
+程序名及数量不确定；最后一列是程序执行的时间，单位为妙；<br />
+请用PHP变成统计每个程序的平均执行时间；你可以用shell页实现一边吗？</p>
+<h2 id="6"><a name="user-content-6" href="#6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：6</h2>
+<p>标题：http如何通信的？http通信的三次握手是什么<br />
+详细：http如何通信的？http通信的三次握手是什么<br />
+（1） 建立TCP连接<br />
+（2） Web浏览器向Web服务器发送请求命令<br />
+（3） Web浏览器发送请求头信息<br />
+（4） Web服务器应答<br />
+（5） Web服务器发送应答头信息<br />
+（6） Web服务器向浏览器发送数据<br />
+（7） Web服务器关闭TCP连接<br />
+TCP建立连接的过程通常被称为三次握手。</p>
+<h2 id="7"><a name="user-content-7" href="#7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：7</h2>
+<p>标题：onsql有哪些</p>
+<p>（1. CouchDB</p>
+<p>所用语言： Erlang<br />
+特点：DB一致性，易于使用<br />
+使用许可： Apache<br />
+协议： HTTP/REST<br />
+双向数据复制，<br />
+持续进行或临时处理，<br />
+处理时带冲突检查，<br />
+因此，采用的是master-master复制（见编注2）<br />
+MVCC – 写操作不阻塞读操作<br />
+可保存文件之前的版本<br />
+Crash-only（可靠的）设计<br />
+需要不时地进行数据压缩<br />
+视图：嵌入式 映射/减少<br />
+格式化视图：列表显示<br />
+支持进行服务器端文档验证<br />
+支持认证<br />
+根据变化实时更新<br />
+支持附件处理<br />
+因此， CouchApps（独立的 js应用程序）<br />
+需要 jQuery程序库</p>
+<p>最佳应用场景：适用于数据变化较少，执行预定义查询，进行数据统计的应用程序。适用于需要提供数据版本支持的应用程序。</p>
+<p>例如： CRM、CMS系统。 master-master复制对于多站点部署是非常有用的。</p>
+<p>（编注2：master-master复制：是一种数据库同步方法，允许数据在一组计算机之间共享数据，并且可以通过小组中任意成员在组内进行数据更新。）</p>
+<ol>
+<li>Redis</li>
+</ol>
+<p>所用语言：C/C++<br />
+特点：运行异常快<br />
+使用许可： BSD<br />
+协议：类 Telnet<br />
+有硬盘存储支持的内存数据库，<br />
+但自2.0版本以后可以将数据交换到硬盘（注意， 2.4以后版本不支持该特性！）<br />
+Master-slave复制（见编注3）<br />
+虽然采用简单数据或以键值索引的哈希表，但也支持复杂操作，例如 ZREVRANGEBYSCORE。<br />
+INCR &amp; co （适合计算极限值或统计数据）<br />
+支持 sets（同时也支持 union/diff/inter）<br />
+支持列表（同时也支持队列；阻塞式 pop操作）<br />
+支持哈希表（带有多个域的对象）<br />
+支持排序 sets（高得分表，适用于范围查询）<br />
+Redis支持事务<br />
+支持将数据设置成过期数据（类似快速缓冲区设计）<br />
+Pub/Sub允许用户实现消息机制</p>
+<p>最佳应用场景：适用于数据变化快且数据库大小可遇见（适合内存容量）的应用程序。</p>
+<p>例如：股票价格、数据分析、实时数据搜集、实时通讯。</p>
+<p>（编注3：Master-slave复制：如果同一时刻只有一台服务器处理所有的复制请求，这被称为<br />
+Master-slave复制，通常应用在需要提供高可用性的服务器集群。）</p>
+<ol>
+<li>MongoDB</li>
+</ol>
+<p>所用语言：C++<br />
+特点：保留了SQL一些友好的特性（查询，索引）。<br />
+使用许可： AGPL（发起者： Apache）<br />
+协议： Custom, binary（ BSON）<br />
+Master/slave复制（支持自动错误恢复，使用 sets 复制）<br />
+内建分片机制<br />
+支持 javascript表达式查询<br />
+可在服务器端执行任意的 javascript函数<br />
+update-in-place支持比CouchDB更好<br />
+在数据存储时采用内存到文件映射<br />
+对性能的关注超过对功能的要求<br />
+建议最好打开日志功能（参数 –journal）<br />
+在32位操作系统上，数据库大小限制在约2.5Gb<br />
+空数据库大约占 192Mb<br />
+采用 GridFS存储大数据或元数据（不是真正的文件系统）</p>
+<p>最佳应用场景：适用于需要动态查询支持；需要使用索引而不是 map/reduce功能；需要对大数据库有性能要求；需要使用<br />
+CouchDB但因为数据改变太频繁而占满内存的应用程序。</p>
+<p>例如：你本打算采用 MySQL或 PostgreSQL，但因为它们本身自带的预定义栏让你望而却步。</p>
+<ol>
+<li>Riak</li>
+</ol>
+<p>所用语言：Erlang和C，以及一些Javascript<br />
+特点：具备容错能力<br />
+使用许可： Apache<br />
+协议： HTTP/REST或者 custom binary<br />
+可调节的分发及复制(N, R, W)<br />
+用 JavaScript or Erlang在操作前或操作后进行验证和安全支持。<br />
+使用JavaScript或Erlang进行 Map/reduce<br />
+连接及连接遍历：可作为图形数据库使用<br />
+索引：输入元数据进行搜索（1.0版本即将支持）<br />
+大数据对象支持（ Luwak）<br />
+提供“开源”和“企业”两个版本<br />
+全文本搜索，索引，通过 Riak搜索服务器查询（ beta版）<br />
+支持Masterless多站点复制及商业许可的 SNMP监控</p>
+<p>最佳应用场景：适用于想使用类似 Cassandra（类似Dynamo）数据库但无法处理<br />
+bloat及复杂性的情况。适用于你打算做多站点复制，但又需要对单个站点的扩展性，可用性及出错处理有要求的情况。</p>
+<p>例如：销售数据搜集，工厂控制系统；对宕机时间有严格要求；可以作为易于更新的 web服务器使用。</p>
+<ol>
+<li>Membase</li>
+</ol>
+<p>所用语言： Erlang和C<br />
+特点：兼容 Memcache，但同时兼具持久化和支持集群<br />
+使用许可： Apache 2.0<br />
+协议：分布式缓存及扩展<br />
+非常快速（200k+/秒），通过键值索引数据<br />
+可持久化存储到硬盘<br />
+所有节点都是唯一的（ master-master复制）<br />
+在内存中同样支持类似分布式缓存的缓存单元<br />
+写数据时通过去除重复数据来减少 IO<br />
+提供非常好的集群管理 web界面<br />
+更新软件时软无需停止数据库服务<br />
+支持连接池和多路复用的连接代理</p>
+<p>最佳应用场景：适用于需要低延迟数据访问，高并发支持以及高可用性的应用程序</p>
+<p>例如：低延迟数据访问比如以广告为目标的应用，高并发的 web 应用比如网络游戏（例如 Zynga）</p>
+<ol>
+<li>Neo4j</li>
+</ol>
+<p>所用语言： Java<br />
+特点：基于关系的图形数据库<br />
+使用许可： GPL，其中一些特性使用 AGPL/商业许可<br />
+协议： HTTP/REST（或嵌入在 Java中）<br />
+可独立使用或嵌入到 Java应用程序<br />
+图形的节点和边都可以带有元数据<br />
+很好的自带web管理功能<br />
+使用多种算法支持路径搜索<br />
+使用键值和关系进行索引<br />
+为读操作进行优化<br />
+支持事务（用 Java api）<br />
+使用 Gremlin图形遍历语言<br />
+支持 Groovy脚本<br />
+支持在线备份，高级监控及高可靠性支持使用 AGPL/商业许可</p>
+<p>最佳应用场景：适用于图形一类数据。这是 Neo4j与其他nosql数据库的最显著区别</p>
+<p>例如：社会关系，公共交通网络，地图及网络拓谱</p>
+<ol>
+<li>Cassandra</li>
+</ol>
+<p>所用语言： Java<br />
+特点：对大型表格和 Dynamo支持得最好<br />
+使用许可： Apache<br />
+协议： Custom, binary (节约型)<br />
+可调节的分发及复制(N, R, W)<br />
+支持以某个范围的键值通过列查询<br />
+类似大表格的功能：列，某个特性的列集合<br />
+写操作比读操作更快<br />
+基于 Apache分布式平台尽可能地 Map/reduce<br />
+我承认对 Cassandra有偏见，一部分是因为它本身的臃肿和复杂性，也因为 Java的问题（配置，出现异常，等等）</p>
+<p>最佳应用场景：当使用写操作多过读操作（记录日志）如果每个系统组建都必须用 Java编写（没有人因为选用<br />
+Apache的软件被解雇）</p>
+<p>例如：银行业，金融业（虽然对于金融交易不是必须的，但这些产业对数据库的要求会比它们更大）写比读更快，所以一个自然的特性就是实时数据分析</p>
+<ol>
+<li>HBase</li>
+</ol>
+<p>（配合 ghshephard使用）</p>
+<p>所用语言： Java<br />
+特点：支持数十亿行X上百万列<br />
+使用许可： Apache<br />
+协议：HTTP/REST （支持 Thrift，见编注4）<br />
+在 BigTable之后建模<br />
+采用分布式架构 Map/reduce<br />
+对实时查询进行优化<br />
+高性能 Thrift网关<br />
+通过在server端扫描及过滤实现对查询操作预判<br />
+支持 XML, Protobuf, 和binary的HTTP<br />
+Cascading, hive, and pig source and sink modules<br />
+基于 Jruby（ JIRB）的shell<br />
+对配置改变和较小的升级都会重新回滚<br />
+不会出现单点故障<br />
+堪比MySQL的随机访问性能</p>
+<p>最佳应用场景：适用于偏好BigTable:)并且需要对大数据进行随机、实时访问的场合。</p>
+<p>例如： Facebook消息数据库（更多通用的用例即将出现）</p>
+<p>编注4：Thrift<br />
+是一种接口定义语言，为多种其他语言提供定义和创建服务，由Facebook开发并开源。</p>
+<p>当然，所有的系统都不只具有上面列出的这些特性。这里我仅仅根据自己的观点列出一些我认为的重要特性。与此同时，技术进步是飞速的，所以上述的内容肯定需要不断更新。我会尽我所能地更新这个列表。）</p>
+<h2 id="8"><a name="user-content-8" href="#8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：8</h2>
+<p>标题：高可用怎么配置，双主热备怎么配置<br />
+详细：[color=#000][font=微软雅黑]高可用怎么配置?双主热备怎么配置?[/font][/color]</p>
+<p>（双机热备及高可用性技术??常见问题与方案选择？?<br />
+?<br />
+双机热备、双机互备与双机双工的区别？??<br />
+?<br />
+心跳故障检测过程说明？???<br />
+?<br />
+常见问题与方案选择??<br />
+?<br />
+对于企业重要的应用系统而言，保证系统能持续、可靠地提供服务是非常重要的，因此就出现了对高可用性的需求和高可用性的解决方案。??<br />
+?<br />
+对于如何选择高可用性的解决方案，特别是关于双机热备的方案选择，常见的有以下问题：??<br />
+?<br />
+Q：已经采取了RAID技术和数据备份技术，还有必要做双机吗????<br />
+A：参见：双机热备与数据备份及RAID的关系??<br />
+?<br />
+Q：高可用性的解决方案有哪些??<br />
+??<br />
+A：从广义讲，高可用性包括一切避免系统服务中断的技术。而一般所说的系统高可用性，往往特指服务器的双机或多机热备/容错。??<br />
+?<br />
+Q：什么时候需要双机热备??<br />
+??<br />
+A：决定是否使用双机热备，正确的方法是要分析一下系统的重要性以及对服务中断的容忍程度，以此决定是否使用双机热备。即，你的用户能容忍多长时间恢复服务，如果服务不能恢复会造成多大的影响。??<br />
+?<br />
+Q：双机热备、双机互备与双机双工三个概念都是什么意思？有什么区别？???</p>
+<p>）</p>
+<h2 id="9"><a name="user-content-9" href="#9" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：9</h2>
+<p>标题：一个小球从高度100米落下，每次落地后反跳回原高度的一半<br />
+详细：一个小球从高度100米落下，每次落地后反跳回原高度的一半，再落下。请写程序，输出第n次落地时，小球落下弹起共多少米。</p>
+<p>（#include<stdio.h><br />
+int main()<br />
+{<br />
+double i,a=100,b=0,n,sum=100;</p>
+<p>printf(&ldquo;请输入落地次数n：\n&rdquo;);<br />
+scanf(&ldquo;%lf&rdquo;,&amp;n);</p>
+<p>for(i=1;i&lt;=n;i++)<br />
+{ <br />
+sum=sum+2*b;<br />
+a=a/2;<br />
+b=a;</p>
+<p>}<br />
+printf(&ldquo;小球从100m高处落地%.0lf次时，共经过%lf米\n第%.0lf次落地后反弹的高度为%lf米\n&rdquo;,n,sum,n,a);<br />
+}）</p>
+<h2 id="10"><a name="user-content-10" href="#10" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：10</h2>
+<p>标题：思考题<br />
+详细：非技术性问题：假设有9个球，其中一个求的重量比其他的球略重，现在有一架天平，无砝码，最少使用几次，就可以找到这个不同的球，如何做？</p>
+<p>（2次.平均分3份.先称其中的2份.如果,是质量相当,则重的那个在另一份里.那么在那一份里找2个来称,如果质量相当,则剩下的那个是重的.如果,先称的2份,质量不一样,则再对质量大的那份进行称量.方法同上.）</p>
+<h2 id="11"><a name="user-content-11" href="#11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：11</h2>
+<p>标题：描述至少3种文件操作的常用方法，描述至少2种文件类型的&hellip;<br />
+详细：描述至少3种文件操作的常用方法，描述至少2种文件类型的区别、描述至少2种文件打开方式的区别、文件的至少3种属性的含义。<br />
+（<br />
+一 、解析路径：</p>
+<p>1 获得文件名:<br />
+basename();<br />
+给出一个包含有指向一个文件的全路径的字符串，本函数返回基本的文件名。如果文件名是以 suffix 结束的，那这一部分也会被去掉。 </p>
+<p>2 得到目录部分：<br />
+dirname();<br />
+给出一个包含有指向一个文件的全路径的字符串，本函数返回去掉文件名后的目录名。 </p>
+<p>3 得到路径关联数组<br />
+pathinfo();<br />
+得到一个指定路径中的三个部分：目录名，基本名，扩展名。</p>
+<p>二、文件类型</p>
+<ol>
+<li>filetype();<br />
+返回文件的类型。可能的值有 fifo，char，dir，block，link，file 和 unknown。 </li>
+</ol>
+<p>三、得到给定文件有用信息数组(很有用)</p>
+<ol>
+<li>
+<p>fstat();<br />
+通过已打开的文件指针取得文件信息<br />
+获取由文件指针 handle 所打开文件的统计信息。本函数和 stat() 函数相似，除了它是作用于已打开的文件指针而不是文件名。 </p>
+</li>
+<li>
+<p>stat()<br />
+获取由 filename 指定的文件的统计信息(类比fstat()) </p>
+</li>
+<li>
+<p>disk_total_space()<br />
+返回一个目录的磁盘总大小<br />
+eg:(同上，换掉函数)<br />
+另：如需要计算一个目录大小，可以编写一个递归函数来实现 </p>
+</li>
+</ol>
+<p>五、访问与修改时间<br />
+1. fileatime(): 最后访问时间<br />
+2. filectime(): 最后改变时间（任何数据的修改）<br />
+3. filemtime(): 最后修改时间（指仅是内容修改）</p>
+<p>六、 文件的I/O操作<br />
+1. fopen &ndash; 打开文件或者 URL<br />
+mode 说明<br />
+&lsquo;r&rsquo; 只读方式打开，将文件指针指向文件头。<br />
+&lsquo;r+&rsquo; 读写方式打开，将文件指针指向文件头。<br />
+&lsquo;w&rsquo; 写入方式打开，将文件指针指向文件头并将文件大小截为零。如果文件不存在则尝试创建之。<br />
+&lsquo;w+&rsquo; 读写方式打开，将文件指针指向文件头并将文件大小截为零。如果文件不存在则尝试创建之。<br />
+&lsquo;a&rsquo; 写入方式打开，将文件指针指向文件末尾。如果文件不存在则尝试创建之。<br />
+&lsquo;a+&rsquo; 读写方式打开，将文件指针指向文件末尾。如果文件不存在则尝试创建之。<br />
+&lsquo;x&rsquo; 创建并以写入方式打开，将文件指针指向文件头。如果文件已存在，则 fopen() 调用失败并返回 FALSE，<br />
+&lsquo;x+&rsquo; 创建并以读写方式打开，将文件指针指向文件头。如果文件已存在，则 fopen() 调用失败并返回 FALSE</p>
+<p>）</p>
+<h2 id="12"><a name="user-content-12" href="#12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：12</h2>
+<p>标题：抽象类和接口的区别<br />
+详细：抽象类和接口的区别</p>
+<p>（1、对接口的使用是通过关键字implements。对抽象类的使用是通过关键字extends。当然接口也可以通过关键字extends继承。</p>
+<p>2、接口中不可以声明成员变量（包括类静态变量），但是可以声明类常量。抽象类中可以声明各种类型成员变量，实现数据的封装。（另JAVA接口中的成员变量都要声明为public static final类型）<br />
+3、接口没有构造函数，抽象类可以有构造函数。</p>
+<p>4、接口中的方法默认都是public类型的，而抽象类中的方法可以使用private,protected,public来修饰。</p>
+<p>5、一个类可以同时实现多个接口，但一个类只能继承于一个抽象类。<br />
+）</p>
+<h2 id="13"><a name="user-content-13" href="#13" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：13</h2>
+<p>标题：常见HTTP协议状态<br />
+详细：请列出常见HTTP协议中的几个状态码，并简述其含义？</p>
+<p>（一、200状态码：?<br />
+成功2××：?成功处理了请求的状态码。?<br />
+1、200?：服务器已成功处理了请求并提供了请求的网页。?<br />
+2、204：?服务器成功处理了请求，但没有返回任何内容。?<br />
+二、300状态码：?<br />
+重定向3××?：每次请求中使用重定向不要超过?5?次。?<br />
+1、301：?请求的网页已永久移动到新位置。当URLs发生变化时，使用301代码。搜索引擎索引中保存新的URL。?<br />
+2、302：?请求的网页临时移动到新位置。搜索引擎索引中保存原来的URL。?<br />
+3、304：?如果网页自请求者上次请求后没有更新，则用304代码告诉搜索引擎机器人，可节省带宽和开销。?<br />
+三、400状态码：?</p>
+<p>）</p>
+<h2 id="14"><a name="user-content-14" href="#14" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：14</h2>
+<p>标题：请阐述下什么是分布式事物?以及使用场景?<br />
+详细：请阐述下什么是分布式事物?以及使用场景?</p>
+<p>(Zookeeper是hadoop的一个子项目，虽然源自hadoop，但是?我发现<br />
+zookeeper脱离hadoop的范畴开发分布式框架的运用越来越多。今天我想谈谈zookeeper，本文不谈如何使用zookeeper，?而是zookeeper到底有哪些实际的运用，哪些类型的应用能发挥zookeeper的优势，最后谈谈zookeeper对分布式网站架构能产生怎样的?作用。?<br />
+??Zookeeper是针对大型分布式系统的高可靠的协调系统。由这个定义我们知道zookeeper是个协调系统，作用的对象是分布式系统。为什么分布式系统需要一个协调系统了？理由如下：?<br />
+??开发分布式系统是件很困难的事情，其中的困难主要体现在分布式系统的“部分失败”。“部分失败”是指信息在网络的两个节点之间传送时候，如果网?络出了故障，发送者无法知道接收者是否收到了这个信息，而且这种故障的原因很复杂，接收者可能在出现网络错误之前已经收到了信息，也可能没有收到，又或接?收者的进程死掉了。发送者能够获得真实情况的唯一办法就是重新连接到接收者，询问接收者错误的原因，这就是分布式系统开发里的“部分失败”问题。???Zookeeper就是解决分布式系统“部分失败”的框架。Zookeeper不是让分布式系统避免“部分失败”问题，而是让分布式系统当碰到部分失败时候，可以正确的处理此类的问题，让分布式系统能正常的运行。???下面我要讲讲zookeeper的实际运用场景：?<br />
+??场景一：有一组服务器向客户端提供某种服务（例如：我前面做的分布式网站的服务端，就是由四台服务器组成的?集群，向前端集群提供服务），我们希望客户端每次请求服务端都可以找到服务端集群中某一台服务器，这样服务端就可以向客户端提供客户端所需的服务。对于这?种场景，我们的程序中一定有一份这组服务器的列表，每次客户端请求时候，都是从这份列表里读取这份服务器列表。那么这分列表显然不能存储在一台单节点的服?务器上，否则这个节点挂掉了，整个集群都会发生故障，我们希望这份列表时高可用的。高可用的解决方案是：这份列表是分布式存储的，它是由存储这份列表的服?务器共同管理的，如果存储列表里的某台服务器坏掉了，其他服务器马上可以替代坏掉的服务器，并且可以把坏掉的服务器从列表里删除掉，让故障服务器退出整个?集群的运行，而这一切的操作又不会由故障的服务器来操作，而是集群里正常的服务器来完成。这是一种主动的分布式数据结构，能够在外部情况发生变化时候主动?修改数据项状态的数据机构。Zookeeper框架提供了这种服务。这种服务名字就是：统一命名服务，它和javaEE里的JNDI服务很像。?<br />
+??场景二：分布式锁服务。当分布式系统操作数据，例如：读取数据、分析数据、最后修改数据。在分布式系统里这?些操作可能会分散到集群里不同的节点</p>
+<p>)</p>
+<h2 id="15"><a name="user-content-15" href="#15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：15</h2>
+<p>标题：请写出你所了解的获取指定URL内容的方法</p>
+<p>(public class WebContent<br />
+    {<br />
+        public WebContent() { }<br />
+        private string Url { get; set; }<br />
+        private string Content { get; set; }<br />
+        public WebContent(string url)<br />
+        {<br />
+            this.Url = url;<br />
+        }<br />
+        public string GetContent(string url)//使用时调用此方法<br />
+        {<br />
+            ThreadWebBrowser(url);<br />
+            return this.Content;<br />
+        }<br />
+        private void ThreadWebBrowser(string url)<br />
+        {<br />
+            Thread thread = new Thread(new ParameterizedThreadStart(BeginCatch));<br />
+            thread.SetApartmentState(ApartmentState.STA);<br />
+            thread.Start(url);<br />
+            thread.Join();<br />
+            while (thread.IsAlive)<br />
+            {<br />
+                System.Windows.Forms.Application.DoEvents();<br />
+            }<br />
+        }<br />
+        private void BeginCatch(object obj)<br />
+        {<br />
+            try<br />
+            {<br />
+                string url = obj.ToString();<br />
+                WebBrowser webBrowser = new WebBrowser();<br />
+                webBrowser.ScriptErrorsSuppressed = true;<br />
+                webBrowser.Navigate(&ldquo;about:blank&rdquo;);<br />
+                string charset = SniffwebCodeReturnList(GetHtmlCode(url, Encoding.Default), &ldquo;charset=&rdquo;, &ldquo;"&ldquo;);<br />
+                webBrowser.Document.Write(GetHtmlCode(url, Encoding.GetEncoding(charset)));<br />
+                //上面这两行看上去也很别扭，主要是想解决部分网页获取源代码的时候中文变成乱码<br />
+                //即使这样处理了，还是有不少网页无法获取正确的源代码<br />
+                //此处期待支招<br />
+                Dictionary<string, string> dict = new Dictionary<string, string>();<br />
+                HtmlElementCollection allElement = webBrowser.Document.Body.All;<br />
+                for (int i = 0; i &lt; allElement.Count; i++)<br />
+                {<br />
+                    if (!dict.Keys.Contains(allElement[i].OuterHtml))<br />
+                    {<br />
+                        if (allElement[i].InnerText != null &amp;&amp; allElement[i].InnerText.Length &gt; 100)//这里设置文本长度超过100的才算有效正文，否则太短了就没有什么意义了<br />
+                        {<br />
+                            dict.Add(allElement[i].OuterHtml, allElement[i].InnerText);<br />
+                        }<br />
+                    }<br />
+                }<br />
+                string content = dict.OrderByDescending(p =&gt; p.Value.Length * p.Value.Length / p.Key.Length).FirstOrDefault().Value ?? string.Empty;<br />
+                //原来我只是先按照长度排序，然后再按照密度排序，后来发现这样不准确，不惯我是先按照密度排序还是先按照文本长度排序结果都不准确，<br />
+                //后来我在密度的基础上乘上文本长度后发现准确度提高了不少，不过还是害怕一些特殊的网页<br />
+                this.Content = content;<br />
+            }<br />
+            catch <br />
+            {</p>
+<pre><code>        }
+    }
+    //根据网址获取网页源代码
+    private static string GetHtmlCode(string url, Encoding encode)
+    {
+        string htmlCode = string.Empty;
+        System.Net.WebRequest webRequest;
+        webRequest = System.Net.WebRequest.Create(url);
+        System.Net.WebResponse webResponse;
+        webResponse = webRequest.GetResponse();
+        System.IO.Stream stream;
+        stream = webResponse.GetResponseStream();
+        System.IO.StreamReader streamReader = new System.IO.StreamReader(stream, encode);
+        htmlCode = streamReader.ReadToEnd();
+        stream.Close();
+        stream.Dispose();
+        return htmlCode;
+    }
+    //从html源代码中截取一段代码
+    private static string SniffwebCodeReturnList(string code, string wordsBegin, string wordsEnd)
+    {
+        try
+        {
+            System.Collections.ArrayList codeList = new System.Collections.ArrayList();
+            System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(string.Empty + wordsBegin + @"(?&lt;code&gt;[\s\S]+?)" + wordsEnd + string.Empty, System.Text.RegularExpressions.RegexOptions.Compiled | System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            for (System.Text.RegularExpressions.Match match = regex.Match(code); match.Success; match = match.NextMatch())
+            {
+                codeList.Add(match.Groups["code"].ToString());
+            }
+            if (codeList.Count &gt; 0)
+            {
+                return codeList[0].ToString();
+            }
+            else
+            {
+                return string.Empty;
+            }
+        }
+        catch
+        {
+            return string.Empty;
+        }
+    }
+
+} )
+</code></pre>
+<h2 id="16"><a name="user-content-16" href="#16" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：16</h2>
+<p>标题：一个简单的网页应由、 两部分构成。</p>
+<p>（主要是HEAD域（头部）和body域组成 头部包含了网页的各种信息，包括标题，关键词，描述信息等网页信息 body域主要是网页的主体，即你见到的部分，包括各类网页对象如FLASH动画，音频文件，网页文字，表单之类的 所有的东西均需标记在<HTML>和&lt;\HTML&gt;之间）</p>
+<h2 id="17"><a name="user-content-17" href="#17" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：17</h2>
+<p>标题：memcache一致性哈希原理是什么?以及缺点有哪些?<br />
+详细：memcache一致性哈希原理是什么?以及缺点有哪些?</p>
+<p>（memcache 是一个分布式的缓存系统，但是本身没有提供集群功能，在大型应用的情况下容易成为瓶颈。但是客户端这个时候可以自由扩展，分两阶段实现。第一阶段：key 要先根据一定的算法映射到一台memcache服务器。第二阶段从服务器中取出缓存的值。但是有一个问题，比如其中一台服务器挂了，或者需要增加一台服务 的时候，这个时候第一阶段的算法就很重要了，怎样使得原来的数据尽可能的继续有效，减少扩展节点或缩减节点带来的冲击。下面列出想到一些解决方法：</p>
+<p>一：hash一致性算法：</p>
+<p>优点：</p>
+<p>当一个节点失效的时候，其他节点的数据不会受到破坏，这个节点的数据会被分流到另外一个节点。当增加一个节点时，只会对一个节点的一分部数据有影响。</p>
+<p>缺点：</p>
+<p>极容易造成节点间数据量的不平衡，可能一个节点上热点非常多，一个节点上热点很少。）</p>
+<h2 id="18"><a name="user-content-18" href="#18" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：18</h2>
+<p>标题：Print_r函数的第二个参数是否使用过，使用过，请说出具体&hellip;<br />
+详细：[align=left]Print_r[font=宋体]函数的第二个参数是否使用过，使用过，请说出具体功能[/font][/align]</p>
+<h2 id="19"><a name="user-content-19" href="#19" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：19</h2>
+<p>标题：如何在静态方法中访问非静态属性</p>
+<p>（关于静态方法和静态变量：<br />
+1）static方法中不能直接使用非静态成员，因为非静态成员与实例相关，通过实例化间接使用<br />
+2）static方法中不能用this（与实例相关）<br />
+3）非static方法中可以使用static成员</p>
+<?php
+class abc{
+    public $count=8;
+    function __construct(){
+        $this->count++;
+    }
+    static function getCount(){
+        $b=new abc();
+        return $b->count;
+    }
+}
+$c=new abc();
+$b=new abc();
+echo $b->getCount();
+?>
+）
+
+<h2 id="20"><a name="user-content-20" href="#20" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：20</h2>
+<p>标题：网页中标题的代码为                                                  &hellip;<br />
+详细：网页中标题的代码为。</p>
+<p>（&lt;\title&gt;&lt;\/title&gt;）</p>
+<h2 id="21"><a name="user-content-21" href="#21" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：21</h2>
+<p>标题：网页中标题的代码为                                                  &hellip;<br />
+详细：网页中标题的代码为。</p>
+<p>（&lt;\title&gt;&lt;\/title&gt;）</p>
+<h2 id="22"><a name="user-content-22" href="#22" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：22</h2>
+<p>标题：阐述下include_once作用域以及使用过程中需要注意的事项</p>
+<p>(</p>
+<p>include_once 语句在脚本执行期间包含并运行指定文件。此行为和include语句类似，唯一区别是如果该文件中已经被包含过，则不会再次包含。如同此语句名字暗示的那样，只会包含一次。 </p>
+<p>include_once可以用于在脚本执行期间同一个文件有可能被包含超过一次的情况下，想确保它只被包含一次以避免函数重定义，变量重新赋值等问题。 </p>
+<p>在 PHP 4中，include_once 的行为在不区分大小写字母的操作系统（例如 Windows）中有所不同：</p>
+<p>include_once &ldquo;a.php&rdquo;; // 这将包含 a.php<br />
+include_once &ldquo;A.php&rdquo;; // 这将再次包含 a.php（仅 PHP 4）</p>
+<p>此行为在 PHP 5中已修改，例如在 Windows 中路径先被规格化，因此C:\PROGRA~1\A.php 和C:\Program Files\a.php 的实现一样，文件只会被包含一次。 <br />
+)</p>
+<h2 id="23"><a name="user-content-23" href="#23" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：23</h2>
+<p>标题：你知道的HTTP/1.0 和HTTP/1.1有哪些区别？</p>
+<p>1，HTTP/1.0协议使用非持久连接,即在非持久连接下,一个tcp连接只传输一个Web对象<br />
+2，HTTP/1.1默认使用持久连接(然而,HTTP/1.1协议的客户机和服务器可以配置成使用非持久连接)。</p>
+<p>在持久连接下,不必为每个Web对象的传送建立一个新的连接,一个连接中可以传输多个对象! ）</p>
+<h2 id="24"><a name="user-content-24" href="#24" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：24</h2>
+<p>标题：1.一段英文，要把以a,b,c,m,s,w和z开头的单词首字母变成大写&hellip;<br />
+详细：1.一段英文，要把以a,b,c,m,s,w和z开头的单词首字母变成大写。写一下基本思路</p>
+<p>（php中可以通过ucfirst函数将一个字符串中的第一个字母转换成大写，而ucwords函数可以将一个字符串中每个单词的首字母转换成大写<br />
+?<br />
+1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+6<br />
+7<br />
+8</p>
+<?php
+$string = "php string functions are easy to use.";
+$sentence = ucfirst($string);
+$title = ucwords($string);
+print("$sentence\n");
+print("$title\n");
+print("\n");
+?>
+
+<p>输出结果如下：<br />
+?<br />
+1<br />
+2</p>
+<p>Php string functions are easy to use.<br />
+Php String Functions Are Easy To Use）</p>
+<h2 id="25"><a name="user-content-25" href="#25" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：25</h2>
+<p>标题：Cookie屏蔽后session如何传递？以及session如何跨域？</p>
+<p>（PHP中的session在默认情况下是使用客户端的Cookie来保存session id的,所以当客户端的cookie出现问题的时候就会影响session了。但是Session并不完全依赖Cookie，它还可以通过URL Get传递session id的。这需要你将php.ini中session.use_trans_sid = 1，这表示允许SessionID通过URL明文传输，既然GET可以，那么POST传递session id）<br />
+（想要共享 SESSION 数据，那就必须实现两个目标：<a href="http://www.a.com">www.a.com</a>和i.a.com所产生的SESSION ID相同，并且可通过同一个 COOKIE 进行传递，也就是说各个服务器必须可以读取同一个名为 PHPSESSID 的 COOKIE；另一个是 SESSION 数据必须存放在一个各个系统都能访问到的地方。简单地说就是多服务器共享客户端的 SESSION ID，同时还必须共享服务器端的 SESSION 数据。）</p>
+<h2 id="26"><a name="user-content-26" href="#26" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：26</h2>
+<p>标题：get和post的区别，举例说明<br />
+详细：get和post的区别，举例说明</p>
+<p>（1. get是从服务器上获取数据，post是向服务器传送数据。<br />
+2. get是把参数数据队列加到提交表单的ACTION属性所指的URL中，值和表单内各个字段一一对应，在URL中可以看到。post是通过HTTP post机制，将表单内各个字段与其内容放置在HTML HEADER内一起传送到ACTION属性所指的URL地址。用户看不到这个过程。<br />
+3. 对于get方式，服务器端用Request.QueryString获取变量的值，对于post方式，服务器端用Request.Form获取提交的数据。<br />
+4. get传送的数据量较小，不能大于2KB。post传送的数据量较大，一般被默认为不受限制。但理论上，IIS4中最大量为80KB，IIS5中为100KB。<br />
+5. get安全性非常低，post安全性较高。但是执行效率却比Post方法好。 </p>
+<p>建议：<br />
+1、get方式的安全性较Post方式要差些，包含机密信息的话，建议用Post数据提交方式；<br />
+2、在做数据查询时，建议用Get方式；而在做数据添加、修改或删除时，建议用Post方式；）</p>
+<h2 id="27"><a name="user-content-27" href="#27" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：27</h2>
+<p>标题：一群猴子排成一圈，按1、2，&hellip;n依次编号，然后从第一只&hellip;<br />
+详细：一群猴子排成一圈，按1、2，&hellip;n依次编号，然后从第一只开始数，数到第m只把它提出圈，从它后面再开始树，在数到第m只，再把它提出去,....。如此不停的进行下去，直到最后剩下一只猴子为止，那只猴子就叫做大王，要求编程模拟此过程，输入m、n，输出最后那个大王的编号。</p>
+<p>（$s = 0;<br />
+$n = 9;$m = 3;<br />
+for($i=1;$i&lt;=$n;$i++) {<br />
+    $s = ($s+$m)%$i;<br />
+}<br />
+echo $s+1 . &ldquo;&lt;\br /&gt;&rdquo;;</p>
+<p>）</p>
+<h2 id="28"><a name="user-content-28" href="#28" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：28</h2>
+<p>标题：项目名称：小蝌蚪在线教育<br />
+详细：项目名称：小蝌蚪在线教育<br />
+开发环境：lamp<br />
+开发工具：sublime svn navicat<br />
+项目描述：该项目是一个在线网络的IT教育平台<br />
+项目职责：<br />
+1、负责项目前期需求分析，数据库设计，详细设计以及环境的搭建。SVN版本库的搭建;<br />
+2、参与项目核心流程的讨论和设计;<br />
+3、登录时结合了第三方登录（QQ、新浪）<br />
+4、项目开发 中对mysql数据库主从配置，合理建立索引;<br />
+5、负责用户中心模块中：后台视频的上传、上传用的是webupload插件，可以分割上传、断点续传;采用rtmp协议，解决了播放手动的问题；前台视频购买引入了支付宝功能的实现<br />
+6、负责前台视频课程搜索以及搜索后页面静态化（sphinx技术实现）</p>
+<h2 id="29"><a name="user-content-29" href="#29" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：29</h2>
+<p>标题：你可以通过哪些方式翻墙访问google.com?这些翻墙方式的原理是什么？</p>
+<p>（利用VPN技术，将电脑接入Internet的入口直接安置在海外，这样上网的效果就如同在海外上网一样。<br />
+如同古代唐僧要去天竺，就要经过玉门关。<br />
+如果采用普通的上网方法，唐僧没有通关文堞，过不了玉门关。<br />
+但VPN技术就如同挖了一条隧道越过了玉门关关卡。 ）</p>
+<h2 id="30"><a name="user-content-30" href="#30" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：30</h2>
+<p>标题：项目名称：小城聊社群<br />
+详细：项目名称：小城聊社群<br />
+开发环境：lnmp<br />
+开发工具：sublime svn<br />
+项目描述：该项目是一个社区群聊，好友互动的一个大型网站<br />
+项目职责<br />
+1、负责协助组长人员安排和检查小组进度，定期进行codereview代码审核<br />
+2、负责小城聊的聊天室，在线聊天使用了环信开发技术，使用户之间有更多的粘合<br />
+3、使用memcache对小城聊模块数据的缓存，提高查询好友速度<br />
+4、负责小城聊app登录，注册，话题广场以及话题详情、api接口开发<br />
+5、负责聊天室模块，用环信技术，实现了聊天互动<br />
+6、负责跟团队组长一起调研数据库表设计，优化表中查询频率高的词牌名，设计索引，提升mysql表查询效率。</p>
+<h2 id="31"><a name="user-content-31" href="#31" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：31</h2>
+<p>标题：对于高并发，高流量的网站问题，请描述用什么技术方法&hellip;<br />
+详细：对于高并发，高流量的网站问题，请描述用什么技术方法来解决？</p>
+<p>（以下是一些总结的方法:  第一，确认服务器硬件是否足够支持当前的流量。  普通的P4服务器一般最多能支持每天10万独立IP，如果访问量比这个还要大，那么必须首先配置一台更高性能的专用服务器才能解决问题，否则怎么优化都不可能彻底解决性能问题。 </p>
+<p>第二，优化数据库访问。  服务器的负载过大，一个重要的原因是CPU负荷过大，降低服务器CPU的负荷，才能够有效打破瓶颈。而使用静态页面可以使得CPU的负荷最小化。前台实现完全的静态化 当然最好，可以完全不用访问数据库，不过对于频繁更新的网站，静态化往往不能满足某些功能。  缓存技术 就是另一个解决方案，就是将动态数据存储到缓存文件中，动态网页直接调用这些文件，而不必再访问数据库，WordPress和Z-Blog都大量使用这种缓存技术 。我自己也写过一个Z-Blog的计数器插件，也是基于这样的原理。  如果确实无法避免对数据库的访问，那么可以尝试优化数据库的查询SQL.避免使用Select *from这样的语句，每次查询只返回自己需要的结果，避免短时间内的大量SQL查询。 </p>
+<p>第三，禁止外部的盗链。  外部网站的图片或者文件盗链往往会带来大量的负载压力，因此应该严格限制外部对于自身的图片或者文件盗链，好在目前可以简单地通过refer来控制盗链，Apache自己就可以通过配置来禁止盗链，IIS也有一些第三方的ISAPI可以实现同样的功能。当然，伪造refer也可以通过代码来实现盗 链，不过目前蓄意伪造refer盗链的还不多，可以先不去考虑，或者使用非技术手段来解决，比如在图片上增加水印。 </p>
+<p>第四，控制大文件的下载。  大文件的下载会占用很大的流量，并且对于非SCSI硬盘来说，大量文件下载会消耗CPU，使得网站响应能力下降。因此，尽量不要提供超过2M的大 文件下载，如果需要提供，建议将大文件放在另外一台服务器上。目前有不少免费的Web2.0网站提供图片分享和文件分享功能，因此可以尽量将图片和文件上 传到这些分享网站。</p>
+<p>第五，使用不同主机分流主要流量  将文件放在不同的主机上，提供不同的镜像供用户下载。比如如果觉得RSS文件占用流量大，那么使用FeedBurner或者FeedSky等服务将RSS输出放在其他主机上，这样别人访问的流量压力就大多集中在FeedBurner的主机上，RSS就不占用太多资源了。 </p>
+<p>第六，使用流量分析统计软件。  在网站上安装一个流量分析统计软件，可以即时知道哪些地方耗费了大量流量，哪些页面需要再进行优化，因此，解决流量问题还需要进行精确的统计分析 才可以。我推荐使用的流量分析统计软件是GoogleAnalytics（Google分析）。我使用过程中感觉其效果非常不错，稍后我将详细介绍一下 GoogleAnalytics的一些使用常识和技巧。   1.分表 2.读写分离 3.前端优化。Nginx替换Apache(前端做负载均衡) 个人认为主要还是分布式架构是否到位，mysql和缓存的优化都是有限度的优化，而分布式架构做出来了，PV增长后，只需要堆机器就能扩容。</p>
+<p>另附一些优化经验，首先学会用explain语句分析select语句，优化索引、表结构，其次，合理运用memcache等缓存，降低mysql的负载，最后，如果可能的话，尽量用facebook的hiphop-php把PHP编译了，提高程序效率。）</p>
+<h2 id="32"><a name="user-content-32" href="#32" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：32</h2>
+<p>标题：你用过的抓包工具有哪些？<br />
+详细：[i=s] 本帖最后由 马志向 于 2016-3-25 16:39 编辑 [/i]</p>
+<p>[align=left]你用过的抓包工具有哪些？[/align]</p>
+<p>（Sniffer,wireshark,WinNetCap.WinSock Expert,SpyNet 都是当前流行的抓包工具<br />
+我常用wireshark，支持Windows/LInux，免费）</p>
+<h2 id="33"><a name="user-content-33" href="#33" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：33</h2>
+<p>标题：将当前页面重定向到http://<a href="http://www.poor.com">www.poor.com</a> 时间位3秒的HTML代码为什么</p>
+<h2 id="34"><a name="user-content-34" href="#34" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：34</h2>
+<p>标题：开发过程中你觉得最难的是什么？该如何解决？</p>
+<h2 id="35"><a name="user-content-35" href="#35" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：35</h2>
+<p>标题：HTTP协议中，请写出对应如下PHP语句的HTTP头 Setcookie(“cookie_name”,”cookie;value”);</p>
+<h2 id="36"><a name="user-content-36" href="#36" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：36</h2>
+<p>标题：有1000瓶药，但是其中有一瓶是有毒的，小白鼠吃了24小时找出有毒的药物，最少需要多少只小白鼠？</p>
+<p>（我来解释一下,并给出一个方案,时间不是问题,24小时内肯定可以找出有毒的那瓶.<br />
+给1000个瓶分别标上如下标签（10位长度）：<br />
+0000000001 （第1瓶）<br />
+0000000010 （第2瓶）<br />
+0000000011 （第3瓶）<br />
+.<br />
+1111101000 （第1000瓶）<br />
+从编号最后1位是1的所有的瓶子里面取出1滴混在一起（比如从第一瓶,第三瓶,.里分别取出一滴混在一起）并标上记号为1.以此类推,从编号第一位是1的所有的瓶子里面取出1滴混在一起并标上记号为10.现在得到有10个编号的混合液,小白鼠排排站,分别标上10,9,.1号,并分别给它们灌上对应号码的混合液.24小时过去了,过来验尸吧：<br />
+从左到右,死了的小白鼠贴上标签1,没死的贴上0,最后得到一个序号,把这个序号换成10进制的数字,就是有毒的那瓶水的编号.<br />
+检验一下：假如第一瓶有毒,按照0000000001 （第1瓶）,说明第1号混合液有毒,因此小白鼠的生死符为0000000001（编号为1的小白鼠挂了）,0000000001二进制标签转换成十进制=1号瓶有毒；假如第三瓶有毒,0000000011 （第3瓶）,第1号和第2号混合液有毒,因此小白鼠的生死符为00000011（编号为1,2的鼠兄弟挂了）,0000000011二进制标签转换成十进制=3号瓶有毒.）</p>
+<h2 id="37"><a name="user-content-37" href="#37" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：37</h2>
+<p>标题：假设有一个池塘，里面有无穷多的水，现有2个空水壶，容积分别为5升和6升。问题是如何只用这2个水壶从池塘里取得3升的水</p>
+<p>（假设有一个池塘,里面有无穷多的水,现有2个空水壶,容积分别为5升和6升,如何只用这2个水壶从池塘里取得3升的水.（注：每次灌水壶要灌满；每次倒水水要倒光（倒进池塘里去的时候）；把水从一个壶里倒进另一个壶里,也要都倒光,除非在倒的过程中另一个壶已经满了；倒水的时候没有损失、蒸发溢出什么的）<br />
+1.先用5升的水壶装满水,倒入六升的水壶中.六升的水壶中还空出 一升水体积.<br />
+2.再用把盛五升水水壶装满水,倒入容积六升的水壶中,壶中还剩4升水.<br />
+3.把容积六升水中的水倒掉,再把容积五升的水壶倒满水,把这些水倒入容积六升的壶中,容积五升的水壶中这时刚好剩下三升水.）</p>
+<h2 id="38"><a name="user-content-38" href="#38" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：38</h2>
+<p>标题：思考题<br />
+详细：推理题：猜扑克<br />
+s先生、p先生、q先生他们直到桌子的抽屉里有16张扑克牌：红桃A、Q、4 黑桃J、8、4、2、7、3 草花k、Q、5、4、6 方块A、5。约翰教授问P先生和Q先生；你们能从已知的点数或花色中推知这张是什么牌吗？</p>
+<p>于是,S先生听到如下的对话：<br />
+            P先生：我不知道这张牌<br />
+            Q先生：我知道你不知道这张牌<br />
+            p先生：现在我知道这张牌了。<br />
+            Q先生：我也知道了<br />
+听罢以上的对话，S先生想了一想之后，就正确地推出这张牌是什么牌了。</p>
+<p>请问，这张是什么牌？并写出推理思路</p>
+<p>（P先生、Q先生都具有足够的推理能力。这天，他们正在接受推理面试。 他们知道桌子的抽屉里有如下16张扑克牌: 红桃 A、Q、4 黑桃 J、8、4、2、7、3 草花 K、Q、5、4、6 方块 A、5 约翰教授从这16张牌中挑出一张牌来，并把这张牌的点数告诉P先生，把这张牌 的花色告诉Q先生。 这时，约翰教授问P先生和Q先生:你们能从已知的点数或花色中推知这张牌是什么牌 吗? P先生:&rdquo;我不知道这张牌。&rdquo; Q先生:&rdquo;我知道你不知道这张牌。&rdquo; P先生:&rdquo;现在我知道这张牌了。&rdquo; Q先生:&rdquo;我也知道了。&rdquo; 请问:这张牌是什么牌? 答案提前揭晓:推理过程如下：p先生说我不知道，说明他知道的点数不会是唯一的一张。因此，那张牌只能在红桃AQ4,黑桃4，草花Q54和方块A5中。 Q先生说我知道你不知道，说明他了解的花色应该是该花色的每一张牌都有重复的点数，否则他不可能判定P先生一定不知道是是什么牌。所以花色只能是红桃和方块。现在，剩下的牌只能在红桃AQ4和方块A5中。 P先生说现在我知道了。是因为他从Q先生上面一句话中也判断出了花色。那么，他知道的点数不可能是剩下的牌中有重复的，因此可以排除A. Q先生说现在我也知道了，说明他知道的花色肯定是只剩下一张牌的那个花色。也就是方块。 所以答案是方块5）</p>
+<h2 id="39"><a name="user-content-39" href="#39" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：39</h2>
+<p>标题：使用递归方法，列表目录下的所有文件。往其中一个文件&hellip;<br />
+详细：使用递归方法，列表目录下的所有文件。往其中一个文件末尾写入当前时间。</p>
+<p>（&lt;?php<br />
+function showdir($path){<br />
+ $dh = opendir($path);//打开目录<br />
+ while(($d = readdir($dh)) != false){<br />
+ //逐个文件读取，添加!=false条件，是为避免有文件或目录的名称为0<br />
+ if($d==&rsquo;.&rsquo; || $d == &lsquo;..&rsquo;){//判断是否为.或..，默认都会有<br />
+ continue;<br />
+ }<br />
+ echo $d.&rdquo;&lt;\br /&gt;&rdquo;;<br />
+ if(is_dir($path.&rsquo;/&rsquo;.$d)){//如果为目录<br />
+ showdir($path.&rsquo;/&rsquo;.$d);//继续读取该目录下的目录或文件<br />
+ }<br />
+ }<br />
+}</p>
+<p>$path = &lsquo;./&rsquo;;//当前目录<br />
+showdir($path);<br />
+?&gt;）</p>
+<h2 id="40"><a name="user-content-40" href="#40" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：40</h2>
+<p>标题：请描述http中cookie返回的格式<br />
+详细：请描述http中cookie返回的格式</p>
+<p>（COOKIE文件为UNIX格式，只有换行(0x0A)没有回车(0x0D)。每个COOKIE文件内，各字段之间以*分隔，每个字段均包含8行信息 // 字段名  // 字段值 // 字段所属域// 标志位  // 过期时间（低位）// 过期时间（高位）// 创建时间（低位）// 创建时间（高位））</p>
+<h2 id="41"><a name="user-content-41" href="#41" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：41</h2>
+<p>标题：一个球，一把长度大约是球的直径2/3长度的直尺，你怎样&hellip;<br />
+详细：一个球，一把长度大约是球的直径2/3长度的直尺，你怎样测出球的半径?</p>
+<p>（ 球在水平面上,支持垂直于水平面,靠近球体,接触点到桌面的距离为半径,再乘以2即可 ）</p>
+<h2 id="42"><a name="user-content-42" href="#42" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：42</h2>
+<p>标题：一个表中的id有多个记录，把这个id的所有记录都查询出来&hellip;<br />
+详细：一个表中的id有多个记录，把这个id的所有记录都查询出来，并显示共有多少记录条数，用sql语句实现。<br />
+（select id, count(*) from 表 where id=.. group by id）</p>
+<h2 id="43"><a name="user-content-43" href="#43" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：43</h2>
+<p>标题：描述HTTP中POST和GET的区别，解释multipart/form-data 的含义，举&hellip;<br />
+详细：描述HTTP中POST和GET的区别，解释multipart/form-data 的含义，举例说明三种常见HTTP状态值含义，使用代码设置HTTP状态<br />
+答：<br />
+GET：明文传输，传输数据量小，不安全。<br />
+POST：非明文传输，相比GET的传输量大的多并且安全。<br />
+multipart/form-data：设置表单的MIME编码。默认情况，这个编码格式是application/x-www-form-urlencoded，不能用于文件上传；只有使用了multipart/form-data，才能完整的传递文件数据，multipart/form-data是指表单数据有多部分构成：既有文本数据，又有文件等二进制数据的意思。<br />
+200 – 服务器成功返回网页<br />
+404 – 请求的网页不存在<br />
+503 – 服务不可用</p>
+<h2 id="44"><a name="user-content-44" href="#44" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：44</h2>
+<p>标题：写一个类，其中需要包含私有属性、公有方法，写另存一&hellip;<br />
+详细：写一个类，其中需要包含私有属性、公有方法，写另存一个类，调用前一个类的方法<br />
+答：class A { // 类A<br />
+        public function text($text){<br />
+            echo $text;<br />
+        }<br />
+    }<br />
+    $a = new A(); // 实例化类A<br />
+    class B{  // 类B<br />
+        public function show(){<br />
+            global $a; // 调用外部(全局)变量$a<br />
+            $a-&gt;text(&lsquo;你好&rsquo;); // 调用类A里面的a()函数<br />
+        }<br />
+    }<br />
+    $b = new B(); // 实例化类B<br />
+    $b-&gt;show(); // 输出你好</p>
+<h2 id="45"><a name="user-content-45" href="#45" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：45</h2>
+<p>标题：四个人在牙科医生的等候室中坐成一排，布朗小姐下一个&hellip;<br />
+详细：[align=left]四个人在牙科医生的等候室中坐成一排，布朗小姐下一个是格林小姐，但布朗小姐不在琼斯先生之后，琼斯先生不在吉尔先生之后，吉尔先生下一个是谁？[/align]<br />
+答：<br />
+布朗小姐。</p>
+<h2 id="46"><a name="user-content-46" href="#46" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：46</h2>
+<p>标题：请列出你所知道的http状态吗，多达多得<br />
+答：<br />
+200 OK<br />
+  一切正常，对GET和POST请求的应答文档跟在后面<br />
+201 Created<br />
+  服务器已经创建了文档，Location头给出了它的URL。<br />
+202 Accepted<br />
+  已经接受请求，但处理尚未完成。<br />
+400 Bad Request<br />
+  请求出现语法错误。<br />
+403 Forbidden<br />
+  资源不可用。<br />
+404 Not Found<br />
+  无法找到指定位置的资源<br />
+500 Internal Server Error<br />
+  服务器遇到了意料不到的情况，不能完成客户的请求<br />
+501 Not Implemented<br />
+  服务器不支持实现请求所需要的功能。例如，客户发出了一个服务器不支持的PUT请求<br />
+502 Bad Gateway<br />
+  服务器作为网关或者代理时，为了完成请求访问下一个服务器，但该服务器返回了非法的应答</p>
+<h2 id="47"><a name="user-content-47" href="#47" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：47</h2>
+<p>标题：有一列数的规则如下1、1、2、3、5、8、13、21、34…求第30位数是多少，写出相关函数和算法名称<br />
+答：<br />
+数列的规律是从第3个数开始，每个数是前两个数的和。<br />
+“public static int Foo(int i)”即定义一个公共静态函数体，输入一个整数（第X位数），返回值；<br />
+“if (i &lt;= 0)   return 0;”预防输入0或负数，输入则返回“0”；<br />
+“else if (i &gt; 0 &amp;&amp; i &lt;= 2)    return 1;”如果输入第1位或第2位，则返回“1”（如题）；<br />
+“else return Foo(i - 1) + Foo(i - 2);”输入其它的数则返回前两个数的值。注意：因为求数列中每一个值都是调用该函数，所以求前两个数的值就又要调用2个这个函数。这就是递归（调用自身）。<br />
+eg：求Foo（30）的值，则返回Foo(29) + Foo(28)的值，其中又要调用Foo(29) 和Foo(28)求它们的值，Foo(29)又要调用Foo(28)和Foo(27)，Foo(28)又要调用Foo(27)和Foo(26)……直到调用Foo(2)和Foo(1)会返回“1”，又一层层代回去，最后加出正确答案。</p>
+<h2 id="48"><a name="user-content-48" href="#48" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：48</h2>
+<p>标题：用SQL语句实现：表中有ABC三列，当A列大于B列时选择A列否&hellip;<br />
+详细：用SQL语句实现：表中有ABC三列，当A列大于B列时选择A列否则选择B列，当B列大于C列时选择B列否则选择C列.<br />
+答：<br />
+select IF(a&gt;b,a,b),if(b&gt;c,b,a) from t</p>
+<h2 id="49"><a name="user-content-49" href="#49" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：49</h2>
+<p>标题：如何直接使用kill命令重启php-fpm进程<br />
+答：<br />
+不清楚，不过我认为的是kill是可以杀死进程的，怎么还能让进程重启呢？</p>
+<h2 id="50"><a name="user-content-50" href="#50" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：50</h2>
+<p>标题：服务器上根目录：/data/www/htdocs/,访问;&rsquo;<a href="http://test.com/path/abc.php?test=test">http://test.com/path/abc.php?test=test</a>&lsquo;,请写出$_SERVER[&lsquo;SCRIPT_FILENAME&rsquo;],$SERVER[&lsquo;SCRIPT_NAME&rsquo;],$SERVER[&lsquo;REQUEST_URL&rsquo;],$_SERVER[&lsquo;PHP_SELF&rsquo;],以下几个变量的值；</p>
+<h2 id="51"><a name="user-content-51" href="#51" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：51</h2>
+<p>标题：一段英文<br />
+详细：一段英文，要把以a,b,e,m,s,w和z开头的单词首字母变成大写，写一下思路<br />
+答：<br />
+用explode函数吧这段英文转化为数组，然后循环数组，判断数组中的单词第一个字母是否为a,b,e,m,s,w,z开头，如果是利用str_replace函数进行替换</p>
+<h2 id="52"><a name="user-content-52" href="#52" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：52</h2>
+<p>标题：使用正则表达式检查输入的电子邮件地址是否正确<br />
+详细：使用正则表达式检查输入的电子邮件地址是否正确<br />
+答：<br />
+/^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/i</p>
+<h2 id="53"><a name="user-content-53" href="#53" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：53</h2>
+<p>标题：类静态方法和实例化类方法比较及优缺点<br />
+答：<br />
+1、静态方法的调用，是类名后直接加静态方法即可。实例方法必须将类实例化后，用实例调用该实例方法。<br />
+2、静态方法，只能调用类中的其他静态属性和静态方法，不能调用类中的非静态属性和非静态方法。<br />
+3、实例方法，可以调用静态属性和静态方法，也可以调用实例属性和实例方法。<br />
+4、静态方法是属于类的必须由类来调用，实例方法是属于实例的必须实例化类后，用类的实例调用。</p>
+<h2 id="54"><a name="user-content-54" href="#54" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：54</h2>
+<p>标题：长连接端连接区别以及个字应用场景<br />
+详细： 长连接端连接区别以及个字应用场景</p>
+<h2 id="55"><a name="user-content-55" href="#55" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：55</h2>
+<p _foreach="/foreach">标题：如果模板是smarty模板，怎样用foreach语句来实现一个名为$dat&hellip;<br />
+详细：如果模板是smarty模板，怎样用foreach语句来实现一个名为$data的数组。<br />
+答：<br />
+{foreach from=$data key=key item=value}<br />
+{$key}: {$value}<br /></p>
+<h2 id="56"><a name="user-content-56" href="#56" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：56</h2>
+<p>标题：请写出http状态码304、403、502所代表的状态<br />
+详细：请写出http状态码304、403、502所代表的状态<br />
+答：<br />
+304  客户的缓存资源是最新的， 要客户端使用缓存<br />
+403  请求被服务器拒绝<br />
+502  代理使用的服务器遇到了上游的无效响应</p>
+<h2 id="57"><a name="user-content-57" href="#57" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：57</h2>
+<p>标题：请阐述下什么是分布式事件？以及使用场景？</p>
+<h2 id="58"><a name="user-content-58" href="#58" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：58</h2>
+<p>标题：简述队列，堆栈的原理及应用场景<br />
+答：<br />
+堆栈是一种抽象数据结构，其操作机理是后进先出。当你把新条目推进堆栈时，已经在堆栈内的任何条目都会压到堆栈的深处。同样的，把一个条目从堆栈移出则会让堆栈内的其他条目都向堆栈的顶部移动。只有堆栈最顶端的条目能从堆栈中取出，条目离开堆栈的顺序和它们被推进堆栈的顺序一样</p>
+<h2 id="59"><a name="user-content-59" href="#59" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：59</h2>
+<p>标题：版本控制工具原理及用法描述<br />
+详细：版本控制工具原理及用法描述<br />
+答：<br />
+目前我所知的版本控制工具有两种svn和git<br />
+svn： 在一台服务器上建立一个源代码库，库里可以存放许多不同项目的源程序。有源代码库管理员统一管理这些源程序。每个用户在使用源代码库之前，首先要把源代码库里德项目文件下载到本地，然后开发人员可以在本地修改，左后用svn命令进行提交，由源代码库统一管理修改。<br />
+git：Git是一个强调速度的分布式版本控制软件和源代码管理系统，每一个Git工作目录是一个带有完全历史记录和版本信息的仓库，不依赖于网络和中央服务器。Git是一个免费的开源软件，遵从GNU v2协议<br />
+两者区别：<br />
+1、GIT是分布式的，SVN不是<br />
+2、GIT把内容按元数据方式存储，而SVN是按文件<br />
+3、GIT分支和SVN的分支不同<br />
+4、GIT没有一个全局的版本号，而SVN有<br />
+5、GIT的内容完整性要优于SVN</p>
+<h2 id="60"><a name="user-content-60" href="#60" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：60</h2>
+<p>标题：阐述死锁发生的原因？以及如何避免死锁？<br />
+答：<br />
+死锁主要原因：<br />
+（1）系统资源不足。<br />
+（2） 进程运行推进的顺序不合适。<br />
+（3）资源分配不当等。<br />
+死锁四个条件：<br />
+（1） 互斥条件：一个资源每次只能被一个进程使用。<br />
+（2） 请求与保持条件：一个进程因请求资源而阻塞时，对已获得的资源保持不放。<br />
+（3） 不剥夺条件:进程已获得的资源，在末使用完之前，不能强行剥夺。<br />
+（4） 循环等待条件:若干进程之间形成一种头尾相接的循环等待资源关系。<br />
+避免死锁：<br />
+（1）按同一顺序访问对象。<br />
+如果所有并发事务按同一顺序访问对象，则发生死锁的可能性会降低。例如，如果两个并发事务获得 Supplier 表上的锁，然后获得 Part 表上的锁，则在其中一个事务完成之前，另一个事务被阻塞在 Supplier 表上。第一个事务提交或回滚后，第二个事务继续进行。不发生死锁。将存储过程用于所有的数据修改可以标准化访问对象的顺序。<br />
+（2）避免事务中的用户交互。<br />
+避免编写包含用户交互的事务，因为运行没有用户交互的批处理的速度要远远快于用户手动响应查询的速度，例如答复应用程序请求参数的提示。例如，如果事务正在等待用户输入，而用户去吃午餐了或者甚至回家过周末了，则用户将此事务挂起使之不能完成。这样将降低系统的吞吐量，因为事务持有的任何锁只有在事务提交或回滚时才会释放。即使不出现死锁的情况，访问同一资源的其它事务也会被阻塞，等待该事务完成。<br />
+（3）保持事务简短并在一个批处理中。<br />
+在同一数据库中并发执行多个需要长时间运行的事务时通常发生死锁。事务运行时间越长，其持有排它锁或更新锁的时间也就越长，从而堵塞了其它活动并可能导致死锁。<br />
+保持事务在一个批处理中，可以最小化事务的网络通信往返量，减少完成事务可能的延迟并释放锁。<br />
+（4）使用低隔离级别。<br />
+确定事务是否能在更低的隔离级别上运行。执行提交读允许事务读取另一个事务已读取（未修改）的数据，而不必等待第一个事务完成。使用较低的隔离级别（例如提交读）而不使用较高的隔离级别（例如可串行读）可以缩短持有共享锁的时间，从而降低了锁定争夺。<br />
+（5）使用绑定连接。<br />
+使用绑定连接使同一应用程序所打开的两个或多个连接可以相互合作。次级连接所获得的任何锁可以象由主连接获得的锁那样持有，反之亦然，因此不会相互阻塞。</p>
+<h2 id="61"><a name="user-content-61" href="#61" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：61</h2>
+<p>标题：事件的隔离级别有哪些？<br />
+答：<br />
+读取未提交：TRANSACTION_READ_UNCOMMITTED(最低)<br />
+读取提交：TRANSACTION_READ_COMMITTED(默认)<br />
+可重读：TRANSACTION_REPEATABLE_READ<br />
+可串化：TRANSACTION_SERIALIZABLE(最高)</p>
+<h2 id="62"><a name="user-content-62" href="#62" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：62</h2>
+<p>标题：用socket相关函数实现如下功能:构造一个post请求,发送到指定http server的指定请求路径(如[url]<a href="http://www.example.com:80/test[/url">http://www.example.com:80/test[/url</a>]).请求中包含以下变量:<br />
+用户名(username):温柔一刀:密码(pwd):&amp;123=321&amp;123&amp;:个人简介(intro):<br />
+word!<br />
+且该http server 需要以下cookie来进行简单的用户动作跟踪:<br />
+cur_query you&amp;me<br />
+last_tm:<em>(上次请求的unix时间戳,定为当前请求时间地10分钟)<br />
+cur_tm</em>(当前请求的unix时间戳)<br />
+设置超时为10秒,发出请求后,讲http server 的相应内容输出</p>
+<h2 id="63"><a name="user-content-63" href="#63" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：63</h2>
+<p>标题：php获取用户ip地址，直接用$_SERVER[&lsquo;REMOTE_ADDR&rsquo;]可以吗？并说明理由<br />
+答：<br />
+不清楚</p>
+<h2 id="64"><a name="user-content-64" href="#64" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：64</h2>
+<p>标题：开发过程中你感觉最难的是什么？<br />
+详细：开发过程中你感觉最难的是什么？<br />
+答：<br />
+开发过程中，总会有一些难题，看的就是用怎么样一个心态去解决这个难题，对于我来说，没有最难的，只有不愿意解决的。而我每次遇到难题我都是兴奋的，恨不得把这个难题吃了，因为我知道这是提升自我的一个机会，所以开发过程中，我感觉没有最难的</p>
+<h2 id="65"><a name="user-content-65" href="#65" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：65</h2>
+<p>标题：用shell命令找出当前目录下文件内容最近两天内被修改过且后缀名为php的文件<br />
+答：<br />
+用find查询</p>
+<h2 id="66"><a name="user-content-66" href="#66" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：66</h2>
+<p>标题：Nginx,apache,lighthttp等web server 有何异同<br />
+详细：Nginx,apache,lighthttp等web server 有何异同<br />
+答：<br />
+1、nginx相对于apache的优点： <br />
+轻量级，同样起web 服务，比apache 占用更少的内存及资源 <br />
+抗并发，nginx 处理请求是异步非阻塞的，而apache 则是阻塞型的，在高并发下nginx 能保持低资源低消耗高性能 <br />
+高度模块化的设计，编写模块相对简单 <br />
+社区活跃，各种高性能模块出品迅速啊 <br />
+apache 相对于nginx 的优点： <br />
+rewrite ，比nginx 的rewrite 强大 <br />
+模块超多，基本想到的都可以找到 <br />
+少bug ，nginx 的bug 相对较多 <br />
+超稳定 <br />
+存在就是理由，一般来说，需要性能的web 服务，用nginx 。如果不需要性能只求稳定，那就apache 吧。后者的各种功能模块实现得比前者，例如ssl 的模块就比前者好，可配置项多。这里要注意一点，epoll(freebsd 上是 kqueue )网络IO 模型是nginx 处理性能高的根本理由，但并不是所有的情况下都是epoll 大获全胜的，如果本身提供静态服务的就只有寥寥几个文件，apache 的select 模型或许比epoll 更高性能。当然，这只是根据网络IO 模型的原理作的一个假设，真正的应用还是需要实测了再说的。 </p>
+<p>2、作为 Web 服务器：相比 Apache，Nginx 使用更少的资源，支持更多的并发连接，体现更高的效率，这点使 Nginx 尤其受到虚拟主机提供商的欢迎。在高连接并发的情况下，Nginx是Apache服务器不错的替代品: Nginx在美国是做虚拟主机生意的老板们经常选择的软件平台之一. 能够支持高达 50,000 个并发连接数的响应, 感谢Nginx为我们选择了 epoll and kqueue 作为开发模型. <br />
+Nginx作为负载均衡服务器: Nginx 既可以在内部直接支持 Rails 和 PHP 程序对外进行服务, 也可以支持作为 HTTP代理 服务器对外进行服务. Nginx采用C进行编写, 不论是系统资源开销还是CPU使用效率都比 Perlbal 要好很多. <br />
+作为邮件代理服务器: Nginx 同时也是一个非常优秀的邮件代理服务器（最早开发这个产品的目的之一也是作为邮件代理服务器）, Last.fm 描述了成功并且美妙的使用经验. <br />
+Nginx 是一个安装非常的简单 , 配置文件非常简洁（还能够支持perl语法）, Bugs 非常少的服务器: Nginx 启动特别容易, 并且几乎可以做到7*24不间断运行，即使运行数个月也不需要重新启动. 你还能够不间断服务的情况下进行软件版本的升级 . </p>
+<p>3、Nginx 配置简洁, Apache 复杂 <br />
+Nginx 静态处理性能比 Apache 高 3倍以上 <br />
+Apache 对 PHP 支持比较简单，Nginx 需要配合其他后端用 <br />
+Apache 的组件比 Nginx 多 <br />
+现在 Nginx 才是 Web 服务器的首选 </p>
+<p>4、最核心的区别在于apache是同步多进程模型，一个连接对应一个进程；nginx是异步的，多个连接（万级别）可以对应一个进程 </p>
+<p>5、nginx处理静态文件好,耗费内存少.但无疑apache仍然是目前的主流,有很多丰富的特性.所以还需要搭配着来.当然如果能确定nginx就适合需求,那么使用nginx会是更经济的方式. </p>
+<p>6、从个人过往的使用情况来看，nginx的负载能力比apache高很多。最新的服务器也改用nginx了。而且nginx改完配置能-t测试一下配置有没有问题，apache重启的时候发现配置出错了，会很崩溃，改的时候都会非常小心翼翼现在看有好多集群站，前端nginx抗并发，后端apache集群，配合的也不错。 </p>
+<p>7、nginx处理动态请求是鸡肋，一般动态请求要apache去做，nginx只适合静态和反向。 </p>
+<p>8、從我個人的經驗來看，nginx是很不錯的前端服務器，負載性能很好，在老奔上開nginx，用webbench模擬10000個靜態文件請求毫不吃力。apache對php等語言的支持很好，此外apache有強大的支持網路，發展時間相對nginx更久，bug少但是apache有先天不支持多核心處理負載雞肋的缺點，建議使用nginx做前端，後端用apache。大型網站建議用nginx自代的集群功能 </p>
+<p>9、Nginx优于apache的主要两点：1.Nginx本身就是一个反向代理服务器 2.Nginx支持7层负载均衡；其他的当然，Nginx可能会比apache支持更高的并发，但是根据NetCraft的统计，2011年4月的统计数据，Apache依然占有62.71%，而Nginx是7.35%，因此总得来说，Aapche依然是大部分公司的首先，因为其成熟的技术和开发社区已经也是非常不错的性能。 </p>
+<p>10、你对web server的需求决定你的选择。大部分情况下nginx都优于APACHE，比如说静态文件处理、PHP-CGI的支持、反向代理功能、前端Cache、维持连接等等。在Apache+PHP（prefork）模式下，如果PHP处理慢或者前端压力很大的情况下，很容易出现Apache进程数飙升，从而拒绝服务的现象。 </p>
+<p>11、可以看一下nginx lua模块：<a href="https://github.com/chaoslaw...apache">https://github.com/chaoslaw&hellip;apache</a>比nginx多的模块，可直接用lua实现apache是最流行的，why？大多数人懒得更新到nginx或者学新事物 </p>
+<p>12、对于nginx，我喜欢它配置文件写的很简洁，正则配置让很多事情变得简单运行效率高，占用资源少，代理功能强大，很适合做前端响应服务器 </p>
+<p>13、Apache在处理动态有优势，Nginx并发性比较好，CPU内存占用低，如果rewrite频繁，那还是Apache吧</p>
+<h2 id="67"><a name="user-content-67" href="#67" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：67</h2>
+<p>标题：请使用伪语言结合数据结构冒泡排序法对以下一组数据进&hellip;<br />
+详细：请使用伪语言结合数据结构冒泡排序法对以下一组数据进行排序<br />
+10  2  36  14  10  25  23  85  99 45<br />
+答：</p>
+<h2 id="68"><a name="user-content-68" href="#68" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：68</h2>
+<p>标题：apache如何处理php请求?列举自己知道的http code<br />
+详细：apache如何处理php请求?列举自己知道的http code<br />
+答：<br />
+    Apache对于php的解析，就是通过众多Module中的php Module来完成的，加载php是通过php5这个模块来实现的，下面通过图来说明Apache加载php模块的过程及代码如何加载php。<br />
+　　把php最终集成到Apache系统中，还需要对Apache进行一些必要的设置。这里，我们就以php的mod_php5 SAPI运行模式为例进行讲解，至于SAPI这个概念后面我们还会在其它的文章中讲解<br />
+　　假定我们安装的版本是Apache2 和 Php5，那么需要编辑Apache的主配置文件http.conf，在其中加入下面的几行内容：<br />
+　　Unix/Linux环境下：<br />
+　　LoadModule php5_module modules/mod_php5.so<br />
+　　AddType application/x-httpd-php .php<br />
+　　注：其中modules/mod_php5.so 是X系统环境下mod_php5.so文件的安装位置。<br />
+　　Windows环境下：<br />
+　　LoadModule php5_module d:/php/php5apache2.dll<br />
+　　AddType application/x-httpd-php .php<br />
+　　注：其中d:/php/php5apache2.dll 是在Windows环境下php5apache2.dll文件的安装位置。<br />
+　　这两项配置就是告诉Apache Server，以后收到的Url用户请求，凡是以php作为后缀，就需要调用php5_module模块（mod_php5.so/ php5apache2.dll）进行处理。</p>
+<h2 id="69"><a name="user-content-69" href="#69" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：69</h2>
+<p>标题：假设有一个池塘，里面有无穷的水，现在有两个空水壶，容积分别位5升和6升。问题是如何只用这2个水壶从池塘的取出3升的水？<br />
+答：<br />
+先让六升的水壶倒满，然后把六升的水倒进五升的水壶，这时六升的水壶里面剩余一升的水。然后把五升的水壶里面全部倒掉，然后把六升的水壶里面的一升水倒进五升的水壶里面，这个时候五升的水壶有一升水，然后再把六升的水壶倒满，然后用六升的水壶里面水把五升的水壶装满，这个时候六升的水壶里面有两升水，把五升的水壶里面的水倒掉，依次循环，就能得到三升的水。</p>
+<h2 id="70"><a name="user-content-70" href="#70" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：70</h2>
+<p>标题：请解释如下错误提示可能是什么问题<br />
+详细：请解释如下错误提示可能是什么问题</p>
+<p>Catchable fatal error ：Argument 1 passed to dok() must be an array ,integer given , called<br />
+in /www/kaoshi/html/test.php on line 2<br />
+答:<br />
+应该是dok()方法里面的参数传错了，应该传入数组而不是整数。</p>
+<h2 id="71"><a name="user-content-71" href="#71" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：71</h2>
+<p>标题：require与include都是包含文件，二者的区别何在？<br />
+详细：require与include都是包含文件，二者的区别何在？<br />
+答：<br />
+区别就是当包含一个文件的时候，如果文件有错误，一个是继续执行下面的脚本，一个就是直接报出致命错误停止脚本运行</p>
+<h2 id="72"><a name="user-content-72" href="#72" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：72</h2>
+<p>标题：请写出一个你认为最完整的邮箱验证正则表达式<br />
+详细：请写出一个你认为最完整的邮箱验证正则表达式</p>
+<p>答：<br />
+/^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/i</p>
+<h2 id="73"><a name="user-content-73" href="#73" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：73</h2>
+<p>标题：401  402  403  404  405分别是什么错误？<br />
+详细：401  402  403  404  405分别是什么错误？<br />
+答：<br />
+401、请求授权失败<br />
+402、保留有效ChargeTo头响应<br />
+403、请求不允许，请求失败<br />
+404、没有发现文件、查询或URL，找不到页面<br />
+405、不支持该Request的方法</p>
+<h2 id="74"><a name="user-content-74" href="#74" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：74</h2>
+<p>标题：一个球，一把长度大运是球的直径2/3长度的自尺，你怎样&hellip;<br />
+详细：[i=s] 本帖最后由 liqingyuan 于 2016-3-25 17:03 编辑 [/i]</p>
+<p>一个球，一把长度大运是球的直径2/3长度的自尺，你怎样测出球的半径？<br />
+答：<br />
+用自尺的长度除以2乘以3再乘以2，就是求的半径。</p>
+<h2 id="75"><a name="user-content-75" href="#75" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：75</h2>
+<p>标题：请用php实现如下功能    一致一组数字，21，25，11,32,12，35,5&hellip;<br />
+详细：请用php实现如下功能<br />
+   一致一组数字，21，25，11,32,12，35,55,77,66，写程序按照下面要求排序。（第1个数最大，第二个数最小，<br />
+第3个数是剩余数字中最大的，第4个数是剩余数字中最小的，以此类推）<br />
+答：<br />
+首先利用explode函数把这串数字转化为一维数组，利用max和min这两个函数取出数组中的最大值和最小值。然后可以把这两个值从数组中删除。继续取值。</p>
+<h2 id="76"><a name="user-content-76" href="#76" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：76</h2>
+<p>标题：如何将请求重新定向到另一台机器?几种方法?区别?<br />
+详细：如何将请求重新定向到另一台机器?几种方法?区别?<br />
+答：</p>
+<h2 id="77"><a name="user-content-77" href="#77" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：77</h2>
+<p>标题：1、一些网站（如baidu,163.com）使用不同机器访问相同域名时&hellip;<br />
+详细：一些网站（如baidu,163.com）使用不同机器访问相同域名时，</p>
+<p>连接的对方服务器居然不同（可能做了负载均衡），如何让他们访</p>
+<p>问相同的服务器？<br />
+答：<br />
+如果是搭建的负载均衡的话，里面会有upstream这个方法，这个方法里面有server，设置这个就是访问某一台服务器的概率，咱们可以记录IP，然后让他访问同一个服务器。</p>
+<h2 id="78"><a name="user-content-78" href="#78" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：78</h2>
+<p>标题：列举你知道的http code 值及含义<br />
+详细：列举你知道的http code 值及含义<br />
+401、请求授权失败<br />
+402、保留有效ChargeTo头响应<br />
+403、请求不允许，请求失败<br />
+404、没有发现文件、查询或URL，找不到页面<br />
+405、不支持该Request的方法</p>
+<h2 id="79"><a name="user-content-79" href="#79" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：79</h2>
+<p>标题：请解释什么是事件冒泡<br />
+详细：请解释什么是事件冒泡</p>
+<p>答案：页面上有好多事件，也可以多个元素响应一个事件.假如:<br />
+<BODY onclick="alert('aaa');"><br />
+<div onclick="alert('bbb');"><br />
+ <a href="#" class="cooltip" title="这是我的超链接提示1。" onclick="alert('ddd');"><br />
+   提示<br />
+  </a><br />
+</div><br />
+</BODY><br />
+上面这段代码一共有三个事件,body，div，a都分别绑定了单击事件。在页面中当单击a标签会连续弹出<br />
+3个提示框。这就是事件冒泡引起的现象。事件冒 泡的过程是：a &ndash;&gt; div &ndash;&gt; body 。a冒泡到div冒泡到body。</p>
+<h2 id="80"><a name="user-content-80" href="#80" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：80</h2>
+<p>标题：综合<br />
+详细：一些网站（如baidu,163.com）,使用不同的机器访问相同的域名时。连接的对方服务器居然不同（肯呢个做了负载均衡），如何让他们访问相同的服务器？</p>
+<h2 id="81"><a name="user-content-81" href="#81" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：81</h2>
+<p>标题：解释如下样式每行的含义<br />
+详细：请解释如下样式每行的含义</p>
+<h1 id="bodyheader-_200____"><a name="user-content-bodyheader-_200____" href="#bodyheader-_200____" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>body。header{                                 ＿宽：200像素＿＿＿＿</h1>
+<pre><code>width:200px;                ＿上边距：1像素；右边距:2像素；下边距：3像素；左边距：4像素＿＿＿＿＿
+padding:1px 2px 3px 4px;        ＿＿＿＿＿
+-webkit-transform:translate(20px,0)     向右位移20像素＿＿＿＿
+</code></pre>
+<h2 id="82"><a name="user-content-82" href="#82" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：82</h2>
+<p>标题：请简述项目中优化sql语句执行效率的方法，从哪些方面，sq&hellip;<br />
+详细：请简述项目中优化sql语句执行效率的方法，从哪些方面，sql语句性能比较好？</p>
+<p>答案：1. SQL优化的原则是：将一次操作需要读取的BLOCK数减到最低,即在最短的时间达到最大的数据吞吐量。 <br />
+调整不良SQL通常可以从以下几点切入： <br />
+? 检查不良的S搜索QL，考虑其写法是否还有可优化内容 <br />
+? 检查子查询 考虑SQL子查询是否可以用简单连接的方式进行重新书写 <br />
+? 检查优化索引的使用 <br />
+? 考虑数据库的优化器 </p>
+<ol>
+<li>
+<p>避免出现SELECT * FROM table 语句，要明确查出的字段。 </p>
+</li>
+<li>
+<p>在一个SQL语句中，如果一个where条件过滤的数据库记录越多，定位越准确，则该where条件越应该前移。 </p>
+</li>
+<li>
+<p>查询时尽可能使用索引覆盖。即对SELECT的字段建立复合索引，这样查询时只进行索引扫描，不读取数据块。 </p>
+</li>
+<li>
+<p>在判断有无符合条件的记录时建议不要用SELECT COUNT （*）和select top 1 语句。 </p>
+</li>
+<li>
+<p>使用内层限定原则，在拼写SQL语句时，将查询条件分解、分类，并尽量在SQL语句的最里层进行限定，以减少数据的处理量。 </p>
+</li>
+<li>
+<p>应绝对避免在order by子句中使用表达式。 </p>
+</li>
+<li>
+<p>如果需要从关联表读数据，关联的表一般不要超过7个。 </p>
+</li>
+<li>
+<p>小心使用 IN 和 OR，需要注意In集合中的数据量。建议集合中的数据不超过200个。 </p>
+</li>
+<li>
+<p>&lt;&gt; 用 &lt; 、 &gt; 代替，&gt;用&gt;=代替，&lt;用&lt;=代替，这样可以有效的利用索引。 </p>
+</li>
+<li>
+<p>在查询时尽量减少对多余数据的读取包括多余的列与多余的行。 </p>
+</li>
+<li>
+<p>对于复合索引要注意，例如在建立复合索引时列的顺序是F1，F2，F3，则在where或order by子句中这些字段出现的顺序要与建立索引时的字段顺序一致，且必须包含第一列。只能是F1或F1，F2或F1，F2，F3。否则不会用到该索引。 </p>
+</li>
+<li>
+<p>多表关联查询时，写法必须遵循以下原则，这样做有利于建立索引，提高查询效率。格式如下select sum（table1.je） from table1 table1, table2 table2, table3 table3 where (table1的等值条件（=）) and (table1的非等值条件) and (table2与table1的关联条件) and (table2的等值条件) and (table2的非等值条件) and (table3与table2的关联条件) and (table3的等值条件) and (table3的非等值条件)。 <br />
+注:关于多表查询时from 后面表的出现顺序对效率的影响还有待研究。 </p>
+</li>
+<li>
+<p>子查询问题。对于能用连接方式或者视图方式实现的功能，不要用子查询。例如：select name from customer where customer_id in ( select customer_id from order where money&gt;1000)。应该用如下语句代替：select name from customer inner join order on customer.customer_id=order.customer_id where order.money&gt;100。 </p>
+</li>
+<li>
+<p>在WHERE 子句中，避免对列的四则运算，特别是where 条件的左边，严禁使用运算与函数对列进行处理。比如有些地方 substring 可以用like代替。 </p>
+</li>
+<li>
+<p>如果在语句中有not in（in）操作，应考虑用not exists（exists）来重写,最好的办法是使用外连接实现。 </p>
+</li>
+<li>
+<p>对一个业务过程的处理，应该使事物的开始与结束之间的时间间隔越短越好，原则上做到数据库的读操作在前面完成，数据库写操作在后面完成，避免交叉。 </p>
+</li>
+<li>
+<p>请小心不要对过多的列使用列函数和order by,group by等，谨慎使用disti软件开发t。 </p>
+</li>
+<li>
+<p>用union all 代替 union，数据库执行union操作，首先先分别执行union两端的查询，将其放在临时表中，然后在对其进行排序，过滤重复的记录。 <br />
+当已知的业务逻辑决定query A和query B中不会有重复记录时，应该用union all代替union，以提高查询效率。</p>
+</li>
+</ol>
+<p>数据更新的效率 <br />
+1. 在一个事物中，对同一个表的多个insert语句应该集中在一起执行。 <br />
+2. 在一个业务过程中，尽量的使insert,update,delete语句在业务结束前执行，以减少死锁的可能性。 </p>
+<p>数据库物理规划的效率 </p>
+<p>为了避免I/O的冲突，我们在设计数据库物理规划时应该遵循几条基本的原则(以ORACLE举例)： <br />
+?? table和index分离：table和index应该分别放在不同的tablespace中。 </p>
+<p>?? Rollback Segment的分离：Rollback Segment应该放在独立的Tablespace中。 </p>
+<p>?? System Tablespace的分离：System Tablespace中不允许放置任何用户的object。（mssql中primary filegroup中不允许放置任何用户的object） </p>
+<p>?? Temp Tablesace的分离：建立单独的Temp Tablespace，并为每个user指定default Temp Tablespace </p>
+<p>??避免碎片：但segment中出现大量的碎片时，会导致读数据时需要访问的block数量的增加。对经常发生DML操作的segemeng来说，碎片是不能完全避免的。所以，我们应该将经常做DML操作的表和很少发生变化的表分离在不同的Tablespace中。 </p>
+<p>当我们遵循了以上原则后，仍然发现有I/O冲突存在，我们可以用数据分离的方法来解决。 <br />
+?? 连接Table的分离：在实际应用中经常做连接查询的Table，可以将其分离在不同的Taclespace中，以减少I/O冲突。 </p>
+<p>?? 使用分区：对数据量很大的Table和Index使用分区，放在不同的Tablespace中。 </p>
+<p>在实际的物理存储中，建议使用RAID。日志文件应放在单独的磁盘中。</p>
+<h2 id="83"><a name="user-content-83" href="#83" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：83</h2>
+<p>标题：当接手一个（mvc）项目时，没有手册提供模板标签的使用方法，怎么办？</p>
+<h2 id="84"><a name="user-content-84" href="#84" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：84</h2>
+<p>标题：&lt;\div id=&rdquo;loading&rdquo;&gt;&lt;\/div&gt;<br />
+请写javascript设置div的内容为“正在加载中&hellip;”，并使之3秒后消失</p>
+<p>&lt;\script&gt;<br />
+$(&ldquo;#loading&rdquo;).click(function(){<br />
+    $(&ldquo;#loading&rdquo;).html(&ldquo;正在加载中&hellip;&rdquo;).show(300).delay(3000).hide(300);<br />
+})<br />
+&lt;\/script&gt;</p>
+<h2 id="85"><a name="user-content-85" href="#85" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：85</h2>
+<p>标题：请列出常见的HTTP协议中的几个状态码？并简述其意义。<br />
+详细：请列出常见的HTTP协议中的几个状态码？并简述其意义。<br />
+答案：<br />
+成功的状态码： <br />
+200 – 服务器成功返回网页 <br />
+304 – 未修改 <br />
+失败的状态码： <br />
+404 – 请求的网页不存在 <br />
+503 – 服务器暂时不可用 <br />
+500 – 服务器内部错误 </p>
+<h2 id="86"><a name="user-content-86" href="#86" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：86</h2>
+<p>标题：综合<br />
+详细：请举例说明在你的开发过程中用什么方法来加快页面的加载速度<br />
+答案：<br />
+1,数据库优化;<br />
+2,php缓存;<br />
+3,使用zend引擎(其它框架);<br />
+4,分布式部署;<br />
+5,静态化处理(非伪静态)</p>
+<h2 id="87"><a name="user-content-87" href="#87" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：87</h2>
+<p>标题：写出一个正则表达式，过滤网页上的所有JS脚本。<br />
+详细：写出一个正则表达式，过滤网页上的所有JS脚本。<br />
+答案：/&lt;[^&gt;].<em>?&gt;.</em>?&lt;\/&gt;/si</p>
+<h2 id="88"><a name="user-content-88" href="#88" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：88</h2>
+<p>标题：编写一个shell脚本实现如下功能<br />
+详细：编写一个shell脚本实现如下功能：<br />
+a.进入自己的开发目录：假设 /home/name/dev<br />
+b.进行svn更新代码<br />
+c.比较当前版本与上一版本的不同并打包<br />
+d.通过patch的方式更新线上代码</p>
+<h2 id="89"><a name="user-content-89" href="#89" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：89</h2>
+<p>标题：算法题<br />
+详细：请写出一个算法实现如下功能：搜索一个英文字符串片段，三个仅且三个连续的大写字母，并输出，例如aaAAAa，输出AAA，不能用正则式表达</p>
+<h2 id="90"><a name="user-content-90" href="#90" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：90</h2>
+<p>标题：linux如何分析日志文件?<br />
+详细：如何分析日志文件?(工具)</p>
+<h2 id="91"><a name="user-content-91" href="#91" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：91</h2>
+<p>标题：$val的意义和作用<br />
+详细：$val的意义和作用</p>
+<h2 id="92"><a name="user-content-92" href="#92" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：92</h2>
+<p>标题：类的属性可以序列化后保存到session中，从而以后可以恢复&hellip;<br />
+详细：类的属性可以序列化后保存到session中，从而以后可以恢复整个类，这要用的函数是<br />
+答案：serialize和unserialize<br />
+      json_encode 和 json_decode<br />
+      var_export 和 eval<br />
+      wddx_serialize_value 和 wddx deserialize</p>
+<h2 id="93"><a name="user-content-93" href="#93" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：93</h2>
+<p>标题：寻找一个简单链表的中项,如果存在两个则返回前一个，请&hellip;<br />
+详细：寻找一个简单链表的中项,如果存在两个则返回前一个，请给出算法描述并给出代码</p>
+<h2 id="94"><a name="user-content-94" href="#94" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：94</h2>
+<p>标题：常用的端口号<br />
+详细：常用的端口号<br />
+答案：mysql:3306  apache:80  http:80  https:443  svn:3690  meemcache:11211  redis:6379</p>
+<h2 id="95"><a name="user-content-95" href="#95" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：95</h2>
+<p>标题：javascript<br />
+详细：一个最简单的网页应由__head<strong><em>_</em>、</strong><strong><em>body</em></strong>_两部分构成。</p>
+<p>网页中标题的代码为<strong><em>_</em></strong>&lt;\title&gt;&lt;\/title&gt;<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__。</p>
+<p>如何指定当前网页的编码方案为UTF8__&lt;\meta charset=&rsquo;utf8&rsquo;/&gt;<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_。</p>
+<p>与&lt;\div style=&rsquo;width:200px;height:100px;text-align:center;&rsquo;&gt;&lt;\/div&gt;等HTML可以写成：<br />
+__.div{<br />
+    width:200px;<br />
+    height:100px;<br />
+    text-align:center;<br />
+   }<br />
+<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>。</p>
+<p>使用jquery和js各写一个函数，改变&lt;\div id=&rsquo;newstitle&rsquo;&gt;TEST&lt;\/div&gt;中显示的内容为“这是一个测试”？<br />
+js:&lt;\div id=&rsquo;newstitle&rsquo; onclick=&rsquo;fun();&rsquo;&gt;TEST&lt;\/div&gt;<br />
+&lt;\script&gt;<br />
+  function fun(){<br />
+   document.getElementById(&ldquo;newstitle&rdquo;).innerHTML=&rdquo;这是一个测试&rdquo;;<br />
+}<br />
+&lt;\/script&gt;<br />
+jquery:&lt;\div id=&rsquo;newstitle&gt;TEST&lt;\/div&gt;<br />
+&lt;\script&gt;<br />
+ $(&ldquo;#newstitle&rdquo;).click(function(){<br />
+    $(&ldquo;#newstitle&rdquo;).html(&ldquo;这是一个测试&rdquo;);<br />
+})<br />
+&lt;\/script&gt;</p>
+<p>写出一个jquery的ajax提交表单并处理返回的示例，要求成功返回时显示ok，否则返回ERROR，注意缓存、数据格式等问题</p>
+<p>&lt;\script&gt;<br />
+$.ajax({<br />
+    url:&rsquo;路径&rsquo;，<br />
+    type:&rsquo;类型&rsquo;,<br />
+    data:&rsquo;传的值&rsquo;,<br />
+    dataType：&rsquo;json&rsquo;,<br />
+    success:function(msg){<br />
+        alert(msg.success);<br />
+        alert(msg.errors);<br />
+    }<br />
+})<br />
+&lt;\/script&gt;</p>
+<h2 id="96"><a name="user-content-96" href="#96" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：96</h2>
+<p>标题：操作系统<br />
+详细：1请结合你的使用经验，简述如何查看当前系统的负载情况？<br />
+答案：可以用TOP工具查看实时状态。</p>
+<h2 id="97"><a name="user-content-97" href="#97" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：97</h2>
+<p>标题：禁用COOKIE，SESSION还能用吗？<br />
+详细：禁用COOKIE，SESSION还能用吗？<br />
+答案：能。通过改php配置</p>
+<h2 id="98"><a name="user-content-98" href="#98" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：98</h2>
+<p>标题：最近读过的技术书籍,对你最有帮助的技术网站<br />
+详细：最近读过的技术书籍,对你最有帮助的技术网站</p>
+<h2 id="99"><a name="user-content-99" href="#99" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：99</h2>
+<p>标题：设计一个短链接的功能类似 <a href="http://house.focus.cn/s9w">http://house.focus.cn/s9w</a> 要求满足 1000W url，并通过memcached 实现覆盖 80% ，请描述一下你的数据结构及开发思路。</p>
+<h2 id="100"><a name="user-content-100" href="#100" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：100</h2>
+<p>标题：已知一个整数数组啊，给定一个个整数X，判断X 是否数组a&hellip;<br />
+详细：已知一个整数数组啊，给定一个个整数X，判断X 是否数组a中某两个数之和？</p>
+<h2 id="101"><a name="user-content-101" href="#101" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：101</h2>
+<p>标题：已知n个人（以编码1,2,3&hellip;n分别表示）围坐在一张圆桌周围&hellip;<br />
+详细：已知n个人（以编码1,2,3&hellip;n分别表示）围坐在一张圆桌周围。从编码为k的人开始报数，数到m的那个人出列；他的下一个人有从1开始报数，数到m的那个人有出列；一次规律重复下去，知道圆桌周围的人全部出列，求出列的人的编码顺序。</p>
+<h2 id="102"><a name="user-content-102" href="#102" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：102</h2>
+<p>标题：str()与mb_strlen()的作用分别是什么<br />
+详细：str()与mb_strlen()的作用分别是什么<br />
+答案：PHP内置的字符串长度函数strlen无法正确处理中文字符串,它得 到的只是字符串所占的字节数.对于GB2312的中文编码,strlen得到的值是汉字个数的2倍,而对于UTF-8编码的中文,就是3倍的差异了（在 UTF-8编码下,一个汉字占3个字节）.<br />
+采用mb_strlen函数可以较好地解决这个问题.mb_strlen的用法和 strlen类似,只不过它有第二个可选参数用于指定字符编码.例如得到UTF-8的字符串$str长度,可以用 mb_strlen($str,&rsquo;UTF-8&rsquo;).如果省略第二个参数,则会使用PHP的内部编码.内部编码可以通过 mb_internal_encoding()函数得到.</p>
+<h2 id="103"><a name="user-content-103" href="#103" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：103</h2>
+<p>标题：请举例你用过的版本控制软件的名称<br />
+详细：[align=left]请举例你用过的版本控制软件的名称[/align]<br />
+答案：SVN  Git</p>
+<h2 id="104"><a name="user-content-104" href="#104" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：104</h2>
+<p>标题：3.请举例说明在你的开发过程中用什么方法来加快页面的加加载速度。<br />
+答案：<br />
+1,数据库优化;<br />
+2,php缓存;<br />
+3,使用zend引擎(其它框架);<br />
+4,分布式部署;<br />
+5,静态化处理(非伪静态);</p>
+<h2 id="105"><a name="user-content-105" href="#105" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：105</h2>
+<p>标题：include 和require 都能把另一个文件包含到当前文件下中,他们有什么区别?include和include_one又有什么区别<br />
+答案：相同点：include和require 都能把另外一个文件包含到当前文件中。<br />
+不同点：使用include时，当包含的文件不存在时，系统会报出警告级别的错误，程序会继续往下执行。   使用require包含文件时，当包含的文件不存在时，系统会先报出警告级别的错误，接着又报一个致命级别的错误。程序将终止执行。   require能让php的程序得到更高的效率，在同一php文件中解释过一次后，不会再解释第二次。而include却会重复的解释包含的文件。所以当php网页中使用循环或条件语句引入</p>
+<p>文件时，&rdquo;require&rdquo;则不会做任何的改变，当出现这种情况，必须使用&rdquo;include&rdquo;命令来引入文件。</p>
+<h2 id="106"><a name="user-content-106" href="#106" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：106</h2>
+<p>标题：设计任务：  1、最近总有人骚扰我们的投票模块，需要你&hellip;<br />
+详细：设计任务：</p>
+<p>1、最近总有人骚扰我们的投票模块，需要你来设计一个投票限制的东东<br />
+要求如下：<br />
+1）要求每个qq号码（假设此qq号码在UNIT32内可以表示）10分钟内只能投5票。<br />
+2）我们的用户很踊跃，平均每天要有2000万人左右通过此程序投票。<br />
+说明：<br />
+1）无须写代码，只需要图跟文字即可。<br />
+2）对于关键逻辑，请用图加代码表示出来，这也是对你文字表达能力的一个考验。<br />
+3）对你能想到的所有边界条件列出来，这是对你逻辑思维全面与敏捷性的考验。<br />
+4）存储部分，尽你所能吧，如果，你需要一个自己设计的存储层，那么把这个存储层的实现，用文字加图片的方式描述清楚</p>
+<h2 id="107"><a name="user-content-107" href="#107" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：107</h2>
+<p>标题：检测一个变量是否有设置的函数是否?是否为空的函数是<br />
+详细：检测一个变量是否有设置的函数是否?是否为空的函数是<br />
+答案：is_set   empty</p>
+<h2 id="108"><a name="user-content-108" href="#108" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：108</h2>
+<p>标题：一个最简单的网页应由（）（）两部分组成。<br />
+答案：主要是HEAD域（头部）和body域组成 头部包含了网页的各种信息，包括标题，关键词，描述信息等网页信息 body域主要是网页的主体，即你见到的部分，包括各类网页对象如FLASH动画，音频文件，网页文字，表单之类的 所有的东西均需标记在<HTML>和&lt;\HTML&gt;之间</p>
+<h2 id="109"><a name="user-content-109" href="#109" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：109</h2>
+<p>标题：memcache使用场景及其工作原理<br />
+答案：适用memcached的业务场景：<br />
+1）如果网站包含了访问量很大的动态网页，因而数据库的负载将会很高。由于大部分数据库请求都是读操作，那么memcached可以显著地减小数据库负载。<br />
+2）如果数据库服务器的负载比较低但CPU使用率很高，这时可以缓存计算好的结果（ computed objects ）和渲染后的网页模板（enderred templates）。<br />
+3）利用memcached可以缓存 session数据 、临时数据以减少对他们的数据库写操作。<br />
+4）缓存一些很小但是被频繁访问的文件。<br />
+5）缓存Web &lsquo;services&rsquo;（非IBM宣扬的Web Services，译者注）或RSS feeds的结果.。<br />
+原理：Memcached处理的原子是每一个（key，value）对（以下简称kv对），key会通过一个hash算法转化成hash-key，便于查找、对比以及做到尽可能的散列。同时，memcached用的是一个二级散列，通过一张大hash表来维护。</p>
+<p>Memcached有两个核心组件组成：服务端（ms）和客户端（mc），在一个memcached的查询中，mc先通过计算key的hash值来 确定kv对所处在的ms位置。当ms确定后，客户端就会发送一个查询请求给对应的ms，让它来查找确切的数据。因为这之间没有交互以及多播协议，所以 memcached交互带给网络的影响是最小化的。</p>
+<h2 id="110"><a name="user-content-110" href="#110" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：110</h2>
+<p>标题：代码如下<br />
+详细：代码如下</p>
+<h2 id="111"><a name="user-content-111" href="#111" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：111</h2>
+<p>标题：请写出该形式的实现思路<br />
+详细：说明：点击左右箭头，图片会向左向右移动一张<br />
+答案：给左右箭头个一个点击事件，当点击时触碰事件让图片边距发生改变即可</p>
+<h2 id="112"><a name="user-content-112" href="#112" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：112</h2>
+<p>标题：sort(),asort(),和ksort有什么分别?他们分别在什么情况下使用?<br />
+详细：sort(),asort(),和ksort有什么分别?他们分别在什么情况下使用?<br />
+答案：sort()，根据数组中元素的值，以英文字母顺序排序，索引键会由0到n-1重新编号。主要是当数组索引键的值无关紧要时用来把数组排序。 <br />
+asort()，对数组进行排序，数组的索引保持和单元的关联。主要用于对那些单元顺序很重要的结合数组进行排序。 <br />
+ksort()，根据数组中索引键的值，以英文字母顺序排序，特别适合用于希望把索引键排序的关联数组</p>
+<h2 id="113"><a name="user-content-113" href="#113" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：113</h2>
+<p>标题：怎么实现一个简单的无刷新图片上传,说出关键点就可</p>
+<p>答案：ajax</p>
+<h2 id="114"><a name="user-content-114" href="#114" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：114</h2>
+<p>标题：请简单设计一个基于较色的权限管理（几张表以及之间的关系），并描述其实现原理<br />
+答案：用户表  角色表  权限表  用户与角色的关系表   角色与权限的关系表<br />
+用户表与角色表是多对多  角色表与权限表是多对多<br />
+原理：通过对不同控制器和控制器不同方法的限制，实现的管理</p>
+<h2 id="115"><a name="user-content-115" href="#115" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：115</h2>
+<p>标题：列出你知道的5中设计模式,并用单列模式($ingieton)建立一个数据库连续:</p>
+<p>答：工厂模式、单元素模式（单例模式）、观察者模式、命令链模式、策略模式</p>
+<h2 id="116"><a name="user-content-116" href="#116" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：116</h2>
+<p>标题：如何优化网站效率</p>
+<p>答：首先，确认服务器硬件是否足够支持当前的流量<br />
+            其次，优化数据库访问。<br />
+            第三，禁止外部的盗链。<br />
+            第四，控制大文件的下载。<br />
+            第五，使用不同主机分流主要流量<br />
+            第六，使用流量分析统计软件</p>
+<h2 id="117"><a name="user-content-117" href="#117" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：117</h2>
+<p>标题：两条不均匀的绳子本来60分钟烧完.45分钟怎么才能烧完<br />
+详细：两条不均匀的绳子本来60分钟烧完.45分钟怎么才能烧完</p>
+<p>答：一条对折烧30分钟,一条对折2次烧15分钟,</p>
+<h2 id="118"><a name="user-content-118" href="#118" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：118</h2>
+<p>标题：echo  count(“abc”)输出的是什么？</p>
+<p>答：echo  count(“abc”)输出的是 1  。</p>
+<h2 id="119"><a name="user-content-119" href="#119" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：119</h2>
+<p>标题：求两个日期的差数，例如2009-3-1~2009-4-4的时间差</p>
+<p>答：&lt;?php<br />
+$time1 = strtotime(&lsquo;2009-4-4&rsquo;);<br />
+$time2 = strtotime(&lsquo;2009-3-1&rsquo;);<br />
+$date = $time1-$time2;<br />
+echo $date;   //2937600<br />
+?&gt;</p>
+<h2 id="120"><a name="user-content-120" href="#120" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：120</h2>
+<p>标题：写个函数用来对二维数组排序<br />
+详细：写个函数用来对二维数组排序</p>
+<p>答：返回一个升序排列的数组：<br />
+&lt;?php<br />
+$a=array(&ldquo;Dog&rdquo;,&rdquo;Cat&rdquo;,&rdquo;Horse&rdquo;,&rdquo;Bear&rdquo;,&rdquo;Zebra&rdquo;);<br />
+array_multisort($a);<br />
+print_r($a);<br />
+?&gt;</p>
+<h2 id="121"><a name="user-content-121" href="#121" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：121</h2>
+<p>标题：请设计一个短地址的服务（类似于微博的短地址） 要&hellip;<br />
+详细：请设计一个短地址的服务（类似于微博的短地址）要求：可以支持10亿条URL信息：需要画出系统架构图，并说明如何保证服务的高性能和高稳定性，如果我需要申请一个memcached服务器来缓存100万条原始URL的数据。请问需要多大空间？（需写明计算过程）</p>
+<h2 id="122"><a name="user-content-122" href="#122" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：122</h2>
+<p>标题：写出echo “1”.print(2)+3 的运算结果？</p>
+<p>答：运算结果为511</p>
+<h2 id="123"><a name="user-content-123" href="#123" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：123</h2>
+<p>标题：11[简答题]前台发送一个ajax请求后,没有预想中的结果返回&hellip;<br />
+详细：前台发送一个ajax请求后,没有预想中的结果返回回来,该做哪些错误排查?</p>
+<p>答：查询sql有问题、表连接不对、</p>
+<h2 id="124"><a name="user-content-124" href="#124" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：124</h2>
+<p>标题：说说file_get_contents()函数的功能及注意事项</p>
+<p>答：file_get_contents() 函数把整个文件读入一个字符串中。</p>
+<p>和 file() 一样，不同的是 file_get_contents() 把文件读入一个字符串。</p>
+<p>file_get_contents() 函数是用于将文件的内容读入到一个字符串中的首选方法。如果操作系统支持，还会使用内存映射技术来增强性能。</p>
+<h2 id="125"><a name="user-content-125" href="#125" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：125</h2>
+<p>标题：请举例说明在你的开发过程中用什么方法来加快页面的加&hellip;<br />
+详细：请举例说明在你的开发过程中用什么方法来加快页面的加载速度</p>
+<p>答：要用到服务器资源时才打开，及时关闭服务器资源，数据库添加索引，页面可生成静态，图片等大文件单独服务器</p>
+<h2 id="126"><a name="user-content-126" href="#126" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：126</h2>
+<p>标题：编写shell脚本实现如下功能：  a 进入自己的开发目录  ： &hellip;<br />
+详细：编写shell脚本实现如下功能：<br />
+a 进入自己的开发目录  ： 假设 /home/name/dev<br />
+b 进行SVN跟新代码<br />
+c 比较当前版本与上一版本的不同并打包<br />
+d 通过patch的方式跟新线上代码<br />
+（或者你有更好的线上发布方法可以阐述说明）</p>
+<h2 id="127"><a name="user-content-127" href="#127" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：127</h2>
+<p>标题：MVC<br />
+详细：当接手一个（mvc）项目时，没有手册提供模板标签的使用方法，怎么办？</p>
+<p>答：最简单的方法就是参考项目中的代码逻辑</p>
+<h2 id="128"><a name="user-content-128" href="#128" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：128</h2>
+<p>标题：后台防止Xss注入，禁止js获取cookie</p>
+<p>后台防止Xss注入，禁止js获取cookie</p>
+<p>答：setcookie(&ldquo;name&rdquo;,&rdquo;hello&rdquo;, NULL, NULL, NULL, NULL, TRUE);</p>
+<h2 id="129"><a name="user-content-129" href="#129" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：129</h2>
+<p>标题：请写出一个函数，能快速查找出数组（…n…）中，n的下标位置是多少</p>
+<p>答：</p>
+<h2 id="130"><a name="user-content-130" href="#130" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：130</h2>
+<p>标题：怎么实现一个简单的无刷新图片上传，说出关键点就可以</p>
+<p>答：ajaxform是一个异步表单提交工具。</p>
+<h2 id="131"><a name="user-content-131" href="#131" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：131</h2>
+<p>标题：请谈一下http协议里header中keep-alive的作用</p>
+<p>答：显示此HTTP连接的Keep-Alive时间。使客户端到服务器端的连接持续有效，当出现对服务器的后继请求时，Keep-Alive功能避免了建立或者重新建立连接。<br />
+ 以前HTTP请求是一站式连接，从HTTP/1.1协议之后，就有了长连接，即在规定的Keep-Alive时间内，连接是不会断开的。</p>
+<p>实例：</p>
+<p>Keep-Alive: 300 </p>
+<h2 id="132"><a name="user-content-132" href="#132" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：132</h2>
+<p>标题：抓取网页的几种方法</p>
+<p>答：1. file()函数 <br />
+2. file_get_contents()函数 <br />
+3. fopen()-&gt;fread()-&gt;fclose()模式 <br />
+4.curl方式 <br />
+5. fsockopen()函数 socket模式 <br />
+6. 使用插件(如：<a href="http://sourceforge.net/projects/snoopy/">http://sourceforge.net/projects/snoopy/</a>)</p>
+<h2 id="133"><a name="user-content-133" href="#133" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：133</h2>
+<p>标题：有一个网页地址, 比如PHPma主页: <a href="http://www.phpma.com">http://www.phpma.com</a>,如何得到它的内容?</p>
+<p>答：//需要读取的page地址<br />
+$http_page_url=&rdquo;<a href="http://www.baidu.com/index.html">http://www.baidu.com/index.html</a>&rdquo;;<br />
+//打开远程文件<br />
+$read_file=fopen($http_page_url,&rdquo;rb&rdquo;);<br />
+if (!feof($read_file)) {<br />
+//读取远程文件<br />
+$file_stream = &ldquo;&rdquo;;<br />
+do {<br />
+$data = fread($read_file, 8192);<br />
+if (strlen($data) == 0) {<br />
+break;<br />
+}<br />
+$file_stream.= $data;<br />
+} while(true);<br />
+}<br />
+echo $file_stream; //输出内容</p>
+<h2 id="134"><a name="user-content-134" href="#134" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：134</h2>
+<p>标题：在命令行下git如何批量删除标签？标签删除并推送到服务&hellip;<br />
+详细：在命令行下git如何批量删除标签？标签删除并推送到服务器后，其它使用此仓库的人员在提取git数据的时候也会同时删除他们本地的标签吗？</p>
+<p>答：</p>
+<h2 id="135"><a name="user-content-135" href="#135" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：135</h2>
+<p>标题：php中int范围 ？32 位系统和64位系统是否有区别？为什么<br />
+详细：php中int范围 ？32 位系统和64位系统是否有区别？为什么</p>
+<p>答：1、64bit CPU拥有更大的寻址能力，最大支持到16GB内存，而32bit只支持4G内存<br />
+2、64位CPU一次可提取64位数据，比32位提高了一倍，理论上性能会提升1倍。但这是建立在64bit操作系统，64bit软件的基础上的。</p>
+<h2 id="136"><a name="user-content-136" href="#136" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：136</h2>
+<p>标题：如何在后台获取访问来源的手机类型<br />
+详细：[align=left]1、如何在后台获取访问来源的手机类型[/align]</p>
+<h2 id="137"><a name="user-content-137" href="#137" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：137</h2>
+<p>标题：从扑克牌中随机抽5张牌,判断是不是一个顺子 即这5张牌是&hellip;<br />
+详细：从扑克牌中随机抽5张牌,判断是不是一个顺子,即这5张牌是不是连续的.2-10为数字本身,A为1,J为11,Q为12,K为13,而大小王可以看成任意数字</p>
+<p>答：我们需要把扑克牌的背景抽象成计算机语言。不难想象，我们可以把5张牌看成由5个数字组成的数组。大、小王是特殊的数字，我们不妨把它们都定义为0，这样就能和其他扑克牌区分开来了。<br />
+接下来我们分析怎样判断5个数字是不是连续的，最直观的方法是把数组排序。值得注意的是，由于0可以当成任意数字，我们可以用0去补满数组中的空缺。如果排序之后的数组不是连续的，即相邻的两个数字相隔若干个数字，但只要我们有足够的0可以补满这两个数字的空缺，这个数组实际上还是连续的。举个例子，数组排序之后为{0，1，3，4，5}，在1和3之间空缺了一个2，刚好我们有一个0，也就是我们可以把它当成2  去填补这个空缺。<br />
+于是我们需要做3件事情：首先把数组排序，再统计数组中0的个数，最后统计排序之后的数组中相邻数字之间的空缺总数。如果空缺的总数小于或者等于0的个数，那么这个数组就是连续的；反之则不连续。<br />
+最后，我们还需要注意一点：如果数组中的非0数字重复出现，则该数组不是连续的。换成扑克牌的描述方式就是如果一副牌里含有对子，则不可能是顺子。<br />
+基于这个思路，我们可以写出如下代码：<br />
+bool  IsContinuous (int*numloers, int length)<br />
+{<br />
+    if(numbers==NULL | | length&lt;1)<br />
+        return false;</p>
+<p>qsort(num}oers,  length,  sizeof (int),  compare)；</p>
+<pre><code>int numberOfZero=0 ；
+</code></pre>
+<p>int numberOfGap=  0 ；</p>
+<pre><code>／／统计数组中0的个数
+for(int i=0;i&lt;length＆&amp;numbers[i]= =0;++i)
+    ++ numberOfZero;
+
+／／统计数组中的间隔数目
+int small=numberOfZero;
+int big=small+l；
+while (big&lt;length)
+</code></pre>
+<p>{</p>
+<pre><code>    ／／两个数相等，有对子，不可能是顺子
+    if (numloers[ small]  = =nurnbers[big])
+        return false;
+
+    numberOfGap+=numbers [big]  - numbers [small]  -1；
+    small=big;
+    ++big;
+}
+return(numberOfGap&gt;numberOfZero)  ?false  :  true;
+</code></pre>
+<p>}</p>
+<p>int compare (const void <em>argl,  const void </em>arg2)<br />
+}<br />
+    return<em>(int</em>) argl  -<em>(int</em>) arg2;<br />
+}</p>
+<hr />
+<p>为了让代码显得简洁，上述代码调用C的库函数qsort排序。可能有人担心qsort是O(n/ogn)的时间复杂度，还不够快。由于扑克牌的值出现在0～13之间，我们可以定义一个长度为14的哈希表，这样在O(n)时间就能完成排序（本书2.4.1节有这种思路的例子）。通常我们认为不同级别的时间复杂度只有当n足够大的时候才有意义。由于本题中数组的长度是固定的，只有5张牌，那么O(n)和O(nlogn)不会有多少区别，我们可以选用简洁易懂的方法来实现算法。<br />
+源代码：<br />
+本题完整的源代码详见44 ContinousCards项目。<br />
+测试用例：<br />
+●   功能测试（抽出的牌中有一个或者多个大、小王，抽出的牌中没有大、小王，抽出的牌中有对子）。<br />
+●  特殊输入测试（输入NULL指针）。<br />
+本题考点：<br />
+考查抽象建模能力。这个题目要求我们把熟悉的扑克牌转换为数组，把找顺子的过程通过排序、计数等步骤实现。这些都是把生活中的模型用程序语言来表达的例子。</p>
+<h2 id="138"><a name="user-content-138" href="#138" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：138</h2>
+<p>标题：可以把一个object当成一个数组用于foreach循环中,对吗? A:True B:False<br />
+详细：可以把一个object当成一个数组用于foreach循环中,对吗?</p>
+<p>答：A:True </p>
+<h2 id="139"><a name="user-content-139" href="#139" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：139</h2>
+<p>标题：一个球、一把长度大约是球的直径2/3长度的直尺，你怎样&hellip;<br />
+详细：一个球、一把长度大约是球的直径2/3长度的直尺，你怎样测出球的半径？（口述）</p>
+<p>答：球在水平面上,支持垂直于水平面,靠近球体,接触点到桌面的距离为半径,再乘以2即可 </p>
+<h2 id="140"><a name="user-content-140" href="#140" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：140</h2>
+<p>标题：谈一谈商城中购物车的实现思路，以及用所学知识分析订&hellip;<br />
+详细：[b][font=宋体][size=14.0pt]谈一谈商城中购物车的实现思路，以及用所学知识分析订单表与订单详细表之间的关系。[/size][/font][/b]</p>
+<p>答：①用户未登录，购物车数据存储于cookie中(使用cookie会话技术)；<br />
+②用户登录，则购物车数据存储于数据库中(需要存储会员id)，同时将cookie中数据转移到数据库中；</p>
+<p>购物车和订单表式一对多的关系 ，一个购物车 至少存在1个订单表，这里的订单表你可以理解为订单的明细了</p>
+<h2 id="141"><a name="user-content-141" href="#141" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：141</h2>
+<p>标题：四个人在牙科医生的等候室做成一排。布朗小姐下一个是&hellip;<br />
+详细：四个人在牙科医生的等候室做成一排。布朗小姐下一个是格林小姐，但布朗小姐不在琼斯先生之后，琼斯先生不在吉尔先生之后，吉尔先生下一个是谁？（口述）</p>
+<p>答：布朗小姐<br />
+//吉尔先生  布朗小姐 格林小姐 琼斯先生 </p>
+<h2 id="142"><a name="user-content-142" href="#142" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：142</h2>
+<p>标题：下程序的输出结果是什么？ &lt;?php $a1 = null $a2 = false $a3 = 0 $a4&hellip;<br />
+详细：下程序的输出结果是什么？<br />
+&lt;?php<br />
+$a1 = null;<br />
+$a2 = false;<br />
+$a3 = 0;<br />
+$a4 = &lsquo;*&rsquo;;<br />
+$a5 = 0;<br />
+$a6 = null ;<br />
+$a7 = array();<br />
+$a8 = array(array());<br />
+Echo empty($a1)?&rsquo;true&rsquo;:&rsquo;false&rsquo;;<br />
+Echo empty($a2)?&rsquo;true&rsquo;:&rsquo;false&rsquo;;<br />
+Echo empty($a3)?&rsquo;true&rsquo;:&rsquo;false&rsquo;;<br />
+Echo empty($a4)?&rsquo;true&rsquo;:&rsquo;false&rsquo;;<br />
+Echo empty($a5)?&rsquo;true&rsquo;:&rsquo;false&rsquo;;<br />
+Echo empty($a6)?&rsquo;true&rsquo;:&rsquo;false&rsquo;;<br />
+Echo empty($a7)?&rsquo;true&rsquo;:&rsquo;false&rsquo;;<br />
+Echo empty($a8)?&rsquo;true&rsquo;:&rsquo;false&rsquo;;<br />
+?&gt;</p>
+<p>答：true true true false true true true false</p>
+<h2 id="143"><a name="user-content-143" href="#143" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：143</h2>
+<p>标题：命令行运行php脚本<br />
+详细：图和在命令行执行php脚本，同时向php脚本传递参数？</p>
+<p>答：一种是创建任务计划<br />
+一种是直接在命令行运行php文件</p>
+<h2 id="144"><a name="user-content-144" href="#144" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：144</h2>
+<p>标题：举例说明css 的border,margin，padding,float，clear的含义<br />
+详细：[i=s] 本帖最后由 真真假假 于 2016-3-25 16:47 编辑 [/i]</p>
+<p>[align=left]{:3_53:}[b]举例说明css 的border,margin，padding,float，clear的含义?如何使用[/b][/align]</p>
+<p>答：边界，外间距，内间距，浮动，清除样式 </p>
+<h2 id="145"><a name="user-content-145" href="#145" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：145</h2>
+<p>标题：一段英文，要把a,b,e,m,s,w和z开头的单词首字母变成大写。写一个基本思路</p>
+<p>答：strtolower(): 该函数将传入的字符串参数所有的字符都转换成小写,并以小定形式放回这个字符串.<br />
+ strtoupper(): 该函数的作用同strtolower函数相反,是将传入的字符参数的字符全部转换成大写,并以大写的形式返回这个字符串.用法同strtolowe()一样.ucfirst(): 该函数的作用是将字符串的第一个字符改成大写,该函数返回首字符大写的字符串.用法同strtolowe()一样.<br />
+ucwords()：该函数将传入的字符串的每个单词的首字符变成大写。如&rdquo;imphper cn&rdquo;，经过该函数处理后，将返回&rdquo;Imphper Cn&rdquo;。用法同strtolower()一样。</p>
+<h2 id="146"><a name="user-content-146" href="#146" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：146</h2>
+<p>标题：开发过程中你觉得最难的是什么？<br />
+详细：开发过程中你觉得最难的是什么？</p>
+<p>答：1、开发前分析<br />
+2、明确开发目标<br />
+3、网站规划<br />
+4、技术解决方案：根据之前的系统规划，来确定网站开发技术解决方案，这样在内容实现时就会很快速、很方便。<br />
+5、网站内容实现：实现规划的所有内容，这一步是系统平台从“虚无”转为“有形”。<br />
+6、上线推广维护：p2p网贷平台上线后就要开始推广和维护了，推广和维护的工作量很大，并且工作内容也很枯燥无味，最需要的就是坚持。</p>
+<h2 id="147"><a name="user-content-147" href="#147" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：147</h2>
+<p>标题：windows server2003 操作系统的文件系统是否区分文件路径大小写<br />
+详细：windows server2003 操作系统的文件系统是否区分文件路径大小写</p>
+<p>答：windows操作系统的文件系统是不区分大小写的，所以本来就没有只有大小写字母不同的文件或文件夹共存。</p>
+<h2 id="148"><a name="user-content-148" href="#148" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：148</h2>
+<p>标题：windows7 中中文版操作系统对未申明字符集的文本内容采用&hellip;<br />
+详细：windows7 中中文版操作系统对未申明字符集的文本内容采用何种字符集进行解码</p>
+<p>答：Character set encoding basics</p>
+<h2 id="149"><a name="user-content-149" href="#149" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：149</h2>
+<p>标题：写出最近读过的技术书籍 对你最有帮助的技术网站（至少三个）</p>
+<p>php和mysql web开发 <br />
+NoSQL数据库入门:<br />
+目前国内外正在应用NoSQL的网站有：<br />
+新浪微博 Redis<br />
+Google Bigtable<br />
+Amazon SimpleDB<br />
+淘宝数据平台 Tair(淘宝自主开发的Key/Value结构数据存储系统)<br />
+视觉中国网站 MongoDB<br />
+优酷运营数据分析 MongoDB<br />
+飞信空间 HandlerSocket<br />
+豆瓣社区 BeansDB<br />
+网易  HBase<br />
+去哪儿网 HBase<br />
+盛大  MongoDB<br />
+唯品会   MongoDB<br />
+赶集网   MongoDB</p>
+<h2 id="150"><a name="user-content-150" href="#150" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：150</h2>
+<p>标题：假设有一个池塘，里面无穷多的水，现有2个空水壶，容积分别为5升和6升，问题是如何用这2个水壶从池塘里取得3升的水。</p>
+<p>答：先用5升壶装满后倒进6升壶里，再将5升壶装满向6升壶里到，使6升壶装满为止，此时5升壶里还剩4升水。 将6升壶里的水全部倒掉，将5升壶里剩下的4升水倒进6升壶里，此时6升壶里只有4升水。 再将5升壶装满，向6升壶里到，使6升壶里装满为止，此时5升壶里就只剩下3升水了。</p>
+<h2 id="151"><a name="user-content-151" href="#151" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：151</h2>
+<p>标题：http状态码<br />
+详细：请列出您所知道的http状态吗，多答多得</p>
+<p>消息（1字头）<br />
+编辑<br />
+这一类型的状态码，代表请求已被接受，需要继续处理。这类响应是临时响应，只包含状态行和某些可选的响应头信息，并以空行结束。由于 HTTP/1.0 协议中没有定义任何 1xx 状态码，所以除非在某些试验条件下，服务器禁止向此类客户端发送 1xx 响应。<br />
+100 Continue<br />
+客户端应当继续发送请求。这个临时响应是用来通知客户端它的部分请求已经被服务器接收，且仍未被拒绝。客户端应当继续发送请求的剩余部分，或者如果请求已经完成，忽略这个响应。服务器必须在请求完成后向客户端发送一个最终响应。<br />
+101 Switching Protocols<br />
+服务器已经理解了客户端的请求，并将通过Upgrade 消息头通知客户端采用不同的协议来完成这个请求。在发送完这个响应最后的空行后，服务器将会切换到在Upgrade 消息头中定义的那些协议。<br />
+只有在切换新的协议更有好处的时候才应该采取类似措施。例如，切换到新的HTTP 版本比旧版本更有优势，或者切换到一个实时且同步的协议以传送利用此类特性的资源。<br />
+102 Processing<br />
+由WebDAV（RFC 2518）扩展的状态码，代表处理将被继续执行。</p>
+<p>成功（2字头）<br />
+编辑<br />
+这一类型的状态码，代表请求已成功被服务器接收、理解、并接受[1]  。<br />
+200 OK<br />
+请求已成功，请求所希望的响应头或数据体将随此响应返回。<br />
+201 Created<br />
+请求已经被实现，而且有一个新的资源已经依据请求的需要而建立，且其 URI 已经随Location 头信息返回。假如需要的资源无法及时建立的话，应当返回 &lsquo;202 Accepted&rsquo;。<br />
+202 Accepted<br />
+服务器已接受请求，但尚未处理。正如它可能被拒绝一样，最终该请求可能会也可能不会被执行。在异步操作的场合下，没有比发送这个状态码更方便的做法了。<br />
+返回202状态码的响应的目的是允许服务器接受其他过程的请求（例如某个每天只执行一次的基于批处理的操作），而不必让客户端一直保持与服务器的连接直到批处理操作全部完成。在接受请求处理并返回202状态码的响应应当在返回的实体中包含一些指示处理当前状态的信息，以及指向处理状态监视器或状态预测的指针，以便用户能够估计操作是否已经完成。<br />
+203 Non-Authoritative Information<br />
+服务器已成功处理了请求，但返回的实体头部元信息不是在原始服务器上有效的确定集合，而是来自本地或者第三方的拷贝。当前的信息可能是原始版本的子集或者超集。例如，包含资源的元数据可能导致原始服务器知道元信息的超集。使用此状态码不是必须的，而且只有在响应不使用此状态码便会返回200 OK的情况下才是合适的。<br />
+204 No Content<br />
+服务器成功处理了请求，但不需要返回任何实体内容，并且希望返回更新了的元信息。响应可能通过实体头部的形式，返回新的或更新后的元信息。如果存在这些头部信息，则应当与所请求的变量相呼应。<br />
+如果客户端是浏览器的话，那么用户浏览器应保留发送了该请求的页面，而不产生任何文档视图上的变化，即使按照规范新的或更新后的元信息应当被应用到用户浏览器活动视图中的文档。<br />
+由于204响应被禁止包含任何消息体，因此它始终以消息头后的第一个空行结尾。<br />
+205 Reset Content<br />
+服务器成功处理了请求，且没有返回任何内容。但是与204响应不同，返回此状态码的响应要求请求者重置文档视图。该响应主要是被用于接受用户输入后，立即重置表单，以便用户能够轻松地开始另一次输入。<br />
+与204响应一样，该响应也被禁止包含任何消息体，且以消息头后的第一个空行结束。<br />
+206 Partial Content<br />
+服务器已经成功处理了部分 GET 请求。类似于 FlashGet 或者迅雷这类的 HTTP下载工具都是使用此类响应实现断点续传或者将一个大文档分解为多个下载段同时下载。<br />
+该请求必须包含 Range 头信息来指示客户端希望得到的内容范围，并且可能包含 If-Range 来作为请求条件。<br />
+响应必须包含如下的头部域：<br />
+Content-Range 用以指示本次响应中返回的内容的范围；如果是 Content-Type 为 multipart/byteranges 的多段下载，则每一 multipart 段中都应包含 Content-Range 域用以指示本段的内容范围。假如响应中包含 Content-Length，那么它的数值必须匹配它返回的内容范围的真实字节数。<br />
+Date<br />
+ETag 和/或 Content-Location，假如同样的请求本应该返回200响应。<br />
+Expires, Cache-Control，和/或 Vary，假如其值可能与之前相同变量的其他响应对应的值不同的话。<br />
+假如本响应请求使用了 If-Range 强缓存验证，那么本次响应不应该包含其他实体头；假如本响应的请求使用了 If-Range 弱缓存验证，那么本次响应禁止包含其他实体头；这避免了缓存的实体内容和更新了的实体头信息之间的不一致。否则，本响应就应当包含所有本应该返回200响应中应当返回的所有实体头部域。<br />
+假如 ETag 或 Last-Modified 头部不能精确匹配的话，则客户端缓存应禁止将206响应返回的内容与之前任何缓存过的内容组合在一起。<br />
+207 Multi-Status<br />
+由WebDAV(RFC 2518)扩展的状态码，代表之后的消息体将是一个XML消息，并且可能依照之前子请求数量的不同，包含一系列独立的响应代码。</p>
+<p>重定向（3字头）<br />
+编辑<br />
+这类状态码代表需要客户端采取进一步的操作才能完成请求。通常，这些状态码用来重定向，后续的请求地址（重定向目标）在本次响应的 Location 域中指明。<br />
+当且仅当后续的请求所使用的方法是 GET 或者 HEAD 时，用户浏览器才可以在没有用户介入的情况下自动提交所需要的后续请求。客户端应当自动监测无限循环重定向（例如：A-&gt;A，或者A-&gt;B-&gt;C-&gt;A），因为这会导致服务器和客户端大量不必要的资源消耗。按照 HTTP/1.0 版规范的建议，浏览器不应自动访问超过5次的重定向。<br />
+300 Multiple Choices<br />
+被请求的资源有一系列可供选择的回馈信息，每个都有自己特定的地址和浏览器驱动的商议信息。用户或浏览器能够自行选择一个首选的地址进行重定向。<br />
+除非这是一个 HEAD 请求，否则该响应应当包括一个资源特性及地址的列表的实体，以便用户或浏览器从中选择最合适的重定向地址。这个实体的格式由 Content-Type 定义的格式所决定。浏览器可能根据响应的格式以及浏览器自身能力，自动作出最合适的选择。当然，RFC 2616规范并没有规定这样的自动选择该如何进行。<br />
+如果服务器本身已经有了首选的回馈选择，那么在 Location 中应当指明这个回馈的 URI；浏览器可能会将这个 Location 值作为自动重定向的地址。此外，除非额外指定，否则这个响应也是可缓存的。<br />
+301 Moved Permanently<br />
+被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个 URI 之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。<br />
+新的永久性的URI 应当在响应的 Location 域中返回。除非这是一个 HEAD 请求，否则响应的实体中应当包含指向新的 URI 的超链接及简短说明。<br />
+如果这不是一个 GET 或者 HEAD 请求，因此浏览器禁止自动进行重定向，除非得到用户的确认，因为请求的条件可能因此发生变化。<br />
+注意：对于某些使用 HTTP/1.0 协议的浏览器，当它们发送的 POST 请求得到了一个301响应的话，接下来的重定向请求将会变成 GET 方式。<br />
+302 Move temporarily<br />
+请求的资源临时从不同的 URI响应请求。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。<br />
+上文有提及。<br />
+如果这不是一个 GET 或者 HEAD 请求，那么浏览器禁止自动进行重定向，除非得到用户的确认，因为请求的条件可能因此发生变化。<br />
+注意：虽然RFC 1945和RFC 2068规范不允许客户端在重定向时改变请求的方法，但是很多现存的浏览器将302响应视作为303响应，并且使用 GET 方式访问在 Location 中规定的 URI，而无视原先请求的方法。状态码303和307被添加了进来，用以明确服务器期待客户端进行何种反应。<br />
+303 See Other<br />
+对应当前请求的响应可以在另一个 URI 上被找到，而且客户端应当采用 GET 的方式访问那个资源。这个方法的存在主要是为了允许由脚本激活的POST请求输出重定向到一个新的资源。这个新的 URI 不是原始资源的替代引用。同时，303响应禁止被缓存。当然，第二个请求（重定向）可能被缓存。<br />
+注意：许多 HTTP/1.1 版以前的浏览器不能正确理解303状态。如果需要考虑与这些浏览器之间的互动，302状态码应该可以胜任，因为大多数的浏览器处理302响应时的方式恰恰就是上述规范要求客户端处理303响应时应当做的。<br />
+304 Not Modified<br />
+如果客户端发送了一个带条件的 GET 请求且该请求已被允许，而文档的内容（自上次访问以来或者根据请求的条件）并没有改变，则服务器应当返回这个状态码。304响应禁止包含消息体，因此始终以消息头后的第一个空行结尾。<br />
+该响应必须包含以下的头信息：<br />
+Date，除非这个服务器没有时钟。假如没有时钟的服务器也遵守这些规则，那么代理服务器以及客户端可以自行将 Date 字段添加到接收到的响应头中去（正如RFC 2068中规定的一样），缓存机制将会正常工作。<br />
+ETag 和/或 Content-Location，假如同样的请求本应返回200响应。<br />
+Expires, Cache-Control，和/或Vary，假如其值可能与之前相同变量的其他响应对应的值不同的话。<br />
+假如本响应请求使用了强缓存验证，那么本次响应不应该包含其他实体头；否则（例如，某个带条件的 GET 请求使用了弱缓存验证），本次响应禁止包含其他实体头；这避免了缓存了的实体内容和更新了的实体头信息之间的不一致。<br />
+假如某个304响应指明了当前某个实体没有缓存，那么缓存系统必须忽视这个响应，并且重复发送不包含限制条件的请求。<br />
+假如接收到一个要求更新某个缓存条目的304响应，那么缓存系统必须更新整个条目以反映所有在响应中被更新的字段的值。<br />
+305 Use Proxy<br />
+被请求的资源必须通过指定的代理才能被访问。Location 域中将给出指定的代理所在的 URI 信息，接收者需要重复发送一个单独的请求，通过这个代理才能访问相应资源。只有原始服务器才能建立305响应。<br />
+注意：RFC 2068中没有明确305响应是为了重定向一个单独的请求，而且只能被原始服务器建立。忽视这些限制可能导致严重的安全后果。<br />
+306 Switch Proxy<br />
+在最新版的规范中，306状态码已经不再被使用。<br />
+307 Temporary Redirect<br />
+请求的资源临时从不同的URI 响应请求。<br />
+新的临时性的URI 应当在响应的 Location 域中返回。除非这是一个HEAD 请求，否则响应的实体中应当包含指向新的URI 的超链接及简短说明。因为部分浏览器不能识别307响应，因此需要添加上述必要信息以便用户能够理解并向新的 URI 发出访问请求。<br />
+如果这不是一个GET 或者 HEAD 请求，那么浏览器禁止自动进行重定向，除非得到用户的确认，因为请求的条件可能因此发生变化。</p>
+<p>请求错误（4字头）<br />
+编辑<br />
+这类的状态码代表了客户端看起来可能发生了错误，妨碍了服务器的处理。除非响应的是一个 HEAD 请求，否则服务器就应该返回一个解释当前错误状况的实体，以及这是临时的还是永久性的状况。这些状态码适用于任何请求方法。浏览器应当向用户显示任何包含在此类错误响应中的实体内容。<br />
+如果错误发生时客户端正在传送数据，那么使用TCP的服务器实现应当仔细确保在关闭客户端与服务器之间的连接之前，客户端已经收到了包含错误信息的数据包。如果客户端在收到错误信息后继续向服务器发送数据，服务器的TCP栈将向客户端发送一个重置数据包，以清除该客户端所有还未识别的输入缓冲，以免这些数据被服务器上的应用程序读取并干扰后者。<br />
+400 Bad Request<br />
+1、语义有误，当前请求无法被服务器理解。除非进行修改，否则客户端不应该重复提交这个请求。<br />
+2、请求参数有误。<br />
+401 Unauthorized<br />
+当前请求需要用户验证。该响应必须包含一个适用于被请求资源的 WWW-Authenticate 信息头用以询问用户信息。客户端可以重复提交一个包含恰当的 Authorization 头信息的请求。如果当前请求已经包含了 Authorization 证书，那么401响应代表着服务器验证已经拒绝了那些证书。如果401响应包含了与前一个响应相同的身份验证询问，且浏览器已经至少尝试了一次验证，那么浏览器应当向用户展示响应中包含的实体信息，因为这个实体信息中可能包含了相关诊断信息。参见RFC 2617。<br />
+402 Payment Required<br />
+该状态码是为了将来可能的需求而预留的。<br />
+403 Forbidden<br />
+服务器已经理解请求，但是拒绝执行它。与401响应不同的是，身份验证并不能提供任何帮助，而且这个请求也不应该被重复提交。如果这不是一个 HEAD 请求，而且服务器希望能够讲清楚为何请求不能被执行，那么就应该在实体内描述拒绝的原因。当然服务器也可以返回一个404响应，假如它不希望让客户端获得任何信息。<br />
+404 Not Found<br />
+请求失败，请求所希望得到的资源未被在服务器上发现。没有信息能够告诉用户这个状况到底是暂时的还是永久的。假如服务器知道情况的话，应当使用410状态码来告知旧资源因为某些内部的配置机制问题，已经永久的不可用，而且没有任何可以跳转的地址。404这个状态码被广泛应用于当服务器不想揭示到底为何请求被拒绝或者没有其他适合的响应可用的情况下。出现这个错误的最有可能的原因是服务器端没有这个页面。<br />
+405 Method Not Allowed<br />
+请求行中指定的请求方法不能被用于请求相应的资源。该响应必须返回一个Allow 头信息用以表示出当前资源能够接受的请求方法的列表。<br />
+鉴于 PUT，DELETE 方法会对服务器上的资源进行写操作，因而绝大部分的网页服务器都不支持或者在默认配置下不允许上述请求方法，对于此类请求均会返回405错误。<br />
+406 Not Acceptable<br />
+请求的资源的内容特性无法满足请求头中的条件，因而无法生成响应实体。<br />
+除非这是一个 HEAD 请求，否则该响应就应当返回一个包含可以让用户或者浏览器从中选择最合适的实体特性以及地址列表的实体。实体的格式由 Content-Type 头中定义的媒体类型决定。浏览器可以根据格式及自身能力自行作出最佳选择。但是，规范中并没有定义任何作出此类自动选择的标准。<br />
+407 Proxy Authentication Required<br />
+与401响应类似，只不过客户端必须在代理服务器上进行身份验证。代理服务器必须返回一个 Proxy-Authenticate 用以进行身份询问。客户端可以返回一个 Proxy-Authorization 信息头用以验证。参见RFC 2617。<br />
+408 Request Timeout<br />
+请求超时。客户端没有在服务器预备等待的时间内完成一个请求的发送。客户端可以随时再次提交这一请求而无需进行任何更改。<br />
+409 Conflict<br />
+由于和被请求的资源的当前状态之间存在冲突，请求无法完成。这个代码只允许用在这样的情况下才能被使用：用户被认为能够解决冲突，并且会重新提交新的请求。该响应应当包含足够的信息以便用户发现冲突的源头。<br />
+冲突通常发生于对 PUT 请求的处理中。例如，在采用版本检查的环境下，某次 PUT 提交的对特定资源的修改请求所附带的版本信息与之前的某个（第三方）请求向冲突，那么此时服务器就应该返回一个409错误，告知用户请求无法完成。此时，响应实体中很可能会包含两个冲突版本之间的差异比较，以便用户重新提交归并以后的新版本。<br />
+410 Gone<br />
+被请求的资源在服务器上已经不再可用，而且没有任何已知的转发地址。这样的状况应当被认为是永久性的。如果可能，拥有链接编辑功能的客户端应当在获得用户许可后删除所有指向这个地址的引用。如果服务器不知道或者无法确定这个状况是否是永久的，那么就应该使用404状态码。除非额外说明，否则这个响应是可缓存的。<br />
+410响应的目的主要是帮助网站管理员维护网站，通知用户该资源已经不再可用，并且服务器拥有者希望所有指向这个资源的远端连接也被删除。这类事件在限时、增值服务中很普遍。同样，410响应也被用于通知客户端在当前服务器站点上，原本属于某个个人的资源已经不再可用。当然，是否需要把所有永久不可用的资源标记为&lsquo;410 Gone&rsquo;，以及是否需要保持此标记多长时间，完全取决于服务器拥有者。<br />
+411 Length Required<br />
+服务器拒绝在没有定义 Content-Length 头的情况下接受请求。在添加了表明请求消息体长度的有效 Content-Length 头之后，客户端可以再次提交该请求。<br />
+412 Precondition Failed<br />
+服务器在验证在请求的头字段中给出先决条件时，没能满足其中的一个或多个。这个状态码允许客户端在获取资源时在请求的元信息（请求头字段数据）中设置先决条件，以此避免该请求方法被应用到其希望的内容以外的资源上。<br />
+413 Request Entity Too Large<br />
+服务器拒绝处理当前请求，因为该请求提交的实体数据大小超过了服务器愿意或者能够处理的范围。此种情况下，服务器可以关闭连接以免客户端继续发送此请求。<br />
+如果这个状况是临时的，服务器应当返回一个 Retry-After 的响应头，以告知客户端可以在多少时间以后重新尝试。<br />
+414 Request-URI Too Long<br />
+请求的URI 长度超过了服务器能够解释的长度，因此服务器拒绝对该请求提供服务。这比较少见，通常的情况包括：<br />
+本应使用POST方法的表单提交变成了GET方法，导致查询字符串（Query String）过长。<br />
+重定向URI “黑洞”，例如每次重定向把旧的 URI 作为新的 URI 的一部分，导致在若干次重定向后 URI 超长。<br />
+客户端正在尝试利用某些服务器中存在的安全漏洞攻击服务器。这类服务器使用固定长度的缓冲读取或操作请求的 URI，当 GET 后的参数超过某个数值后，可能会产生缓冲区溢出，导致任意代码被执行[1]。没有此类漏洞的服务器，应当返回414状态码。<br />
+415 Unsupported Media Type<br />
+对于当前请求的方法和所请求的资源，请求中提交的实体并不是服务器中所支持的格式，因此请求被拒绝。<br />
+416 Requested Range Not Satisfiable<br />
+如果请求中包含了 Range 请求头，并且 Range 中指定的任何数据范围都与当前资源的可用范围不重合，同时请求中又没有定义 If-Range 请求头，那么服务器就应当返回416状态码。<br />
+假如 Range 使用的是字节范围，那么这种情况就是指请求指定的所有数据范围的首字节位置都超过了当前资源的长度。服务器也应当在返回416状态码的同时，包含一个 Content-Range 实体头，用以指明当前资源的长度。这个响应也被禁止使用 multipart/byteranges 作为其 Content-Type。<br />
+417 Expectation Failed<br />
+在请求头 Expect 中指定的预期内容无法被服务器满足，或者这个服务器是一个代理服务器，它有明显的证据证明在当前路由的下一个节点上，Expect 的内容无法被满足。<br />
+421There are too many connections from your internet address<br />
+从当前客户端所在的IP地址到服务器的连接数超过了服务器许可的最大范围。通常，这里的IP地址指的是从服务器上看到的客户端地址（比如用户的网关或者代理服务器地址）。在这种情况下，连接数的计算可能涉及到不止一个终端用户。<br />
+422 Unprocessable Entity<br />
+请求格式正确，但是由于含有语义错误，无法响应。（RFC 4918 WebDAV）<br />
+423 Locked<br />
+当前资源被锁定。（RFC 4918 WebDAV）<br />
+424 Failed Dependency<br />
+由于之前的某个请求发生的错误，导致当前请求失败，例如 PROPPATCH。（RFC 4918 WebDAV）<br />
+425 Unordered Collection<br />
+在WebDav Advanced Collections 草案中定义，但是未出现在《WebDAV 顺序集协议》（RFC 3658）中。<br />
+426 Upgrade Required<br />
+客户端应当切换到TLS/1.0。（RFC 2817）<br />
+449 Retry With<br />
+由微软扩展，代表请求应当在执行完适当的操作后进行重试。</p>
+<p>服务器错误（5、6字头）<br />
+编辑<br />
+这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。除非这是一个HEAD 请求，否则服务器应当包含一个解释当前错误状态以及这个状况是临时的还是永久的解释信息实体。浏览器应当向用户展示任何在当前响应中被包含的实体。<br />
+这些状态码适用于任何响应方法。<br />
+500 Internal Server Error<br />
+服务器遇到了一个未曾预料的状况，导致了它无法完成对请求的处理。一般来说，这个问题都会在服务器端的源代码出现错误时出现。<br />
+501 Not Implemented<br />
+服务器不支持当前请求所需要的某个功能。当服务器无法识别请求的方法，并且无法支持其对任何资源的请求。<br />
+502 Bad Gateway<br />
+作为网关或者代理工作的服务器尝试执行请求时，从上游服务器接收到无效的响应。<br />
+503 Service Unavailable<br />
+由于临时的服务器维护或者过载，服务器当前无法处理请求。这个状况是临时的，并且将在一段时间以后恢复。如果能够预计延迟时间，那么响应中可以包含一个 Retry-After 头用以标明这个延迟时间。如果没有给出这个 Retry-After 信息，那么客户端应当以处理500响应的方式处理它。<br />
+注意：503状态码的存在并不意味着服务器在过载的时候必须使用它。某些服务器只不过是希望拒绝客户端的连接。<br />
+504 Gateway Timeout<br />
+作为网关或者代理工作的服务器尝试执行请求时，未能及时从上游服务器（URI标识出的服务器，例如HTTP、FTP、LDAP）或者辅助服务器（例如DNS）收到响应。<br />
+注意：某些代理服务器在DNS查询超时时会返回400或者500错误<br />
+505 HTTP Version Not Supported<br />
+服务器不支持，或者拒绝支持在请求中使用的 HTTP 版本。这暗示着服务器不能或不愿使用与客户端相同的版本。响应中应当包含一个描述了为何版本不被支持以及服务器支持哪些协议的实体。<br />
+506 Variant Also Negotiates<br />
+由《透明内容协商协议》（RFC 2295）扩展，代表服务器存在内部配置错误：被请求的协商变元资源被配置为在透明内容协商中使用自己，因此在一个协商处理中不是一个合适的重点。<br />
+507 Insufficient Storage<br />
+服务器无法存储完成请求所必须的内容。这个状况被认为是临时的。WebDAV (RFC 4918)<br />
+509 Bandwidth Limit Exceeded<br />
+服务器达到带宽限制。这不是一个官方的状态码，但是仍被广泛使用。<br />
+510 Not Extended<br />
+获取资源所需要的策略并没有没满足。（RFC 2774）<br />
+600 Unparseable Response Headers<br />
+源站没有返回响应头部，只返回实体内容</p>
+<h2 id="152"><a name="user-content-152" href="#152" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：152</h2>
+<p>标题：对于web网站优化,您有哪些建议?<br />
+详细：对于web网站优化,您有哪些建议?</p>
+<p>1. 从用户角度而言，优化能够让页面加载得更快、对用户的操作响应得更及时，能够给用户提供更为友好的体验。<br />
+　　2. 从服务商角度而言，优化能够减少页面请求数、或者减小请求所占带宽，能够节省可观的资源。</p>
+<p>一、页面级优化<br />
+　　1. 减少 HTTP请求数<br />
+　　这条策略基本上所有前端人都知道，而且也是最重要最有效的。都说要减少 HTTP请求，那请求多了到底会怎么样呢 ?首先，每个请求都是有成本的，既包含时间成本也包含资源成本。一个完整的请求都需要经过 DNS寻址、与服务器建立连接、发送数据、等待服务器响应、接收数据这样一个 “漫长” 而复杂的过程。时间成本就是用户需要看到或者 “感受” 到这个资源是必须要等待这个过程结束的，资源上由于每个请求都需要携带数据，因此每个请求都需要占用带宽。另外，由于浏览器进行并发请求的请求数是有上限的 (具体参见此处 )，因此请求数多了以后，浏览器需要分批进行请求，因此会增加用户的等待时间，会给用户造成站点速度慢这样一个印象，即使可能用户能看到的第一屏的资源都已经请求完了，但是浏览器的进度条会一直存在。<br />
+　　减少 HTTP请求数的主要途径包括：<br />
+　　(1). 从设计实现层面简化页面<br />
+　　如果你的页面像百度首页一样简单，那么接下来的规则基本上都用不着了。保持页面简洁、减少资源的使用时最直接的。如果不是这样，你的页面需要华丽的皮肤，则继续阅读下面的内容。<br />
+　　(2). 合理设置 HTTP缓存<br />
+　　缓存的力量是强大的，恰当的缓存设置可以大大的减少 HTTP请求。以有啊首页为例，当浏览器没有缓存的时候访问一共会发出 78个请求，共 600多 K数据 (如图 1.1)，而当第二次访问即浏览器已缓存之后访问则仅有 10个请求，共 20多 K数据 (如图 1.2)。 (这里需要说明的是，如果直接 F5刷新页面的话效果是不一样的，这种情况下请求数还是一样，不过被缓存资源的请求服务器是 304响应，只有 Header没有Body ，可以节省带宽 )</p>
+<p>(3). 资源合并与压缩<br />
+　　如果可以的话，尽可能的将外部的脚本、样式进行合并，多个合为一个。另外， CSS、 Javascript、Image 都可以用相应的工具进行压缩，压缩后往往能省下不少空间。<br />
+　　(4). CSS Sprites<br />
+　　合并 CSS图片，减少请求数的又一个好办法。<br />
+　　(5). Inline Images<br />
+　　使用 data: URL scheme的方式将图片嵌入到页面或 CSS中，如果不考虑资源管理上的问题的话，不失为一个好办法。如果是嵌入页面的话换来的是增大了页面的体积，而且无法利用浏览器缓存。使用在 CSS中的图片则更为理想一些。<br />
+　　(6). Lazy Load Images（自己对这一块的内容还是不了解）<br />
+　　这条策略实际上并不一定能减少 HTTP请求数，但是却能在某些条件下或者页面刚加载时减少 HTTP请求数。对于图片而言，在页面刚加载的时候可以只加载第一屏，当用户继续往后滚屏的时候才加载后续的图片。这样一来，假如用户只对第一屏的内容感兴趣时，那剩余的图片请求就都节省了。 </p>
+<ol>
+<li>将外部脚本置底（将脚本内容在页面信息内容加载后再加载）<br />
+　　前文有谈到，浏览器是可以并发请求的，这一特点使得其能够更快的加载资源，然而外链脚本在加载时却会阻塞其他资源，例如在脚本加载完成之前，它后面的图片、样式以及其他脚本都处于阻塞状态，直到脚本加载完成后才会开始加载。如果将脚本放在比较靠前的位置，则会影响整个页面的加载速度从而影响用户体验。解决这一问题的方法有很多，在 这里有比较详细的介绍 (这里是译文和 更详细的例子 )，而最简单可依赖的方法就是将脚本尽可能的往后挪，减少对并发下载的影响。<br />
+　　3. 异步执行 inline脚本(其实原理和上面是一样，保证脚本在页面内容后面加载。)<br />
+　　inline脚本对性能的影响与外部脚本相比，是有过之而无不及。首页，与外部脚本一样， inline脚本在执行的时候一样会阻塞并发请求，除此之外，由于浏览器在页面处理方面是单线程的，当 inline脚本在页面渲染之前执行时，页面的渲染工作则会被推迟。简而言之， inline脚本在执行的时候，页面处于空白状态。鉴于以上两点原因，建议将执行时间较长的 inline脚本异步执行，异步的方式有很多种，例如使用 script元素的defer 属性(存在兼容性问题和其他一些问题，例如不能使用 document.write)、使用setTimeout ，此外，在HTML5中引入了 Web Workers的机制，恰恰可以解决此类问题。</li>
+</ol>
+<p>4. Lazy Load Javascript（只有在需要加载的时候加载，在一般情况下并不加载信息内容。）<br />
+　　随着 Javascript框架的流行，越来越多的站点也使用起了框架。不过，一个框架往往包括了很多的功能实现，这些功能并不是每一个页面都需要的，如果下载了不需要的脚本则算得上是一种资源浪费 -既浪费了带宽又浪费了执行花费的时间。目前的做法大概有两种，一种是为那些流量特别大的页面专门定制一个专用的 mini版框架，另一种则是 Lazy Load。YUI 则使用了第二种方式，在 YUI的实现中，最初只加载核心模块，其他模块可以等到需要使用的时候才加载。</p>
+<p>5. 将 CSS放在 HEAD中<br />
+　　如果将 CSS放在其他地方比如 BODY中，则浏览器有可能还未下载和解析到 CSS就已经开始渲染页面了，这就导致页面由无 CSS状态跳转到 CSS状态，用户体验比较糟糕。除此之外，有些浏览器会在 CSS下载完成后才开始渲染页面，如果 CSS放在靠下的位置则会导致浏览器将渲染时间推迟。</p>
+<p>7. 减少不必要的 HTTP跳转<br />
+　　对于以目录形式访问的 HTTP链接，很多人都会忽略链接最后是否带 ’/&rsquo;，假如你的服务器对此是区别对待的话，那么你也需要注意，这其中很可能隐藏了 301跳转，增加了多余请求。具体参见下图，其中第一个链接是以无 ’/&rsquo;结尾的方式访问的，于是服务器有了一次跳转。<br />
+　　8. 避免重复的资源请求<br />
+　　这种情况主要是由于疏忽或页面由多个模块拼接而成，然后每个模块中请求了同样的资源时，会导致资源的重复请求</p>
+<p>代码级优化<br />
+　　1. Javascript<br />
+　　(1). DOM<br />
+　　DOM操作应该是脚本中最耗性能的一类操作，例如增加、修改、删除 DOM元素或者对 DOM集合进行操作。如果脚本中包含了大量的 DOM操作则需要注意以下几点：<br />
+　　a. HTML Collection（HTML收集器，返回的是一个数组内容信息）<br />
+　　在脚本中 document.images、document.forms 、getElementsByTagName()返回的都是 HTMLCollection类型的集合，在平时使用的时候大多将它作为数组来使用，因为它有 length属性，也可以使用索引访问每一个元素。不过在访问性能上则比数组要差很多，原因是这个集合并不是一个静态的结果，它表示的仅仅是一个特定的查询，每次访问该集合时都会重新执行这个查询从而更新查询结果。所谓的 “访问集合” 包括读取集合的 length属性、访问集合中的元素。<br />
+　　因此，当你需要遍历 HTML Collection的时候，尽量将它转为数组后再访问，以提高性能。即使不转换为数组，也请尽可能少的访问它，例如在遍历的时候可以将 length属性、成员保存到局部变量后再使用局部变量。</p>
+<p>(2). 慎用 with<br />
+with(obj){ p = 1}; 代码块的行为实际上是修改了代码块中的 执行环境 ，将obj放在了其作用域链的最前端，在 with代码块中访问非局部变量是都是先从 obj上开始查找，如果没有再依次按作用域链向上查找，因此使用 with相当于增加了作用域链长度。而每次查找作用域链都是要消耗时间的，过长的作用域链会导致查找性能下降。<br />
+　　因此，除非你能肯定在 with代码中只访问 obj中的属性，否则慎用 with，替代的可以使用局部变量缓存需要访问的属性。<br />
+　　(3). 避免使用 eval和 Function<br />
+　　每次 eval 或 Function 构造函数作用于字符串表示的源代码时，脚本引擎都需要将源代码转换成可执行代码。这是很消耗资源的操作 —— 通常比简单的函数调用慢 100倍以上。<br />
+　　eval 函数效率特别低，由于事先无法知晓传给 eval 的字符串中的内容，eval在其上下文中解释要处理的代码，也就是说编译器无法优化上下文，因此只能有浏览器在运行时解释代码。这对性能影响很大。<br />
+　　Function 构造函数比 eval略好，因为使用此代码不会影响周围代码 ;但其速度仍很慢。<br />
+　　此外，使用 eval和 Function也不利于Javascript 压缩工具执行压缩。<br />
+　　(4). 减少作用域链查找（这方面设计到一些内容的相关问题）<br />
+　　前文谈到了作用域链查找问题，这一点在循环中是尤其需要注意的问题。如果在循环中需要访问非本作用域下的变量时请在遍历之前用局部变量缓存该变量，并在遍历结束后再重写那个变量，这一点对全局变量尤其重要，因为全局变量处于作用域链的最顶端，访问时的查找次数是最多的。</p>
+<p>(5). 数据访问<br />
+　　Javascript中的数据访问包括直接量 (字符串、正则表达式 )、变量、对象属性以及数组，其中对直接量和局部变量的访问是最快的，对对象属性以及数组的访问需要更大的开销</p>
+<h2 id="153"><a name="user-content-153" href="#153" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：153</h2>
+<p>标题：是否开发过手机网站<br />
+详细：是否开发过手机网站</p>
+<h2 id="154"><a name="user-content-154" href="#154" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：154</h2>
+<p>标题：有过到少大型项目经验,并发量是多少<br />
+详细：有过到少大型项目经验,并发量是多少<br />
+当时我们网站的并发量是 4千</p>
+<p>大型网站，比如门户网站，在面对大量用户访问、高并发请求方面，基本的解决方案集中在这样几个环节：使用高性能的服务器、高性能的数据库、高效率的编程语言、还有高性能的Web容器。</p>
+<p>1.HTML静态化</p>
+<p>效率最高、消耗最小的就是纯静态化的html页面，所以我们尽可能使我们的网站上的页面采用静态页面来实现。</p>
+<p>对于门户和信息发布类型的网站（例如各个门户站点的新闻频道），利用信息发布系统CMS可以实现最简单的信息录入自动生成静态页面，还能具备频道管理、权限管理、自动抓取等功能。</p>
+<p>对于交互性要求很高的社区类型网站，将社区内的帖子、文章进行实时的静态化、有更新的时候再重新静态化也是大量使用的策略。<br />
+html静态化也是某些缓存策略使用的手段，对于系统中频繁使用数据库查询但是内容更新很小的应用，可以考虑使用html静态化来实现</p>
+<p>2.图片服务器分离</p>
+<p>对于Web服务器来说，不管是Apache、IIS还是其他容器，图片是最消耗资源的，因此，有必要有必要将图片与页面进行分离，这是基本上大型网站都会采用的策略，他们都有独立的、甚至很多台的图片服务器。这样的架构可以降低提供页面访问请求的服务器系统压力，并且可以保证系统不会因为图片问题而崩溃。。</p>
+<p>在应用服务器和图片服务器上，可以进行不同的配置优化，比如apache在配置ContentType的时候可以尽量少支持、尽可能少的LoadModule，保证更高的系统消耗和执行效率。</p>
+<p>3.数据库集群、库表散列</p>
+<p>大型网站都有复杂的应用，这些应用必须使用数据库，那么在面对大量访问的时候，数据库的瓶颈很快就能显现出来，这时一台数据库将很快无法满足应用，于是我们需要使用数据库集群或者库表散列。</p>
+<p>数据库集群由于在架构、成本、扩张性方面都会受到所采用DB类型的限制，于是我们需要从应用程序的角度来考虑改善系统架构，库表散列是常用并且最有效的解决方案。</p>
+<p>我们在应用程序中安装业务和应用或者功能模块将数据库进行分离，不同的模块对应不同的数据库或者表，再按照一定的策略对某个页面或者功能进行更小的数据库散列，比如用户表，按照用户ID进行表散列，这样就能够低成本的提升系统的性能并且有很好的扩展性。</p>
+<p>4.缓存</p>
+<p>架构方面的缓存，对Apache比较熟悉的人都能知道Apache提供了自己的缓存模块，也可以使用外加的Squid模块进行缓存，这两种方式均可以有效的提高Apache的访问响应能力。</p>
+<p>网站程序开发方面的缓存，Linux上提供的Memory<br />
+ Cache是常用的缓存接口，可以在web开发中使用，比如用Java开发的时候就可以调用MemoryCache对一些数据进行缓存和通讯共享。</p>
+<p>5.镜像</p>
+<p>镜像是大型网站常采用的提高性能和数据安全性的方式，镜像的技术可以解决不同网络接入商和地域带来的用户访问速度差异，比如ChinaNet和EduNet之间的差异就促使了很多网站在教育网内搭建镜像站点，数据进行定时更新或者实时更新。在镜像的细节技术方面，这里不阐述太深，有很多专业的现成的解决架构和产品可选。也有廉价的通过软件实现的思路，比如Linux上的rsync等工具。</p>
+<p>6、负载均衡</p>
+<p>负载均衡将是大型网站解决高负荷访问和大量并发请求采用的高端解决办法。</p>
+<p>负载均衡技术发展了多年，有很多专业的服务提供商和产品可以选择，我个人接触过一些解决方法，其中有两个架构可以给大家做参考。</p>
+<p>（1）、硬件四层交换</p>
+<p>第四层交换使用第三层和第四层信息包的报头信息，根据应用区间识别业务流，将整个区间段的业务流分配到合适的应用服务器进行处理。</p>
+<p>第四层交换功能就像是虚IP，指向物理服务器。它传输的业务服从的协议多种多样，有HTTP、FTP、NFS、Telnet或其他协议。这些业务在物理服务器基础上，需要复杂的载量平衡算法。在IP世界，业务类型由终端TCP或UDP端口地址来决定，在第四层交换中的应用区间则由源端和终端IP地址、TCP和UDP端口共同决定。</p>
+<p>在硬件四层交换产品领域，有一些知名的产品可以选择，比如Alteon、F5等，这些产品很昂贵，但是物有所值，能够提供非常优秀的性能和很灵活的管理能力。“Yahoo中国”当初接近2000台服务器，只使用了三、四台Alteon就搞定了。</p>
+<p>(2)、软件四层交换</p>
+<p>大家知道了硬件四层交换机的原理后，基于OSI模型来实现的软件四层交换也就应运而生，这样的解决方案实现的原理一致，不过性能稍差。但是满足一定量的压力还是游刃有余的，有人说软件实现方式其实更灵活，处理能力完全看你配置的熟悉能力。</p>
+<p>软件四层交换我们可以使用Linux上常用的LVS来解决，LVS就是Linux Virtual Server，他提供了基于心跳线heartbeat的实时灾难应对解决方案，提高系统的强壮性，同时可供了灵活的虚拟VIP配置和管理功能，可以同时满足多种应用需求，这对于分布式的系统来说必不可少。</p>
+<p>一个典型的使用负载均衡的策略就是，在软件或者硬件四层交换的基础上搭建squid集群，这种思路在很多大型网站包括搜索引擎上被采用，这样的架构低成本、高性能还有很强的扩张性，随时往架构里面增减节点都非常容易。</p>
+<p>对于大型网站来说，前面提到的每个方法可能都会被同时使用到，这里介绍得比较浅显，具体实现过程中很多细节还需要大家慢慢熟悉和体会。有时一个很小的squid参数或者apache参数设置，对于系统性能的影响就会很大。</p>
+<p>7、最新：CDN加速技术</p>
+<p>什么是CDN？</p>
+<p>CDN的全称是内容分发网络。其目的是通过在现有的Internet中增加一层新的网络架构，将网站的内容发布到最接近用户的网络“边缘”，使用户可以就近取得所需的内容，提高用户访问网站的响应速度。</p>
+<p>CDN有别于镜像，因为它比镜像更智能，或者可以做这样一个比喻：CDN=更智能的镜像+缓存+流量导流。因而，CDN可以明显提高Internet网络中信息流动的效率。从技术上全面解决由于网络带宽小、用户访问量大、网点分布不均等问题，提高用户访问网站的响应速度。</p>
+<p>CDN的类型特点</p>
+<p>CDN的实现分为三类：镜像、高速缓存、专线。</p>
+<p>镜像站点（Mirror Site），是最常见的，它让内容直接发布，适用于静态和准动态的数据同步。但是购买和维护新服务器的费用较高，还必须在各个地区设置镜像服务器，配备专业技术人员进行管理与维护。对于大型网站来说，更新所用的带宽成本也大大提高了。</p>
+<p>高速缓存，成本较低，适用于静态内容。Internet的统计表明，超过80%的用户经常访问的是20%的网站的内容，在这个规律下，缓存服务器可以处理大部分客户的静态请求，而原始的服务器只需处理约20%左右的非缓存请求和动态请求，于是大大加快了客户请求的响应时间，并降低了原始服务器的负载。</p>
+<p>CDN服务一般会在全国范围内的关键节点上放置缓存服务器。</p>
+<p>专线，让用户直接访问数据源，可以实现数据的动态同步。</p>
+<p>CDN的实例</p>
+<p>举个例子来说，当某用户访问网站时，网站会利用全球负载均衡技术，将用户的访问指向到距离用户最近的正常工作的缓存服务器上，直接响应用户的请求。</p>
+<p>当用户访问已经使用了CDN服务的网站时，其解析过程与传统解析方式的最大区别就在于网站的授权域名服务器不是以传统的轮询方式来响应本地DNS的解析请求，而是充分考虑用户发起请求的地点和当时网络的情况，来决定把用户的请求定向到离用户最近同时负载相对较轻的节点缓存服务器上。</p>
+<p>通过用户定位算法和服务器健康检测算法综合后的数据，可以将用户的请求就近定向到分布在网络“边缘”的缓存服务器上，保证用户的访问能得到更及时可靠的响应。</p>
+<p>由于大量的用户访问都由分布在网络边缘的CDN节点缓存服务器直接响应了，这就不仅提高了用户的访问质量，同时有效地降低了源服务器的负载压力。</p>
+<p>采用GCDN加速方式</p>
+<p>采用了GCDN加速方式以后，系统会在浏览用户和您的服务器之间增加一台GCDN服务器。浏览用户访问您的服务器时，一般静态数据，如图片、多媒体资料等数据将直接从GCDN服务器读取，使得从主服务器上读取静态数据的交换量大大减少。</p>
+<p>为VIP型虚拟主机而特加的VPN高速压缩通道，使用高速压缩的电信&lt;==&gt;网通、电信&lt;==&gt;国际（HK）、网通&lt;==&gt;国际（HK）等跨网专线通道，智能多线，自动获取最快路径，极速的动态实时并发响应速度，实现了网站的动态脚本实时同步，对动态网站有一个更加明显的加速效果。<br />
+每个网络运营商（电信、网通、铁通、教育网）均有您服务器的GCDN服务器，无论浏览用户是来自何处，GCDN都能让您的服务器展现最快的速度！另外，我们将对您的数据进行实时备份，让您的数据更安全！</p>
+<h2 id="155"><a name="user-content-155" href="#155" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：155</h2>
+<p>标题：网站某一连接访问后页面出现403，这是什么意思？</p>
+<p>403错误是网站访问过程中，常见的错误提示。资源不可用。服务器理解客户的请求，但拒绝处理它。通常由于服务器上文件或目录的权限设置导致，比如IIS或者apache设置了访问权限不当。<br />
+一般会出现以下提示：403错误。关闭了IE的&rdquo;显示友好的HTTP错误&rdquo;,显示没有权限访问 </p>
+<h2 id="156"><a name="user-content-156" href="#156" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：156</h2>
+<p>标题：命令行修改<br />
+详细：用shell命令找出当前目录下文件内容最近两天内部被修改过且后缀为php的文件</p>
+<p>view sourceprint?<br />
+1 find . -type f -mtime -1<br />
+查找当前目录下，最近1天前（2天内）修改过的常规文件。</p>
+<h2 id="157"><a name="user-content-157" href="#157" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：157</h2>
+<p>标题：抽屉里有16张扑克牌：红桃A、Q、4 黑桃J、8、4、2、7、3 草&hellip;<br />
+详细：抽屉里有16张扑克牌：红桃A、Q、4 黑桃J、8、4、2、7、3 草花K、Q、5、44、6 方块A、5.约翰教授从这16张牌中挑出一张牌来,把这张牌的点数告诉 P先生,这张牌的花色告诉Q先生.这时,约翰教授问P先生和Q 先生：你们能从已知的点数或花色中推知这张牌是什么牌吗?于是,S先生听到如下的对话：P先生：我不知道这张牌.Q先生：我知道你不知道这张牌.P先生：现在我知道这张牌了.Q先生：我也知道了.听罢以上的对话,S先生想了一想之后,就正确地推出这张牌是什么牌.</p>
+<p>由“我不知道这张牌&rdquo;可以排除黑桃：j,8,2,7,3.草花:K 4 6,因为这些牌点数无重复,单凭点数即可知花色.<br />
+剩下：红桃：4 q a<br />
+黑桃 ：4<br />
+草花：q 5 4<br />
+方块：a 5<br />
+由”我知道你不知道这张牌“,排除黑桃4,草花：Q 5 4,这个是疑问比较多的地方,其实你把这句话可以理解为Q先生一知道花色,即明白无论P手上点数为何,都不可能马上推出花色.符合这个条件的花色只有红桃和方块,另外两个花色都有能让P直接推出花色的点数.<br />
+剩下：红桃 4 q a<br />
+方块：a 5<br />
+由”P的我现在知道这张牌了“Q得出不可能是a,a有重复,不可能在这一步得出<br />
+剩下：红桃 4 Q<br />
+方块：5<br />
+最后能让Q说出”我也知道了“ 只有方块5,综合前面也只有点数5才能让P说出“我现在知道这张牌了”</p>
+<h2 id="159"><a name="user-content-159" href="#159" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：159</h2>
+<p>标题：两条不均等长度的绸子本来60分钟烧完.45钟怎么才能烧完</p>
+<p>其中一条对折，另一条4折，分别燃烧<br />
+30+15=45分钟</p>
+<h2 id="160"><a name="user-content-160" href="#160" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：160</h2>
+<p>标题：请写出序列化,反序列话,对JOSN格式的字符串进行编码,解码&hellip;<br />
+详细：请写出序列化,反序列话,对JOSN格式的字符串进行编码,解码的四个php函数</p>
+<p>serialize和unserialize函数<br />
+这两个是序列化和反序列化PHP中数据的常用函数。<br />
+当数组值包含如双引号、单引号或冒号等字符时，它们被反序列化后，可能会出现问题。为了克服这个问题，一个巧妙的技巧是使用base64_encode和base64_decode。<br />
+json_encode 和 json_decode<br />
+使用JSON格式序列化和反序列化是一个不错的选择：<br />
+    使用json_encode和json_decode格式输出要serialize和unserialize格式快得多。<br />
+    JSON格式是可读的。<br />
+    JSON格式比serialize返回数据结果小。<br />
+    JSON格式是开放的、可移植的。其他语言也可以使用它。</p>
+<p>var_export 和 eval<br />
+var_export 函数把变量作为一个字符串输出；eval把字符串当成PHP代码来执行，反序列化得到最初变量的内容。</p>
+<p>wddx_serialize_value 和 wddx deserialize<br />
+wddx_serialize_value函数可以序列化数组变量，并以XML字符串形式输出。</p>
+<h2 id="161"><a name="user-content-161" href="#161" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：161</h2>
+<p>标题：get传参时,在参数中需要带有+的情况下,该如何处理<br />
+详细：get传参时,在参数中需要带有+的情况下,该如何处理</p>
+<p>提交时“＋”会自动转成“ ”（空格）<br />
+值只需要在把空格再转成加号即可</p>
+<h2 id="162"><a name="user-content-162" href="#162" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：162</h2>
+<p>标题：请写出一个匹配网络上图片地址的正则<br />
+详细：请写出一个匹配网络上图片地址的正则</p>
+<p>&lt;\script type=&rdquo;text/javascript&rdquo;&gt;<br />
+//思路分两步：作者（yanue）.<br />
+//1，匹配出图片img标签（即匹配出所有图片），过滤其他不需要的字符<br />
+//2.从匹配出来的结果（img标签中）循环匹配出图片地址（即src属性）<br />
+var str = &ldquo;this is test string <img src=\"http:yourweb.com/test.jpg\" width='50' > 123 and the end <img src=\"所有地址也能匹配.jpg\" /> 33! <img src=\"/uploads/attached/image/20120426/20120426225658_92565.png\" alt=\"\" />&ldquo;<br />
+//匹配图片（g表示匹配所有结果i表示区分大小写）<br />
+var imgReg = /<img.*?(?:>|\/&gt;)/gi;<br />
+//匹配src属性<br />
+var srcReg = /src=['"]?([^'"]*)['"]?/i;<br />
+var arr = str.match(imgReg);<br />
+alert(&lsquo;所有已成功匹配图片的数组：&rsquo;+arr);<br />
+for (var i = 0; i &lt; arr.length; i++) {<br />
+  var src = arr[i].match(srcReg);<br />
+  //获取图片地址<br />
+  if(src[1]){<br />
+    alert(&lsquo;已匹配的图片地址&rsquo;+(i+1)+&rsquo;：&rsquo;+src[1]);<br />
+  }<br />
+  //当然你也可以替换src属性<br />
+  if (src[0]) {<br />
+    var t = src[0].replace(/src/i, &ldquo;href&rdquo;);<br />
+    //alert(t);<br />
+  }<br />
+}<br />
+&lt;\/script&gt;</p>
+<h2 id="163"><a name="user-content-163" href="#163" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：163</h2>
+<p>标题：为linux增加一个计划任务,每天早上8点执行aa.php文件</p>
+<p>先查看一下服务器上的计划任务</p>
+<p>crontab -u //设定某个用户的cron服务，一般root用户在执行这个命令的时候需要此参数</p>
+<p>crontab -l //列出某个用户cron服务的详细内容</p>
+<p>crontab -r //删除没个用户的cron服务</p>
+<p>crontab -e //编辑某个用户的cron服务<br />
+2</p>
+<p>crontab -e //编辑某个用户的cron服务</p>
+<p>cron文件语法:</p>
+<p>分     小时    日       月       星期      命令</p>
+<p>0-59   0-23   1-31   1-12     0-6     command   </p>
+<p>(取值范围,0表示周日一般一行对应一个任务)</p>
+<p>例如</p>
+<ul>
+<li>8       *      *     0      ls     指定每星期日的8:00执行ls命令</li>
+</ul>
+<h2 id="164"><a name="user-content-164" href="#164" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：164</h2>
+<p>标题：smarty模板中,将变量$price格式化为小数点<br />
+详细：smarty模板中,将变量$price格式化为小数点保留两位(假设$price=78.3,则输出应为78.30)<strong><em>_</em></strong>_____.</p>
+<p>{$num|string_format:’%.2f’}</p>
+<p>使用string_format函数即可。</p>
+<h2 id="165"><a name="user-content-165" href="#165" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：165</h2>
+<p>标题：请用jquery实现:为class为aa下面的abc开头的li元素增加active的c&hellip;<br />
+详细：请用jquery实现:为class为aa下面的abc开头的li元素增加active的class</p>
+<h2 id="166"><a name="user-content-166" href="#166" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：166</h2>
+<p>标题：err_reporting(E_ALL)<br />
+详细：err_reporting(E_ALL)和ini_set(&lsquo;display_error&rsquo;,&rsquo;On&rsquo;)的关系是:<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_.</p>
+<p>后者的权限大于前者，后者是OFF的话，前者就算是E-ALL也没用。</p>
+<h2 id="167"><a name="user-content-167" href="#167" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：167</h2>
+<p>标题：了解一下根目录下,第一级目录的文件夹的大小<br />
+详细：了解一下根目录下,第一级目录的文件夹的大小</p>
+<p>du -sh &ndash;max-depth=1  #查看当前目录下所有一级子目录文件夹大小 </p>
+<h2 id="168"><a name="user-content-168" href="#168" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：168</h2>
+<p>标题：把一个test.txt的文本,从a服务器转移到b服务器<br />
+详细：把一个test.txt的文本,从a服务器转移到b服务器</p>
+<p>最简单的就是使用Windows的同步同能和Windows公文包，但是有些设置配置比较麻烦<br />
+建议你下载一些同步软件！</p>
+<h2 id="169"><a name="user-content-169" href="#169" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：169</h2>
+<p>标题：举例说明jquery常用绑定事件的方法并说明on和live的区别<br />
+详细：举例说明jquery常用绑定事件的方法并说明on和live的区别</p>
+<p>bind()向匹配元素添加一个或多个事件处理器。<br />
+live() 向当前或未来的匹配元素添加一个或多个事件处理器；<br />
+delegate() 为指定的元素（被选元素的子元素）添加一个或多个事件处理程序，并规定当这些事件发生时运行的函数。使用 delegate() 方法的事件处理程序适用于当前或未来的元素（比如由脚本创建的新元素）。<br />
+on() 为指定的元素,添加一个或多个事件处理程序，并规定当这些事件发生时运行的函数。使用 on() 方法的事件处理程序适用于当前或未来的元素（比如由脚本创建的新元素）。</p>
+<p>区别<br />
+live()支持jquery1.8-；<br />
+on()支持jquery1.7+；</p>
+<h2 id="170"><a name="user-content-170" href="#170" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>问题：170</h2>
+<p>标题：设置两个定时任务,一个每分钟执行一次时间同步<br />
+详细：设置两个定时任务,一个每分钟执行一次时间同步,一个每天18:00至23:00之间每个30分钟重启一个名称为abc的服务</p>
+<p>直接在用 crontab -e 就行，脚本都不用写。</p>
+<p>*  */2  *  *  *      wall   &ldquo;hello world&rdquo;</p>
+<p>非要用脚本的 话，用while 循环 加sleep 命令也应该可以</p></article></body></html>
