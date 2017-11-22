@@ -11,6 +11,8 @@ permalink: /boring/
 
 [php操作redis扩展的30个实例]({{site.url}}/show/php-redis-sample.html )  2017-10-24
 
+[分享]({{site.url}}/show/分享.html)
+
 [apache]({{site.url}}/show/apache.html )  2017-10-24
 
 [cache]({{site.url}}/show/cache.html )  2017-10-24

@@ -10,6 +10,8 @@ permalink: /link/
 
 [TIPI: 深入理解PHP内核](http://www.php-internals.com/book/ "点击前往")
 
+[phperblog](http://www.phperblog.cn/category/php/ "点击前往")
+
 [PHP源码阅读，PHP设计模式-胖胖的空间](http://www.phppan.com/ "点击前往")
 
 [新浪云福利 1000云豆免费领！低成本、免运维、灵活、安全稳定](http://t.cn/ROg7EW1 "点击前往")
